@@ -1,0 +1,14 @@
+@import './_reset';
+@import './variables';
+@import './header';
+@import './button';
+@import './input';
+@import './footer';
+
+@import './component/banner.scss';
+@import './content/layout-default.scss';
+
+body{
+    font-family: 'Kanit', sans-serif;
+    transition: all .5s ease-out;
+}

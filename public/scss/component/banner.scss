@@ -1,0 +1,86 @@
+.banner-wrapper{
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            .item{
+                position: relative;
+                img{
+                    width: 100%;
+                    &.d{
+                        display: block;
+                    }
+                    &.m{
+                        display: none;
+                    }
+                }
+                .btn-link{
+                    position: absolute;
+                    bottom: 10%;
+                    left: 4%;
+                }
+                @media only screen and (max-width: 768px) {
+                    img{
+                        &.d{
+                            display: none;
+                        }
+                        &.m{
+                            display: block;
+                        }
+                    }
+                    .btn-link{
+                        bottom: 5%;
+                        left: 3%;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-dots{
+        bottom: 25px;
+        li{
+            width: 29px;
+            height: 6px;
+            transition: all .35s ease-out;
+            button{
+                width: 29px;
+                height: 6px;
+                transition: all .35s ease-out;
+                &:before{
+                    content: '';
+                    background-color: #91989e;
+                    border-radius: 10px;
+                    width: 29px;
+                    height: 6px;
+                    opacity: 1;
+                    transition: all .35s ease-out;
+                }
+            }
+            &.slick-active{
+                width: 39px;
+                button{
+                    width: 39px;
+                    &:before{
+                        width: 39px;
+                        background-color: #ff7301;
+                    }
+                }
+            }
+            &:hover{
+                width: 39px;
+                transition: all .35s ease-out;
+                button{
+                    width: 39px;
+                    transition: all .35s ease-out;
+                    &:before{
+                        background-color: #ff7301;
+                        width: 39px;
+                        transition: all .35s ease-out;
+                    }
+                }
+            }
+        }
+    }
+}

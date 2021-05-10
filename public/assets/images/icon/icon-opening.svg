@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111">
+  <g id="Opening_Icon" data-name="Opening Icon" transform="translate(-726.391 -4767)">
+    <circle id="Ellipse_78" data-name="Ellipse 78" cx="55.5" cy="55.5" r="55.5" transform="translate(726.391 4767)" fill="#fff"/>
+    <g id="Group_632" data-name="Group 632" transform="translate(289.582 1529)">
+      <circle id="Ellipse_81" data-name="Ellipse 81" cx="17" cy="17" r="17" transform="translate(468 3289.5)" fill="#ff7301"/>
+      <g id="Icon" transform="translate(466.143 3267.143)">
+        <g id="Icon-2" data-name="Icon" transform="translate(1.667 1.667)">
+          <circle id="Path" cx="25" cy="25" r="25" transform="translate(0 0)" fill="none" stroke="#163ba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="Path-2" data-name="Path" d="M10,5V20l10,5" transform="translate(14.998 4.998)" fill="none" stroke="#163ba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

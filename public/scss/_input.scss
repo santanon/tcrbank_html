@@ -1,0 +1,224 @@
+.style-input{
+    .inp-style{
+        width: 100%;
+        height: 65px;
+        border-radius: 10px;
+        box-shadow: none;
+        border: 1px solid #E6E6E6;
+        font-weight: $font-light;
+        font-size: 20px;
+        color: #757575;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        &.text-center{
+            text-align: center;
+        }
+        &:focus{
+            outline: none;
+            border: 1px solid #0047B6;
+        }
+        &.text-large{
+            font-weight: $font-regular;
+            font-size: 36px;
+        }
+    }
+    &.nobg{
+        .inp-style{
+            background-color: inherit;
+            border: none;
+            color: #fff;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+    }
+
+
+    .bootstrap-select{
+        width: 100% !important;
+        &.slc-style{
+            position: relative;
+            padding: 0;
+            border: none;
+            .btn{
+                &.dropdown-toggle{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    height: 100%;
+                    background-color: inherit ;
+                    border: 1px solid #E6E6E6;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: inherit ;
+                    }
+                    &:focus{
+                        outline: none !important;
+                        box-shadow: none;
+                    }
+                    .filter-option{
+                        height: auto;
+                        color: #757575;
+                        .filter-option-inner{
+                            .filter-option-inner-inner{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+
+            .dropdown-menu{
+                border-radius: 10px;
+                .inner{
+                    ul.dropdown-menu{
+                        li{
+                            a{
+                                padding: 15px;
+                                &.dropdown-item.active{
+                                    background-color: #0047B6;
+                                }
+                            }
+                            &:hover{
+                                a{
+                                    background-color: #0047B6;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.show{
+            .btn{
+                border: 1px solid #0047B6 !important;
+            }
+        }
+    }
+    .slc-style{
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        appearance:none;
+
+        background: url('../assets/images/icon/icon-select.svg');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px);
+
+        position: relative;
+        width: 100%;
+        height: 65px;
+        border-radius: 10px;
+        box-shadow: none;
+        border: 1px solid #E6E6E6;
+        font-weight: $font-light;
+        font-size: 20px;
+        color: #373737;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        &:focus{
+            outline: none;
+        }
+        &:invalid {
+            color: #373737;
+        }
+          
+        // Styling for browsers which do support
+        // styling select option elements directly
+        [disabled] {
+            color: #373737;
+        }
+    }
+
+    .title-field{
+        font-weight: $font-light;
+        font-size: 14px;
+        line-height: 30px;
+        color: #373737;
+        min-height: 30px;
+        .req{
+            color: #DD1B1B;
+        }
+        &.no-title{
+            @media only screen and (max-width: 425px) {
+                min-height: 10px;
+            }
+            
+        }
+    }
+
+    &.checkbox{
+        margin-bottom: 20px;
+        // Checkbox
+        input[type=checkbox] {
+            display: none;
+        }
+
+        input[type=checkbox] + label {
+            background-image: url('../assets/images/icon/icon-check-default.png');
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            height: 27px;
+            width: 27px;
+            display: block;
+            padding-left: 35px;
+            margin-right: 10px;
+            cursor: pointer;
+
+            font-weight: $font-light;
+            font-size: 20px;
+            line-height: 30px;
+            color: #91989E;
+        }
+
+        input[type=checkbox]:checked + label {
+            background-image: url('../assets/images/icon/icon-check-active.png');
+            background-position: 0 0;
+            background-repeat: no-repeat;
+
+            color: #0047B6;
+        }
+    }
+    
+}
+
+.group-list{
+    .style-input{
+        .list-item{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li{
+                list-style: none;
+                font-weight: $font-light;
+                font-size: 14px;
+                line-height: 22px;
+                padding: 5px 10px;
+                color: #91989E;
+                border: 2px solid #92989D;
+                border-radius: 20px;
+                margin-right: 20px;
+                cursor: pointer;
+                &:last-child{
+                    margin-right: 0;
+                }
+                &.active{
+                    color: #0047B6;
+                    border: 2px solid #0047B6;
+                }
+            }
+        }
+        @media only screen and (max-width: 425px) {
+            .list-item{
+                flex-wrap: wrap;
+                li{
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

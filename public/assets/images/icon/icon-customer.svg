@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111">
+  <g id="Customer_Icon" data-name="Customer Icon" transform="translate(-417 -4767)">
+    <circle id="Ellipse_77" data-name="Ellipse 77" cx="55.5" cy="55.5" r="55.5" transform="translate(417 4767)" fill="#fff"/>
+    <g id="Group_633" data-name="Group 633" transform="translate(142 1529)">
+      <circle id="Ellipse_80" data-name="Ellipse 80" cx="17" cy="17" r="17" transform="translate(305 3289.5)" fill="#ff7301"/>
+      <g id="Icon" transform="translate(305.522 3271.064)">
+        <g id="Icon-2" data-name="Icon" transform="translate(0.833 2.5)">
+          <path id="Path" d="M36.487,25.869V21.412A8.914,8.914,0,0,0,27.572,12.5H9.748A8.914,8.914,0,0,0,.833,21.412v4.457" transform="translate(-0.833 14.131)" fill="none" stroke="#163ba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <circle id="Path-2" data-name="Path" cx="8.913" cy="8.913" r="8.913" transform="translate(9.193)" fill="none" stroke="#163ba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="Path-3" data-name="Path" d="M23.352,25.689V21.231a8.916,8.916,0,0,0-6.685-8.623" transform="translate(26.648 14.311)" fill="none" stroke="#163ba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="Path-4" data-name="Path" d="M13.333,2.608a8.914,8.914,0,0,1,0,17.271" transform="translate(20.862 -2.319)" fill="none" stroke="#163ba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

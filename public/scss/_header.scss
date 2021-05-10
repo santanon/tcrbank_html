@@ -1,0 +1,28 @@
+.header-wrapper{
+    &.landingPage{
+        padding-top: 20px;
+        .-custom{
+            max-width: 1266px;
+        }
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+        .logo{
+            width: 221px;
+            margin-left: auto;
+            a{
+                display: block;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        &.landingPage{
+            .logo{
+                width: 155px;
+            }
+        }
+    }
+}

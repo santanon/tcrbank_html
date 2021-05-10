@@ -1,0 +1,87 @@
+.btn-link{
+    border-radius: 8px;
+    max-width: 275px;
+    a{
+        padding: 10px 75px;
+        display: block;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .text{
+        font-weight: $font-medium;
+        font-size: 22px;
+        line-height: 26px;
+        color: #fff;
+    }
+    .icon{
+        position: absolute;
+        right: 10px;
+        width: 34px;
+        height: 34px;
+    }
+
+    &.color-primary{
+        background-color: $color-primary;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+    @media only screen and (max-width: 1024px) {
+        a{
+            padding: 10px 50px;
+        }
+        .text{
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+
+.btn-link2{
+    border: 1px solid #013CA7;
+    border-radius: 25px;
+    display: inline-block;
+    a{
+        padding: 10px 15px;
+        display: block;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .text{
+        font-weight: $font-light;
+        font-size: 20px;
+        line-height: 28px;
+        color: #013CA6;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+
+.group-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    .btn-type{
+        min-width: 160px;
+        padding: 15px 10px;
+        border-radius: 30px;
+        border: none;
+        font-weight: $font-medium;
+        font-size: 20px;
+        &.bg-main{
+            background-color: #013CA6;
+            color: #fff;
+        }
+        &.bg-no{
+            background-color: inherit;
+            color: #91989E;
+        }
+    }
+}
+
+

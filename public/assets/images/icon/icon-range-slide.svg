@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0"/>
+      <stop offset="1" stop-opacity="0.635"/>
+    </radialGradient>
+  </defs>
+  <g id="Scroll_Button" data-name="Scroll Button" transform="translate(-22331 -21706)">
+    <g id="Group_1493" data-name="Group 1493" transform="translate(21805 19009)">
+      <path id="Path_2368" data-name="Path 2368" d="M13,0A13,13,0,1,1,0,13,13,13,0,0,1,13,0Z" transform="translate(526 2697)" fill="#ff7301"/>
+      <rect id="Rectangle_262" data-name="Rectangle 262" width="1" height="5" transform="translate(543 2708)" fill="#373737"/>
+      <rect id="Rectangle_263" data-name="Rectangle 263" width="1" height="5" transform="translate(539 2708)" fill="#373737"/>
+      <rect id="Rectangle_264" data-name="Rectangle 264" width="1" height="5" transform="translate(535 2708)" fill="#373737"/>
+      <g id="Rectangle_265" data-name="Rectangle 265" transform="translate(526 2697)" fill="none" stroke="#db6200" stroke-width="2">
+        <rect width="26" height="26" rx="13" stroke="none"/>
+        <rect x="1" y="1" width="24" height="24" rx="12" fill="none"/>
+      </g>
+    </g>
+    <path id="Path_2369" data-name="Path 2369" d="M11.389,0A11.223,11.223,0,0,1,22.778,11.05,11.223,11.223,0,0,1,11.389,22.1,11.223,11.223,0,0,1,0,11.05,11.223,11.223,0,0,1,11.389,0Z" transform="translate(22332.611 21707.852)" opacity="0.299" fill="url(#radial-gradient)"/>
+  </g>
+</svg>
