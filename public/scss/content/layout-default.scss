@@ -159,7 +159,8 @@
     tbody{
         tr{
             td{
-                border: none;
+                //border: none;
+                border: 1px solid #fff;
                 font-weight: $font-light;
                 font-size: 20px;
                 line-height: 30px;
@@ -202,6 +203,25 @@
             }
         }
     }
+
+    @media only screen and (max-width: 425px) {
+        width: 1024px;
+        thead{
+            tr{
+                th{
+                    font-size: 18px;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
 }
 
 .style-tab{
@@ -281,6 +301,13 @@
             }
             &.step-progress-3{
                 width: 100%;
+            }
+        }
+        @media only screen and (max-width: 425px) {
+            .progress-bar{
+                .status-bar{
+                    font-size: 16px
+                }
             }
         }
     }

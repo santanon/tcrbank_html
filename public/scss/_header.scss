@@ -20,8 +20,29 @@
     }
     @media only screen and (max-width: 768px) {
         &.landingPage{
+            padding: 10px 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: #013CA6;
+            .logo{
+                //width: 155px;
+                margin: auto;
+            }
+        }
+    }
+    @media only screen and (max-width: 425px) {
+        &.landingPage{
+            padding: 5px 15px;
             .logo{
                 width: 155px;
+            }
+        }
+    }
+    @media only screen and (max-width: 320px) {
+        &.landingPage{
+            .logo{
+                width: 125px;
             }
         }
     }

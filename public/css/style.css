@@ -71,8 +71,24 @@ a:hover {
       width: 100%; }
 
 @media only screen and (max-width: 768px) {
+  .header-wrapper.landingPage {
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #013CA6; }
+    .header-wrapper.landingPage .logo {
+      margin: auto; } }
+
+@media only screen and (max-width: 425px) {
+  .header-wrapper.landingPage {
+    padding: 5px 15px; }
+    .header-wrapper.landingPage .logo {
+      width: 155px; } }
+
+@media only screen and (max-width: 320px) {
   .header-wrapper.landingPage .logo {
-    width: 155px; } }
+    width: 125px; } }
 
 .btn-link {
   border-radius: 8px;
@@ -613,7 +629,7 @@ a:hover {
   border-top-right-radius: 20px; }
 
 .table-custom tbody tr td {
-  border: none;
+  border: 1px solid #fff;
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
@@ -639,6 +655,14 @@ a:hover {
 .table-custom.border-custom thead tr th {
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff; }
+
+@media only screen and (max-width: 425px) {
+  .table-custom {
+    width: 1024px; }
+    .table-custom thead tr th {
+      font-size: 18px; }
+    .table-custom tbody tr td {
+      font-size: 18px; } }
 
 .style-tab .nav-tabs {
   border: none;
@@ -702,6 +726,9 @@ a:hover {
         width: 50%; }
       .custom-progressbar .progress .progress-bar.step-progress-3 {
         width: 100%; }
+    @media only screen and (max-width: 425px) {
+      .custom-progressbar .progress .progress-bar .status-bar {
+        font-size: 16px; } }
   .custom-progressbar .text-status {
     margin-top: 30px;
     font-weight: 300;

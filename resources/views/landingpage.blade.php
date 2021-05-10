@@ -340,7 +340,7 @@
                                                 </div>
                                                 <div class="item">
                                                     <div class="top">ผ่อนชำระขั้นต่ำเพียง</div>
-                                                    <div class="middle">39,800</div>
+                                                    <div class="middle">500</div>
                                                     <div class="bottom">บาท/เดือน</div>
                                                 </div>
                                             </div>
@@ -924,60 +924,6 @@
 <script>
     $(document).ready(function () {
 
-        $('.list-slide').slick({
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            speed: 2000,
-        });
-
-        $('.list-thumb').slick({
-            infinite: false,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            asNavFor: '.list-main',
-            focusOnSelect: true,
-            arrows: true,
-            responsive: [
-                {
-                    breakpoint: 769,//start device 768
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 426,//start device 425
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 376,//start device 375
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
-        $('.list-main').slick({
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: '.list-thumb',
-            arrows: false,
-        });
-
-
         var $range = $(".irs"),
             $from = $(".js-value"),
             range,
@@ -1082,6 +1028,55 @@
 
         $('.selectpicker').selectpicker();
 
+        $('.list-slide').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 2000,
+        });
+
+        $('.list-thumb').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.list-main',
+            focusOnSelect: true,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 769,//start device 768
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 426,//start device 425
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $('.list-main').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.list-thumb',
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 2000,
+        });
+
 
         $(".register-online").click(function() {
             $('html,body').animate({
@@ -1124,6 +1119,7 @@
 
             $('.progress-bar').removeClass('step-progress-1').addClass('step-progress-2');
             $('.status-bar').text('50%');
+
         });
         $('#back_step1').click(function(){
             $('.step1').slideDown('slow');
@@ -1138,6 +1134,8 @@
 
             $('.progress-bar').removeClass('step-progress-2').addClass('step-progress-3');
             $('.status-bar').text('100%');
+
+            
         });
         $('#back_step2').click(function(){
             $('.step2').slideDown('slow');
@@ -1145,6 +1143,8 @@
 
             $('.progress-bar').removeClass('step-progress-3').addClass('step-progress-2');
             $('.status-bar').text('50%');
+
+            
         });
 
 

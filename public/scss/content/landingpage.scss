@@ -6,6 +6,13 @@
 
 .content-wrapper{
     margin-bottom: 70px;
+
+    &.-cashexpress{
+        padding: 0 70px;
+        @media only screen and (max-width: 425px) {
+            padding: 0;
+        }
+    }
 }
 .cashexpress-wrapper{
     //padding: 70px 0 0;
@@ -16,6 +23,7 @@
             li{
                 .content-main{
                     display: flex;
+                    padding: 0 20px;
                     .img-cashexpress{
                         img{
                             width: 100%;
@@ -42,7 +50,7 @@
 
                 @media only screen and (max-width: 768px) {
                     .content-main{
-                        padding: 0 20px;
+                        
                         .detail-cashexpress{
                             .title{
                                 font-size: 18px;
@@ -70,7 +78,7 @@
         padding-top: 50px;
         .list-thumb{
             margin: 0;
-            padding: 50px 0 0;
+            //padding: 50px 0 0;
             li{
                 list-style: none;
                 cursor: pointer;
@@ -85,12 +93,13 @@
                 margin: 0 10px;
               }
             .slick-arrow{
-                top: 0;
+                //top: 0;
+                top: 58%;
                 &.slick-prev{
                     width: 50px;
                     height: 50px;
-                    left: auto;
-                    right: 70px;
+                    left: -65px;
+                    //right: 70px;
                     &:before{
                         content: '';
                         display: block;
@@ -106,7 +115,8 @@
                 &.slick-next{
                     width: 50px;
                     height: 50px;
-                    right: 0;
+                    right: -65px;
+                    //right: 0;
                     &:before{
                         content: '';
                         display: block;
@@ -117,6 +127,33 @@
                         width: 50px;
                         height: 50px;
                         border-radius: 100%;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 425px) {
+                .slick-list{
+                    display: none;
+                }
+
+                .slick-arrow{
+                    top: 0;
+                    &.slick-prev{
+                        left: 35%;
+                        right: auto;
+                    }
+                    &.slick-next{
+                        right: 35%;
+                    }
+                }
+            }
+            @media only screen and (max-width: 425px) {
+                .slick-arrow{
+                    &.slick-prev{
+                        left: 30%;
+                    }
+                    &.slick-next{
+                        right: 30%;
                     }
                 }
             }
@@ -368,6 +405,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
+                @media only screen and (max-width: 425px) {
+                    flex-wrap: wrap;
+                }
             }
             .result-initial{
                 margin-bottom: 10px;
@@ -643,7 +683,7 @@
         position: fixed;
         z-index: 9998;
         width: 100%;
-        bottom: 0;
+        bottom: 0px;
         .btn-link{
             border-radius: 8px;
             max-width: 100%;

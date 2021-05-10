@@ -3,6 +3,11 @@
 
 .content-wrapper {
   margin-bottom: 70px; }
+  .content-wrapper.-cashexpress {
+    padding: 0 70px; }
+    @media only screen and (max-width: 425px) {
+      .content-wrapper.-cashexpress {
+        padding: 0; } }
 
 .cashexpress-wrapper .cashexpress-main ul {
   margin: 0;
@@ -10,7 +15,8 @@
   .cashexpress-wrapper .cashexpress-main ul li .content-main {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding: 0 20px; }
     .cashexpress-wrapper .cashexpress-main ul li .content-main .img-cashexpress img {
       width: 100%; }
     .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .title {
@@ -27,15 +33,13 @@
       line-height: 22px;
       color: #91989E; }
   @media only screen and (max-width: 768px) {
-    .cashexpress-wrapper .cashexpress-main ul li .content-main {
-      padding: 0 20px; }
-      .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .title {
-        font-size: 18px;
-        line-height: 20px;
-        margin-bottom: 15px; }
-      .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .desc {
-        font-size: 18px;
-        line-height: 20px; } }
+    .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .title {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 15px; }
+    .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .desc {
+      font-size: 18px;
+      line-height: 20px; } }
   @media only screen and (max-width: 425px) {
     .cashexpress-wrapper .cashexpress-main ul li .content-main .img-cashexpress {
       margin-bottom: 30px; } }
@@ -43,8 +47,7 @@
 .cashexpress-wrapper .cashexpress-thumb {
   padding-top: 50px; }
   .cashexpress-wrapper .cashexpress-thumb .list-thumb {
-    margin: 0;
-    padding: 50px 0 0; }
+    margin: 0; }
     .cashexpress-wrapper .cashexpress-thumb .list-thumb li {
       list-style: none;
       cursor: pointer; }
@@ -53,12 +56,11 @@
     .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-slide {
       margin: 0 10px; }
     .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow {
-      top: 0; }
+      top: 58%; }
       .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev {
         width: 50px;
         height: 50px;
-        left: auto;
-        right: 70px; }
+        left: -65px; }
         .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev:before {
           content: '';
           display: block;
@@ -72,7 +74,7 @@
       .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-next {
         width: 50px;
         height: 50px;
-        right: 0; }
+        right: -65px; }
         .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-next:before {
           content: '';
           display: block;
@@ -83,6 +85,21 @@
           width: 50px;
           height: 50px;
           border-radius: 100%; }
+    @media only screen and (max-width: 425px) {
+      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-list {
+        display: none; }
+      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow {
+        top: 0; }
+        .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev {
+          left: 35%;
+          right: auto; }
+        .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-next {
+          right: 35%; } }
+    @media only screen and (max-width: 425px) {
+      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev {
+        left: 30%; }
+      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-next {
+        right: 30%; } }
 
 .bg-loancalculation {
   background-image: url("../../assets/images/banner/banner-loancalculation.png");
@@ -283,6 +300,10 @@
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+  @media only screen and (max-width: 425px) {
+    .formcredit-wrapper .form-wrapper .box-form .group-result-initial {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .formcredit-wrapper .form-wrapper .box-form .result-initial {
   margin-bottom: 10px; }
@@ -490,7 +511,7 @@
     position: fixed;
     z-index: 9998;
     width: 100%;
-    bottom: 0; }
+    bottom: 0px; }
     .register-online-m .btn-link {
       border-radius: 8px;
       max-width: 100%;
