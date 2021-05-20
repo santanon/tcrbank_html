@@ -39,7 +39,7 @@
 }
 
 .btn-link2{
-    border: 1px solid #013CA7;
+    border: 1px solid #013CA6;
     border-radius: 25px;
     display: inline-block;
     a{
@@ -48,15 +48,23 @@
         display: flex;
         align-items: center;
         position: relative;
-    }
-    .text{
         font-weight: $font-light;
         font-size: 20px;
         line-height: 28px;
         color: #013CA6;
     }
     &:hover{
-        text-decoration: none;
+        background-color: #013CA6;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        a{
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 }
 

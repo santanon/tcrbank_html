@@ -99,7 +99,6 @@
             </div>
         </section>
         
-
         <section class="content-wrapper -cashexpress">
             <div class="container">
                 <div class="cashexpress-wrapper">
@@ -265,11 +264,10 @@
             </div>
         </section>
 
-
         <section class="content-wrapper -loancalculation">
             <div class="container-fluid bg-loancalculation">
                 <div class="container">
-                    <div class="loancalculation-wrapper">
+                    <div class="loancalculation-wrapper" style="display: none">
                         <div class="row">
                             <div class="col-sm-12 col-lg-4 head">
                                 <div class="title text-white title-loancal">Loan Calculation</div>
@@ -277,20 +275,19 @@
                                     <a href="javascript:void(0)">
                                         <div class="text">สมัครออนไลน์</div>
                                         <div class="icon">
-                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
                                         </div>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-lg-8">
                                 <div class="caculate-wrapper">
-                                    <div class="revenue">
+                                    <!-- <div class="revenue">
                                         <div class="title text-white">กรอกรายได้ต่อเดือนของคุณ</div>
                                         <div class="style-input">
                                             <input class="inp-style text-center text-large fm_money" type="text" value="50000" placeholder="0">
                                         </div>
-                                        
-                                    </div>
+                                    </div> -->
 
                                     <div class="initial-maximum">
                                         <div class="title text-white">วงเงินอนุมัติสูงสุดเบื้องต้น</div>
@@ -307,7 +304,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="installment">
+                                        <!-- <div class="installment">
                                             <div class="title text-white">เลือกรูปแบบการผ่อนชำระ</div>
                                             <div class="type-installment">
                                                 <div class="box-type active" id="min_installment">
@@ -323,7 +320,7 @@
                                                     <div class="text">ผ่อน<br>รายงวด </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -388,7 +385,178 @@
                             </div>
                         </div>
                     </div>
-                    <div class="remark text-white">หมายเหตุ : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+
+
+                    <div class="loancalculation-wrapper">
+                        <div class="row">
+                            <div class="col-lg-7 col-12">
+                                <div class="title text-white text-center">Loan Calculation</div>
+                                <div class="type-loan">
+                                    <div class="title text-white">เลือกความต้องการของคุณ</div>
+                                    <div class="list-type">
+                                        <div class="type-select"></div>
+                                        <div class="text-type active" id="type_1">ต้องการวงเงินพร้อมใช้</div>
+                                        <div class="text-type" id="type_2">ต้องการรวมหนี้ไว้ที่เดียว</div>
+                                    </div>
+                                </div>
+
+                                <div class="revenue">
+                                    <div class="for_type1">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label class="title text-white mh-0">กรอกรายได้ต่อเดือนของคุณ</label>
+                                                <div class="style-input">
+                                                    <input class="inp-style text-center text-large fm_money" type="text" value="60000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="for_type2" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <label class="title text-white">กรอกรายได้ต่อเดือนของคุณ</label>
+                                                <div class="style-input">
+                                                    <input class="inp-style text-center text-large fm_money" type="text" value="60000">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <label class="title text-white">กรุณากรอกอัตราดอกเบี้ยของภาระหนี้รวมในปัจจุบัน</label>
+                                                <div class="style-input">
+                                                    <input class="inp-style text-center text-large fm_money" type="text" value="24%" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="initial-maximum">
+                                    <div class="installment">
+                                        <div class="title text-white">เลือกรูปแบบการผ่อนชำระ</div>
+                                        <div class="type-installment">
+                                            <div class="box-type active" id="min_installment">
+                                                <div class="icon">
+                                                    <img src="{{ asset('assets/images/icon/icon-min-installment.svg')}}" alt="icon">
+                                                </div>
+                                                <div class="text">ผ่อนชำระ<br>ขั้นต่ำ</div>
+                                            </div>
+                                            <div class="box-type" id="normal_installment">
+                                                <div class="icon">
+                                                    <img src="{{ asset('assets/images/icon/icon-normal-installment.svg')}}" alt="icon">
+                                                </div>
+                                                <div class="text">ผ่อน<br>รายงวด </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-installment" id="content_min_installment">
+                                    <div class="title text-white">สามารถเลื่อนเพื่อเลือกอัตราผ่อนขั้นต่ำและวงเงินรีไฟแนนซ์ที่ต้องการ</div>
+                                    <div class="range">
+                                        <div class="style-input">
+                                            <input class="inp-style text-center irs" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <input type="text" class="js-value" value="0">
+                                    </div>
+                                </div>
+                                <div class="content-installment" id="content_normal_installment">
+
+                                </div>
+
+
+
+                            </div>
+                            <!-- สิทธิพืเศษ -->
+                            <div class="col-lg-5 col-12">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12">
+                                        <div class="privilege-wrapper">
+                                            <div class="icon-gift-cap"></div>
+                                            <div class="box-privilege">
+                                                <div class="icon-star">
+                                                    <img src="{{ asset('assets/images/icon/icon-star_privilage.svg')}}" alt="icon">
+                                                </div>
+                                                <div class="title text-white">สิทธิพิเศษที่คุณจะได้รับ</div>
+                                                <div class="limit_interest">
+                                                    <ul>
+                                                        <li>
+                                                            <p>วงเงินอนุมัติสูงสุด</p>
+                                                            <div class="text">300,000</div>
+                                                        </li>
+                                                        <li>
+                                                            <p>อัตราดอกเบี้ย</p>
+                                                            <div class="text">15%</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-12">
+                                        <div class="box-total-result">
+                                            <div class="row for_type1">
+                                                <div class="col-lg-5 col-12">
+                                                    <div class="title">วงเงินพร้อมใช้ผ่อนสบายๆ</div>
+                                                </div>
+                                                <div class="col-lg-7 col-12">
+                                                    <div class="detail">
+                                                        <div class="item">
+                                                            <p>วงเงินที่ต้องการ</p>
+                                                            <div class="result">300,000</div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>อัตราผ่อนขั้นต่ำต่อเดือน</p>
+                                                            <div class="result">7,500</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row for_type2" style="display: none;">
+                                                <div class="col-lg-5 col-12">
+                                                    <div class="title">รวมหนี้ไว้ทีเดียว ลดภาระดอกเบี้ยแพง</div>
+                                                </div>
+                                                <div class="col-lg-7 col-12">
+                                                    <div class="detail">
+                                                        <div class="item">
+                                                            <p>ประหยัดดอกเบี้ยต่อเดือน</p>
+                                                            <div class="result">1,233</div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>ประหยัดดอกเบี้ยต่อปี</p>
+                                                            <div class="result">14,795</div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>วงเงินรีไฟแนนซ์ที่ต้องการ</p>
+                                                            <div class="result">300,000</div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>อัตราผ่อนขั้นต่ำ</p>
+                                                            <div class="result">7,500</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <div class="btn-group-loan">
+                                            <div class="btn-link color-primary">
+                                                <a href="javascript:void(0)">
+                                                    <div class="text">สมัครออนไลน์</div>
+                                                    <div class="icon">
+                                                        <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="remark text-white">หมายเหตุ : การคำนวณดังกล่าวเป็นการคำนวณเบื้องต้น ในการอนุมัติสินเชื่อขึ้นอยูกับการพิจารณาจากเอกสารสมัคร</div>
                 </div>
             </div>
         </section>
@@ -399,13 +567,16 @@
                     <div class="style-tab">
                         <ul class="nav nav-tabs content-tabs" id="interest-rate_tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="interest-tab" data-toggle="tab" href="#interest" role="tab" aria-controls="interest" aria-selected="true">อัตราดอกเบี้ย</a>
+                                <a class="nav-link active" id="content-tab01" data-toggle="tab" href="#tab01" role="tab" aria-controls="tab01" aria-selected="true">อัตราดอกเบี้ย</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="applicant-tab" data-toggle="tab" href="#applicant" role="tab" aria-controls="applicant" aria-selected="false">คุณสมบัติผู้สมัคร</a>
+                                <a class="nav-link" id="content-tab02" data-toggle="tab" href="#tab02" role="tab" aria-controls="tab02" aria-selected="false">คุณสมบัติผู้สมัคร</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="documents-tab" data-toggle="tab" href="#documents" role="tab" aria-controls="documents" aria-selected="false">เอกสารการสมัคร</a>
+                                <a class="nav-link" id="content-tab03" data-toggle="tab" href="#tab03" role="tab" aria-controls="tab03" aria-selected="false">เอกสารการสมัคร</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="content-tab04" data-toggle="tab" href="#tab04" role="tab" aria-controls="tab04" aria-selected="false">เอกสารข้อมูลผลิตภัณฑ์</a>
                             </li>
                         </ul>
                         <div class="style-input">
@@ -413,11 +584,12 @@
                                 <option value="0">อัตราดอกเบี้ย</option>
                                 <option value="1">คุณสมบัติผู้สมัคร</option>
                                 <option value="2">เอกสารการสมัคร</option>
+                                <option value="3">เอกสารข้อมูลผลิตภัณฑ์</option>
                             </select>
                         </div>
                         
                         <div class="tab-content" id="Tab_Content">
-                            <div class="tab-pane fade show active" id="interest" role="tabpanel" aria-labelledby="interest-tab">
+                            <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="content-tab01">
                                 <div class="data-table">
                                     <div class="table-responsive">
                                         <table class="table table-custom border-custom">
@@ -476,18 +648,193 @@
                                         </table>
                                     </div>
                                 </div>
-                                <br><br>
-                                <div class="remark text-black">หมายเหตุ : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
-                                <br><br>
-                                <div class="btn-link2">
-                                    <a href="#">
-                                        <div class="text">ดาวน์โหลดอัตราเบี้ย</div>
+                                <br>
+                                <div class="remark-download">
+                                    <div class="remark text-black">หมายเหตุ : <br>
+                                        - xxxxxxxxxx<br>
+                                        - sdfsdfds
+                                    </div>
+                                    <!-- <div class="btn-link2">
+                                        <a href="#">
+                                            <div class="text">ดาวน์โหลดอัตราเบี้ย</div>
+                                        </a>
+                                    </div> -->
+                                </div>
+                                <br>
+                                <div class="btn-link color-primary register-online">
+                                    <a href="javascript:void(0)">
+                                        <div class="text">สมัครออนไลน์</div>
+                                        <div class="icon">
+                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                        </div>
                                     </a>
                                 </div>
-
                             </div>
-                            <div class="tab-pane fade" id="applicant" role="tabpanel" aria-labelledby="applicant-tab">...</div>
-                            <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">...</div>
+                            <div class="tab-pane fade" id="tab02" role="tabpanel" aria-labelledby="content-tab02">
+                                <div class="list-group-wrapper">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">1. สำเนาบัตรประชาชนที่ยังไม่หมดอายุ </p>
+                                                    <p class="desc">
+                                                        (โดยต้องมีอายุคงเหลืออย่างน้อย 30 วัน นับจากวันที่ลงนามในใบสมัคร)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">2. สลิปเงินเดือน 1 เดือน หรือ หนังสือรับรองการทำงาน</p>
+                                                    <p class="desc">
+                                                        ตำแหน่ง เงินเดือน และ อายุงาน (อายุเอกสารย้อนหลังไม่เกิน 1 เดือน)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">3. สำเนาบัญชีเงินฝากที่เงินเดือนเข้าย้อนหลัง 4 เดือน</p>
+                                                    <p class="desc">
+                                                        ตำแหน่ง เงินเดือน และ อายุงาน (อายุเอกสารย้อนหลังไม่เกิน 1 เดือน)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-link color-primary">
+                                    <a href="javascript:void(0)">
+                                        <div class="text">สมัครออนไลน์</div>
+                                        <div class="icon">
+                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab03" role="tabpanel" aria-labelledby="content-tab03">
+                                <div class="list-group-wrapper">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">1. สำเนาบัตรประชาชนที่ยังไม่หมดอายุ </p>
+                                                    <p class="desc">
+                                                        (โดยต้องมีอายุคงเหลืออย่างน้อย 30 วัน นับจากวันที่ลงนามในใบสมัคร)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">2. สลิปเงินเดือน 1 เดือน หรือ หนังสือรับรองการทำงาน</p>
+                                                    <p class="desc">
+                                                        ตำแหน่ง เงินเดือน และ อายุงาน (อายุเอกสารย้อนหลังไม่เกิน 1 เดือน)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">3. สำเนาบัญชีเงินฝากที่เงินเดือนเข้าย้อนหลัง 4 เดือน</p>
+                                                    <p class="desc">
+                                                        ตำแหน่ง เงินเดือน และ อายุงาน (อายุเอกสารย้อนหลังไม่เกิน 1 เดือน)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-link color-primary">
+                                    <a href="javascript:void(0)">
+                                        <div class="text">สมัครออนไลน์</div>
+                                        <div class="icon">
+                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab04" role="tabpanel" aria-labelledby="content-tab04">
+                                <div class="list-group-wrapper">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">1. สำเนาบัตรประชาชนที่ยังไม่หมดอายุ </p>
+                                                    <div class="style-btn">
+                                                        <div class="btn-link2">
+                                                            <a href="#">
+                                                                ดาวน์โหลดอัตราเบี้ย
+                                                            </a>
+                                                        </div>
+                                                        <div class="btn-link2">
+                                                            <a href="#">
+                                                                ดูออนไลน์
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">2. สลิปเงินเดือน 1 เดือน หรือ หนังสือรับรองการทำงาน</p>
+                                                    <div class="style-btn">
+                                                        <div class="btn-link2">
+                                                            <a href="#">
+                                                                ดาวน์โหลดอัตราเบี้ย
+                                                            </a>
+                                                        </div>
+                                                        <div class="btn-link2">
+                                                            <a href="#">
+                                                                ดูออนไลน์
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-link color-primary">
+                                    <a href="javascript:void(0)">
+                                        <div class="text">สมัครออนไลน์</div>
+                                        <div class="icon">
+                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -500,10 +847,10 @@
                     <div class="custom-progressbar">
                         <div class="progress">
                             <div class="progress-bar step-progress-1">
-                                <div class="status-bar">0%</div>
+                                <div class="status-bar">1</div>
                             </div>
                         </div>
-                        <div class="text-status">Status</div>
+                        <div class="text-status">STEP</div>
                     </div>
                     <div class="custom-title-sub">
                         <div class="title-sub text-white">ข้อมูลส่วนตัว</div>
@@ -549,7 +896,7 @@
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">LINE ID <span class="req">*</span></label>
+                                                    <label for="" class="title-field">LINE ID</label>
                                                     <input class="inp-style" type="text" placeholder="LINE ID">
                                                 </div>
                                             </div>
@@ -745,7 +1092,7 @@
 
                                     <div class="group-btn">
                                         <button type="button" class="btn-type bg-no" id="back_step2">ย้อนกลับ</button>
-                                        <button type="button" class="btn-type bg-main" id="regis">สมัคร</button>
+                                        <button type="button" class="btn-type bg-main" id="regis" data-toggle="modal" data-target="#alert_Msg">สมัคร</button>
                                     </div>
                                 </div>
                             </div>
@@ -762,7 +1109,7 @@
                 <div class="information-wrapper">
                     <div class="title text-black">Other Information</div>
                     <div class="row">
-                        <div class="col-lg-4 col-sm-4 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="item-info">
                                 <div class="hover-img">
                                     <div class="list" style="background-image: url('assets/images/information/img01.png');"></div>
@@ -772,10 +1119,13 @@
                                     <div class="desc-info">
                                         การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้
                                     </div>
+                                    <div class="btn" data-toggle="modal" data-target="#modal_info">
+                                        ดูเพิ่มเติม
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="item-info">
                                 <div class="hover-img">
                                     <div class="list" style="background-image: url('assets/images/information/img02.png');"></div>
@@ -785,10 +1135,15 @@
                                     <div class="desc-info">
                                         การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้
                                     </div>
+                                    <div class="btn">
+                                        <a href="" target="_blank">
+                                            ดูเพิ่มเติม
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="item-info">
                                 <div class="hover-img">
                                     <div class="list" style="background-image: url('assets/images/information/img03.png');"></div>
@@ -797,6 +1152,9 @@
                                     <div class="title-info">บริการบัตรต่างๆ</div>
                                     <div class="desc-info">
                                         การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้
+                                    </div>
+                                    <div class="btn" data-toggle="modal" data-target="#modal_info">
+                                        ดูเพิ่มเติม
                                     </div>
                                 </div>
                             </div>
@@ -808,7 +1166,7 @@
         </section>
 
 
-        <section class="content-wrapper -menufooter m-0">
+        <!-- <section class="content-wrapper -menufooter m-0">
             <div class="container-fluid bg-color-primary">
                 <div class="container">
                     <div class="menu-footer-wrapper">
@@ -832,7 +1190,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <footer class="footer-wrapper">
@@ -842,7 +1200,7 @@
                         <div class="title text-white">ติดต่อ ธนาคารไทยเครดิต</div>
                         <div class="detail-contact">
                             <div class="row">
-                                <div class="col-sm-4 col-lg-3 icon-path">
+                                <div class="col-md-4 col-lg-3 icon-path">
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icon/icon-location.svg')}}" alt="icon location">
                                     </div>
@@ -853,7 +1211,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-lg-3 icon-path">
+                                <div class="col-md-4 col-lg-3 icon-path">
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icon/icon-customer.svg')}}" alt="icon customer">
                                     </div>
@@ -864,7 +1222,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-lg-3 icon-path">
+                                <div class="col-md-4 col-lg-3 icon-path">
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icon/icon-opening.svg')}}" alt="icon opening">
                                     </div>
@@ -914,11 +1272,62 @@
 
         </footer>
 
-
     </div>
 
 
+    <!-- Modal -->
+    <div class="modal fade custom" id="alert_Msg" tabindex="-1" role="dialog" aria-labelledby="alertmessage" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="icon-close" data-dismiss="modal">
+                    <img src="{{ asset('assets/images/icon/icon-close-modal.svg')}}" alt="icon close">
+                </div>
+                <div class="modal-header">
+                    <div class="icon">
+                        <!-- success -->
+                        <img src="{{ asset('assets/images/icon/icon-msg-success.svg')}}" alt="icon">
+                        <!-- error -->
+                        <!-- <img src="{{ asset('assets/images/icon/icon-msg-error.svg')}}" alt="icon"> -->
+                    </div>
+                    <h5 class="modal-title" id="alertmessage">Thank you</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="text-body">การสมัครสินเชื่อบุคคลไทยเครดิต</div>
+                    <p class="desc-body">กำลังรออนุมัติ สามารถรู้ผลภายใน 15 นาที</p>
 
+                    <div class="btn-link color-primary">
+                        <a href="javascript:void(0)">
+                            <div class="text">หน้าหลัก</div>
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade custom custom-info" id="modal_info" tabindex="-1" role="dialog" aria-labelledby="modalinfo" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="icon-close" data-dismiss="modal">
+                    <img src="{{ asset('assets/images/icon/icon-close-modal.svg')}}" alt="icon close">
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalinfo">เงินฝากแบบถอนได้ไม่จำกัด</h5>
+                </div>
+                <div class="modal-body">
+                    <p class="desc-body">
+                        บัญชีเงินฝากที่คล่องตัวสูง สะดวกสบายกับการใช้จ่ายประจำวันที่ให้คุณสะดวกในการฝาก-ถอนได้ทุกวัน ไม่จำกัดจำนวนครั้ง และจำนวนเงิน พร้อมเบิกถอนสะดวกผ่านบัตร ATM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 
 <script>
@@ -928,7 +1337,7 @@
             $from = $(".js-value"),
             range,
             min = 0,
-            max = 250000,
+            max = 300000,
             from;
 
         var updateValues = function () {
@@ -938,7 +1347,8 @@
             min: min,
             max: max,
             grid: true,
-            from: 250000,//ถ้าไม่fix ให้เอาออก
+            step: 250,
+            from: 300000,//ถ้าไม่fix ให้เอาออก
             onChange: function (data) {
                 from = data.from;
                 updateValues();
@@ -987,6 +1397,7 @@
         $range2.ionRangeSlider({
             min: min,
             max: max,
+            step: 250,
             from: 250000,//ถ้าไม่fix ให้เอาออก
             grid: true,
             onChange: function (data) {
@@ -1050,7 +1461,7 @@
                 {
                     breakpoint: 769,//start device 768
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                     }
                 },
@@ -1097,6 +1508,21 @@
             $('.min-installment').slideUp();
         });
 
+        $('.list-type .text-type').click(function(){
+            $('.list-type .text-type').removeClass('active');
+            $(this).addClass('active');
+
+            $('.type-select').toggleClass('slide');
+        });
+        $('#type_1').click(function(){
+            $('.for_type1').show();
+            $('.for_type2').hide();
+        });
+        $('#type_2').click(function(){
+            $('.for_type1').hide();
+            $('.for_type2').show();
+        });
+
 
         $('.item01 li').click(function(){
             $('.item01 li').removeClass('active');
@@ -1118,35 +1544,35 @@
             $('.step1').slideUp('slow');
 
             $('.progress-bar').removeClass('step-progress-1').addClass('step-progress-2');
-            $('.status-bar').text('50%');
+            $('.status-bar').text('2');
 
+            $('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเกี่ยวกับรายได้');
         });
         $('#back_step1').click(function(){
             $('.step1').slideDown('slow');
             $('.step2').slideUp('slow');
 
             $('.progress-bar').removeClass('step-progress-2').addClass('step-progress-1');
-            $('.status-bar').text('0%');
+            $('.status-bar').text('1');
+
+            $('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเพื่อให้ธนาคารได้รู้จักคุณ');
         });
         $('#next_step2').click(function(){
             $('.step3').slideDown('slow');
             $('.step2').slideUp('slow');
 
             $('.progress-bar').removeClass('step-progress-2').addClass('step-progress-3');
-            $('.status-bar').text('100%');
-
-            
+            $('.status-bar').text('3');
         });
         $('#back_step2').click(function(){
             $('.step2').slideDown('slow');
             $('.step3').slideUp('slow');
 
             $('.progress-bar').removeClass('step-progress-3').addClass('step-progress-2');
-            $('.status-bar').text('50%');
+            $('.status-bar').text('2');
 
             
         });
-
 
         // Comma thousand
         $('.fm_money').keyup(function (event) {
