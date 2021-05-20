@@ -51,10 +51,18 @@
     .cashexpress-wrapper .cashexpress-thumb .list-thumb li {
       list-style: none;
       cursor: pointer; }
-      .cashexpress-wrapper .cashexpress-thumb .list-thumb li .img-thumb img {
-        width: 100%; }
+      .cashexpress-wrapper .cashexpress-thumb .list-thumb li .img-thumb {
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        .cashexpress-wrapper .cashexpress-thumb .list-thumb li .img-thumb img {
+          width: 100%; }
+        .cashexpress-wrapper .cashexpress-thumb .list-thumb li .img-thumb:hover {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2); }
     .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-slide {
-      margin: 0 10px; }
+      padding: 20px 25px; }
     .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow {
       top: 58%; }
       .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev {
@@ -85,7 +93,7 @@
           width: 50px;
           height: 50px;
           border-radius: 100%; }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 768px) {
       .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-list {
         display: none; }
       .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow {
@@ -112,63 +120,75 @@
   background-size: cover;
   padding: 30px 0; }
 
-.loancalculation-wrapper .title-loancal {
-  width: 200px;
-  margin-left: auto; }
-
 .loancalculation-wrapper .title {
-  margin-bottom: 35px;
-  text-align: right; }
+  margin-bottom: 35px; }
 
-.loancalculation-wrapper .btn-link {
-  margin-left: auto; }
-
-.loancalculation-wrapper .caculate-wrapper .revenue {
+.loancalculation-wrapper .type-loan {
+  text-align: center;
   margin-bottom: 30px; }
-  .loancalculation-wrapper .caculate-wrapper .revenue .title {
+  .loancalculation-wrapper .type-loan .title {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-size: 20px;
     line-height: 22px;
     font-weight: 300; }
+  .loancalculation-wrapper .type-loan .list-type {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px; }
+    .loancalculation-wrapper .type-loan .list-type .text-type {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #91989E;
+      padding: 8px 15px;
+      width: 225px;
+      cursor: pointer; }
+      .loancalculation-wrapper .type-loan .list-type .text-type.active {
+        color: #fff; }
+    .loancalculation-wrapper .type-loan .list-type .type-select {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #013CA6;
+      width: 225px;
+      padding: 8px 15px;
+      border-radius: 20px;
+      -webkit-transition: all .35s ease-out;
+      -o-transition: all .35s ease-out;
+      transition: all .35s ease-out; }
+      .loancalculation-wrapper .type-loan .list-type .type-select.slide {
+        left: 229px; }
 
-.loancalculation-wrapper .caculate-wrapper .initial-maximum {
+.loancalculation-wrapper .revenue {
+  margin-bottom: 30px; }
+  .loancalculation-wrapper .revenue .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 300;
+    min-height: 44px; }
+    .loancalculation-wrapper .revenue .title.mh-0 {
+      min-height: 0; }
+
+.loancalculation-wrapper .initial-maximum {
   margin-bottom: 50px; }
-  .loancalculation-wrapper .caculate-wrapper .initial-maximum .title {
+  .loancalculation-wrapper .initial-maximum .installment .title {
     text-align: center;
     margin-bottom: 5px;
     font-size: 20px;
     line-height: 22px;
     font-weight: 300; }
-  .loancalculation-wrapper .caculate-wrapper .initial-maximum .range {
-    margin-bottom: 40px; }
-    .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-single, .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-min, .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-max {
-      display: none; }
-    .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-line {
-      height: 6px; }
-    .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-bar {
-      height: 6px;
-      background-color: #FF7301; }
-    .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-handle {
-      background-image: url("../../assets/images/icon/icon-range-slide.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 44px;
-      height: 44px;
-      top: auto; }
-      .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-handle i {
-        display: none; }
-    .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-grid .irs-grid-pol.small {
-      display: none; }
-    .loancalculation-wrapper .caculate-wrapper .initial-maximum .range .irs-grid .irs-grid-text {
-      font-family: 'Kanit', sans-serif;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 16px;
-      color: #fff;
-      bottom: -10px; }
-  .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment {
-    margin-top: 40px;
+  .loancalculation-wrapper .initial-maximum .installment .type-installment {
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -177,7 +197,7 @@
     align-items: center;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-    .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type {
+    .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type {
       background-color: rgba(255, 255, 255, 0.5);
       border-radius: 10px;
       position: relative;
@@ -185,84 +205,287 @@
       -o-transition: all .35s ease-out;
       transition: all .35s ease-out;
       cursor: pointer; }
-      .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type .text {
+      .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type .text {
         font-weight: 500;
         font-size: 20px;
         line-height: 22px;
         padding: 25px 70px;
         color: #fff;
         opacity: 0.5; }
-      .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type .icon {
+      .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type .icon {
         position: absolute;
         top: -5px;
         left: -33px; }
-      .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type.active {
+      .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type.active {
         background-color: #013ca6;
         -webkit-transition: all .35s ease-out;
         -o-transition: all .35s ease-out;
         transition: all .35s ease-out; }
-        .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type.active .text {
+        .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type.active .text {
           opacity: 1; }
-      .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type:hover {
+      .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type:hover {
         background-color: #013ca6;
         -webkit-transition: all .35s ease-out;
         -o-transition: all .35s ease-out;
         transition: all .35s ease-out; }
-        .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type:hover .text {
+        .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type:hover .text {
           opacity: 1; }
 
-.loancalculation-wrapper .min-installment {
-  width: 100%;
-  margin-bottom: 30px; }
-  .loancalculation-wrapper .min-installment .detail {
+.loancalculation-wrapper .content-installment .title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 300;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.loancalculation-wrapper .content-installment .range {
+  margin: 40px 0; }
+  .loancalculation-wrapper .content-installment .range .irs-single, .loancalculation-wrapper .content-installment .range .irs-min, .loancalculation-wrapper .content-installment .range .irs-max {
+    display: none; }
+  .loancalculation-wrapper .content-installment .range .irs-line {
+    height: 6px; }
+  .loancalculation-wrapper .content-installment .range .irs-bar {
+    height: 6px;
+    background-color: #FF7301; }
+  .loancalculation-wrapper .content-installment .range .irs-handle {
+    background-image: url("../../assets/images/icon/icon-range-slide.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 44px;
+    height: 44px;
+    top: auto; }
+    .loancalculation-wrapper .content-installment .range .irs-handle i {
+      display: none; }
+  .loancalculation-wrapper .content-installment .range .irs-grid .irs-grid-pol.small {
+    display: none; }
+  .loancalculation-wrapper .content-installment .range .irs-grid .irs-grid-text {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    bottom: -10px; }
+
+.loancalculation-wrapper .privilege-wrapper {
+  padding-top: 110px;
+  position: relative;
+  margin-bottom: 50px; }
+  .loancalculation-wrapper .privilege-wrapper .icon-gift-cap {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    max-width: 445px;
+    z-index: 1;
+    background-image: url("../../assets/images/icon/icon-gift-cap.svg");
+    width: 100%;
+    height: 195px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .loancalculation-wrapper .privilege-wrapper .icon-gift-cap img {
+      width: 100%; }
+  .loancalculation-wrapper .privilege-wrapper .box-privilege {
+    background-color: #FAA560;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .icon-star {
+      position: absolute;
+      top: 7px;
+      left: -10px;
+      width: 45px; }
+      .loancalculation-wrapper .privilege-wrapper .box-privilege .icon-star img {
+        width: 100%; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .title {
+      text-align: center;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 54px;
+      margin-bottom: 20px;
+      padding: 10px 0 0; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest {
+      padding: 0 20px; }
+      .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul {
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li {
+          list-style: none;
+          width: 50%;
+          border-right: 1px solid #fff;
+          text-align: center;
+          padding-bottom: 15px; }
+          .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 28px;
+            color: #373737; }
+          .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li .text {
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 50px;
+            color: #fff; }
+          .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li:last-child {
+            border-right: none; }
+
+.loancalculation-wrapper .box-total-result {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  margin-bottom: 50px; }
+  .loancalculation-wrapper .box-total-result .title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    color: #013CA6;
+    margin-bottom: 0; }
+  .loancalculation-wrapper .box-total-result .detail .item p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #91989E; }
+  .loancalculation-wrapper .box-total-result .detail .item .result {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 54px;
+    color: #3E75CE; }
+
+.loancalculation-wrapper .btn-group-loan {
+  margin-left: 15px;
+  margin-right: 15px; }
+  .loancalculation-wrapper .btn-group-loan .btn-link {
+    max-width: none;
+    width: 100%; }
+    .loancalculation-wrapper .btn-group-loan .btn-link a {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+
+@media only screen and (max-width: 1200px) {
+  .loancalculation-wrapper .privilege-wrapper {
+    padding-top: 94px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .icon-star {
+      width: 35px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .title {
+      font-size: 28px;
+      line-height: 35px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li p {
+      font-size: 16px;
+      line-height: 24px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li .text {
+      font-size: 30px;
+      line-height: 44px; } }
+
+@media only screen and (max-width: 991px) {
+  .loancalculation-wrapper .privilege-wrapper {
+    padding-top: 85px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .icon-star {
+      width: 30px;
+      left: -8px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .title {
+      font-size: 25px;
+      line-height: 30px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li {
+        width: 100%;
+        border-right: none;
+        padding-bottom: 8px; }
+  .loancalculation-wrapper .box-total-result .title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 32px; }
+  .loancalculation-wrapper .box-total-result .detail {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     text-align: center; }
-    .loancalculation-wrapper .min-installment .detail .item {
-      color: #fff; }
-      .loancalculation-wrapper .min-installment .detail .item .top {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 22px; }
-      .loancalculation-wrapper .min-installment .detail .item .middle {
-        font-weight: 500;
-        font-size: 52px;
-        line-height: 58px; }
-      .loancalculation-wrapper .min-installment .detail .item .bottom {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 22px; }
-
-.loancalculation-wrapper .normal-installment {
-  width: 100%;
-  margin-bottom: 30px; }
-
-@media only screen and (max-width: 768px) {
-  .loancalculation-wrapper .head {
-    margin-bottom: 30px; }
-    .loancalculation-wrapper .head .title-loancal {
-      text-align: center;
+    .loancalculation-wrapper .box-total-result .detail .item {
       width: 100%;
-      margin-bottom: 15px; }
-    .loancalculation-wrapper .head .btn-link {
-      margin-right: auto; }
-  .loancalculation-wrapper .caculate-wrapper .initial-maximum .financial-amount {
-    margin-bottom: 0; } }
+      margin-bottom: 10px; }
+      .loancalculation-wrapper .box-total-result .detail .item:last-of-type {
+        margin-bottom: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .loancalculation-wrapper .privilege-wrapper {
+    padding-top: 125px; }
+    .loancalculation-wrapper .privilege-wrapper .icon-gift-cap {
+      max-width: 100%; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .icon-star {
+      width: 48px;
+      left: -11px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .title {
+      font-size: 34px;
+      line-height: 54px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest {
+      padding: 15px 0; }
+      .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li {
+          border-right: none;
+          padding-bottom: 10px; }
+          .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li p {
+            font-size: 20px;
+            line-height: 28px; }
+          .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li .text {
+            font-size: 32px;
+            line-height: 44px; }
+          .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li:last-child {
+            padding-bottom: 0; } }
+
+@media only screen and (max-width: 576px) {
+  .loancalculation-wrapper .type-loan .list-type .type-select {
+    width: 160px; }
+    .loancalculation-wrapper .type-loan .list-type .type-select.slide {
+      left: 164px; }
+  .loancalculation-wrapper .type-loan .list-type .text-type {
+    width: 160px; } }
 
 @media only screen and (max-width: 425px) {
-  .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment {
+  .loancalculation-wrapper .initial-maximum .installment .type-installment {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type {
+    .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type {
       margin-bottom: 30px; }
-      .loancalculation-wrapper .caculate-wrapper .initial-maximum .installment .type-installment .box-type:last-of-type {
-        margin-bottom: 0; } }
+      .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type:last-of-type {
+        margin-bottom: 0; }
+  .loancalculation-wrapper .privilege-wrapper {
+    padding-top: 99px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .icon-star {
+      width: 40px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .title {
+      font-size: 28px;
+      line-height: 36px; }
+  .loancalculation-wrapper .box-total-result .title {
+    margin-bottom: 20px; } }
+
+@media only screen and (max-width: 375px) {
+  .loancalculation-wrapper .privilege-wrapper {
+    padding-top: 87px;
+    margin-bottom: 30px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .icon-star {
+      width: 32px; }
+    .loancalculation-wrapper .privilege-wrapper .box-privilege .title {
+      font-size: 26px;
+      line-height: 34px;
+      margin-bottom: 10px; }
+  .loancalculation-wrapper .box-total-result {
+    margin-bottom: 30px; } }
 
 .bg-formcredit {
   background-image: url("../../assets/images/banner/banner-form.png");
@@ -285,6 +508,27 @@
   margin-bottom: 10px; }
   .formcredit-wrapper .form-wrapper .title-sub.in {
     margin-top: 15px; }
+  .formcredit-wrapper .form-wrapper .title-sub.icon {
+    position: relative; }
+    .formcredit-wrapper .form-wrapper .title-sub.icon:before {
+      content: '';
+      display: block;
+      background-image: url("../../assets/images/icon/icon-location-currency.png");
+      background-repeat: no-repeat;
+      width: 41px;
+      height: 50px;
+      position: absolute;
+      top: -15px;
+      left: 200px;
+      -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      transform: rotate(-10deg); }
+    @media only screen and (max-width: 1024px) {
+      .formcredit-wrapper .form-wrapper .title-sub.icon:before {
+        left: 140px; } }
+    @media only screen and (max-width: 767px) {
+      .formcredit-wrapper .form-wrapper .title-sub.icon:before {
+        left: 0; } }
 
 .formcredit-wrapper .form-wrapper .bg-white {
   background-color: #fff;
@@ -372,7 +616,7 @@
   position: relative;
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 30px;
   top: -100px;
   width: 90%; }
   .formcredit-wrapper .content-alert .line1 {
@@ -404,7 +648,7 @@
     top: 37px;
     right: -27px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .formcredit-wrapper .custom-title-sub {
     margin-bottom: 30px; }
   .formcredit-wrapper .content-alert {
@@ -448,8 +692,7 @@
   margin-bottom: 35px; }
 
 .information-wrapper .item-info {
-  position: relative;
-  cursor: pointer; }
+  position: relative; }
   .information-wrapper .item-info .hover-img {
     overflow: hidden;
     border-radius: 10px; }
@@ -464,6 +707,7 @@
       transition: all .5s ease-out; }
   .information-wrapper .item-info .content {
     position: absolute;
+    cursor: pointer;
     width: 100%;
     top: 0;
     padding: 20px;
@@ -483,6 +727,23 @@
       line-height: 22px;
       color: #fff;
       max-width: 250px; }
+    .information-wrapper .item-info .content .btn {
+      position: absolute;
+      width: 100%;
+      bottom: 20px;
+      left: 0;
+      max-width: 150px;
+      right: 0;
+      margin: auto;
+      border: 1px solid #fff;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      color: #fff;
+      padding: 5px 25px;
+      border-radius: 20px; }
+      .information-wrapper .item-info .content .btn a {
+        color: #fff; }
   .information-wrapper .item-info:hover .hover-img .list {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -491,13 +752,20 @@
     -o-transition: all .5s ease-out;
     transition: all .5s ease-out; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .information-wrapper .item-info .hover-img .list {
     background-position: center center;
     width: 100%;
     height: 200px; }
-  .information-wrapper .item-info .content .title-info {
-    padding-top: 8px; } }
+  .information-wrapper .item-info .content {
+    padding: 10px; }
+    .information-wrapper .item-info .content .title-info {
+      padding-top: 8px;
+      margin-bottom: 5px; } }
+
+@media only screen and (max-width: 767px) {
+  .information-wrapper .item-info {
+    margin-bottom: 30px; } }
 
 @media only screen and (max-width: 425px) {
   .information-wrapper .item-info {
