@@ -491,9 +491,25 @@
       width: 100%;
       margin-bottom: 10px; }
       .loancalculation-wrapper .box-total-result .detail .item:last-of-type {
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+  .loancalculation-wrapper .btn-group-loan .btn-link {
+    margin: 0 auto 30px;
+    max-width: 275px;
+    width: 100%; }
+    .loancalculation-wrapper .btn-group-loan .btn-link a {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 @media only screen and (max-width: 767px) {
+  .loancalculation-wrapper .initial-maximum .installment .type-installment {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type {
+      margin-bottom: 30px;
+      width: 260px; }
+      .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type:last-of-type {
+        margin-bottom: 0; }
   .loancalculation-wrapper .privilege-wrapper {
     padding-top: 125px; }
     .loancalculation-wrapper .privilege-wrapper .icon-gift-cap {
@@ -519,7 +535,11 @@
             font-size: 32px;
             line-height: 44px; }
           .loancalculation-wrapper .privilege-wrapper .box-privilege .limit_interest ul li:last-child {
-            padding-bottom: 0; } }
+            padding-bottom: 0; }
+  .loancalculation-wrapper .box-total-result .data-table .table-responsive .table {
+    width: 526px; }
+  .loancalculation-wrapper .box-total-result .detail .item .style-input .inp-style {
+    text-align: center; } }
 
 @media only screen and (max-width: 576px) {
   .loancalculation-wrapper .type-loan .list-type .type-select {
@@ -530,13 +550,6 @@
     width: 160px; } }
 
 @media only screen and (max-width: 425px) {
-  .loancalculation-wrapper .initial-maximum .installment .type-installment {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type {
-      margin-bottom: 30px; }
-      .loancalculation-wrapper .initial-maximum .installment .type-installment .box-type:last-of-type {
-        margin-bottom: 0; }
   .loancalculation-wrapper .privilege-wrapper {
     padding-top: 99px; }
     .loancalculation-wrapper .privilege-wrapper .box-privilege .icon-star {

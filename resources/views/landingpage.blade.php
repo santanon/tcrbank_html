@@ -531,159 +531,159 @@
                                     </div>
                                     <div class="col-lg-12 col-md-6 col-12">
                                         <div class="box-total-result">
-                                            <div class="row for_type1">
-                                                <div class="col-lg-5 col-12">
-                                                    <div class="title">วงเงินพร้อมใช้ผ่อนสบายๆ</div>
-                                                </div>
-                                                <div class="col-lg-7 col-12">
-                                                    <div class="detail">
-                                                        <div class="item">
-                                                            <p>วงเงินที่ต้องการ</p>
-                                                            <div class="style-input nobg">
-                                                                <input class="inp-style js-value-limit-max2" type="text" value="200000" placeholder="0" readonly>
+                                            <div class="for_type1">
+                                                <div class="row ">
+                                                    <div class="col-lg-5 col-12">
+                                                        <div class="title">วงเงินพร้อมใช้ผ่อนสบายๆ</div>
+                                                    </div>
+                                                    <div class="col-lg-7 col-12">
+                                                        <div class="detail">
+                                                            <div class="item">
+                                                                <p>วงเงินที่ต้องการ</p>
+                                                                <div class="style-input nobg">
+                                                                    <input class="inp-style js-value-limit-max2" type="text" value="200000" placeholder="0" readonly>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <p>อัตราผ่อนขั้นต่ำต่อเดือน</p>
-                                                            <div class="style-input nobg">
-                                                                <input class="inp-style js-value-payment-max2" type="text" value="6100" placeholder="0" readonly>
+                                                            <div class="item">
+                                                                <p>อัตราผ่อนขั้นต่ำต่อเดือน</p>
+                                                                <div class="style-input nobg">
+                                                                    <input class="inp-style js-value-payment-max2" type="text" value="6100" placeholder="0" readonly>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="for_normal_installment" style="display: none;">
-                                                    <div class="col-12 p-0">
-                                                        <div class="data-table">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-custom border-custom">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th class="align-center" style="background-color: #013CA6;">รายงวด(เดือน)</th>
-                                                                            <th class="align-center" style="background-color: #C68FDE;">ดอกเบี้ยต่อปี</th>
-                                                                            <th class="align-center" style="background-color: #FCA5B7;">รายงวด(บาท)</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">12</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">13,900</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">24</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">7,600</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">36</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">5,500</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">48</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">4,500</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">60</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">3,900</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">72</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">3,600</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
+                                                    <div class="data-table">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-custom border-custom">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="align-center" style="background-color: #013CA6;">รายงวด(เดือน)</th>
+                                                                        <th class="align-center" style="background-color: #C68FDE;">ดอกเบี้ยต่อปี</th>
+                                                                        <th class="align-center" style="background-color: #FCA5B7;">รายงวด(บาท)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">12</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">13,900</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">24</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">7,600</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">36</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">5,500</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">48</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">4,500</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">60</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">3,900</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">72</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">3,600</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
                                             </div>
-                                            <div class="row for_type2" style="display: none;">
-                                                <div class="col-lg-5 col-12">
-                                                    <div class="title">รวมหนี้ไว้ทีเดียว ลดภาระดอกเบี้ยแพง</div>
-                                                </div>
-                                                <div class="col-lg-7 col-12">
-                                                    <div class="detail">
-                                                        <div class="item">
-                                                            <p>ประหยัดดอกเบี้ยต่อเดือน</p>
-                                                            <div class="style-input nobg">
-                                                                <input class="inp-style" type="text" value="616" placeholder="0" readonly>
+                                            <div class="for_type2" style="display: none;">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-12">
+                                                        <div class="title">รวมหนี้ไว้ทีเดียว ลดภาระดอกเบี้ยแพง</div>
+                                                    </div>
+                                                    <div class="col-lg-7 col-12">
+                                                        <div class="detail">
+                                                            <div class="item">
+                                                                <p>ประหยัดดอกเบี้ยต่อเดือน</p>
+                                                                <div class="style-input nobg">
+                                                                    <input class="inp-style" type="text" value="616" placeholder="0" readonly>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <p>ประหยัดดอกเบี้ยต่อปี</p>
-                                                            <div class="style-input nobg">
-                                                                <input class="inp-style" type="text" value="7397" placeholder="0" readonly>
+                                                            <div class="item">
+                                                                <p>ประหยัดดอกเบี้ยต่อปี</p>
+                                                                <div class="style-input nobg">
+                                                                    <input class="inp-style" type="text" value="7397" placeholder="0" readonly>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <p>วงเงินรีไฟแนนซ์ที่ต้องการ</p>
-                                                            <div class="style-input nobg">
-                                                                <input class="inp-style" type="text" value="200000" placeholder="0" readonly>
+                                                            <div class="item">
+                                                                <p>วงเงินรีไฟแนนซ์ที่ต้องการ</p>
+                                                                <div class="style-input nobg">
+                                                                    <input class="inp-style" type="text" value="200000" placeholder="0" readonly>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <p>อัตราผ่อนขั้นต่ำ</p>
-                                                            <div class="style-input nobg">
-                                                                <input class="inp-style" type="text" value="6100" placeholder="0" readonly>
+                                                            <div class="item">
+                                                                <p>อัตราผ่อนขั้นต่ำ</p>
+                                                                <div class="style-input nobg">
+                                                                    <input class="inp-style" type="text" value="6100" placeholder="0" readonly>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="for_normal_installment" style="display: none;">
-                                                    <div class="col-12 p-0">
-                                                        <div class="data-table">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-custom border-custom">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th class="align-center" style="background-color: #013CA6;">รายงวด(เดือน)</th>
-                                                                            <th class="align-center" style="background-color: #C68FDE;">ดอกเบี้ยต่อปี</th>
-                                                                            <th class="align-center" style="background-color: #FCA5B7;">รายงวด(บาท)</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">12</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">13,900</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">24</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">7,600</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">36</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">5,500</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">48</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">4,500</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">60</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">3,900</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="vertical-middle text-color-primary font-medium text-center">72</td>
-                                                                            <td class="align-center">19%</td>
-                                                                            <td class="align-center">3,600</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
+                                                    <div class="data-table">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-custom border-custom">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="align-center" style="background-color: #013CA6;">รายงวด(เดือน)</th>
+                                                                        <th class="align-center" style="background-color: #C68FDE;">ดอกเบี้ยต่อปี</th>
+                                                                        <th class="align-center" style="background-color: #FCA5B7;">รายงวด(บาท)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">12</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">13,900</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">24</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">7,600</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">36</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">5,500</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">48</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">4,500</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">60</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">3,900</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="vertical-middle text-color-primary font-medium text-center">72</td>
+                                                                        <td class="align-center">19%</td>
+                                                                        <td class="align-center">3,600</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-12">
@@ -1024,7 +1024,8 @@
                                             <div class="col-sm-6">
                                                 <div class="style-input">
                                                     <label for="" class="title-field">ชื่อ <span class="req">*</span></label>
-                                                    <input class="inp-style" type="text" placeholder="ชื่อ">
+                                                    <input class="inp-style error" type="text" placeholder="ชื่อ">
+                                                    <div class="text-error">กรุณากรอกชื่อ</div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -1058,12 +1059,12 @@
                                             <div class="col-sm-6">
                                                 <div class="style-input">
                                                     <label for="" class="title-field">อาชีพ <span class="req">*</span></label>
-                                                    <select id="slc_job" class="selectpicker slc-style" title="เลือก">
+                                                    <select id="slc_job" class="selectpicker slc-style error" title="เลือก">
                                                         <option value="0">A</option>
                                                         <option value="1">B</option>
                                                         <option value="2">C</option>
                                                     </select>
-
+                                                    <div class="text-error">กรุณาเลือกอาชีพ</div>
                                                 </div>
                                             </div>
                                         </div>

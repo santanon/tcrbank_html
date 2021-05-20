@@ -1,4 +1,6 @@
 .style-input{
+    position: relative;
+    padding-bottom: 10px;
     .inp-style{
         width: 100%;
         height: 65px;
@@ -21,6 +23,20 @@
             font-weight: $font-regular;
             font-size: 36px;
         }
+        &.error{
+            border: 1px solid #DD1B1B;
+        }
+    }
+    .text-error{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #DD1B1B;
+        border-radius: 15px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+        padding: 0 15px;
     }
     &.nobg{
         .inp-style{
@@ -97,6 +113,11 @@
                 border: 1px solid #0047B6 !important;
             }
         }
+        &.error{
+            .btn{
+                border: 1px solid #DD1B1B !important;
+            }
+        }
     }
     .slc-style{
         -moz-appearance:none; /* Firefox */
@@ -123,6 +144,11 @@
         }
         &:invalid {
             color: #373737;
+        }
+        &.error{
+            background: url('../assets/images/icon/icon-select-error.svg');
+            background-repeat: no-repeat;
+            background-position: calc(100% - 10px);
         }
           
         // Styling for browsers which do support
