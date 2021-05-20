@@ -298,7 +298,7 @@ a:hover {
     background-position: 0 0;
     background-repeat: no-repeat;
     height: 27px;
-    width: 27px;
+    width: 100%;
     display: block;
     padding-left: 35px;
     margin-right: 10px;
@@ -843,28 +843,34 @@ a:hover {
       font-size: 36px;
       color: #fff; }
   .modal.custom .modal-content .modal-body {
-    padding: 50px 1rem;
+    padding: 50px 2rem;
     background-color: #fff;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; }
+    border-radius: 20px; }
     .modal.custom .modal-content .modal-body .text-body {
       font-weight: 400;
       font-size: 36px;
+      line-height: 40px;
       color: #013CA6 !important;
       text-align: center;
       margin-bottom: 20px; }
     .modal.custom .modal-content .modal-body .desc-body {
       font-weight: 300;
       font-size: 20px;
+      line-height: 28px;
       color: #91989E;
       text-align: center;
       margin-bottom: 40px; }
     .modal.custom .modal-content .modal-body .btn-link {
       max-width: 235px;
       margin: auto; }
+    .modal.custom .modal-content .modal-body .consent {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      margin: auto; }
 
 .modal.custom-info .modal-content .modal-body {
-  padding: 20px 1rem; }
+  padding: 50px 1rem; }
   .modal.custom-info .modal-content .modal-body .desc-body {
     text-align: left; }
     .modal.custom-info .modal-content .modal-body .desc-body ul {
@@ -872,6 +878,9 @@ a:hover {
       padding: 0; }
     .modal.custom-info .modal-content .modal-body .desc-body a {
       color: #91989E; }
+
+.modal-backdrop {
+  background-color: #013CA6; }
 
 body {
   font-family: 'Kanit', sans-serif;

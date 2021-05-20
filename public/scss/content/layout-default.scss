@@ -457,14 +457,16 @@
                 }
             }
             .modal-body{
-                padding: 50px 1rem;
+                padding: 50px 2rem;
                 background-color: #fff;
 
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
+                // border-bottom-left-radius: 20px;
+                // border-bottom-right-radius: 20px;
+                border-radius: 20px;
                 .text-body{
                     font-weight: $font-regular;
                     font-size: 36px;
+                    line-height: 40px;
                     color: $color-primary !important;
                     text-align: center;
                     margin-bottom: 20px;
@@ -472,6 +474,7 @@
                 .desc-body{
                     font-weight: $font-light;
                     font-size: 20px;
+                    line-height: 28px;
                     color: #91989E;
                     text-align: center;
                     margin-bottom: 40px;
@@ -481,13 +484,18 @@
                     max-width: 235px;
                     margin: auto;
                 }
+
+                .consent{
+                    width: max-content;
+                    margin: auto;
+                }
             }
         }
     }
     &.custom-info{
         .modal-content{
             .modal-body{
-                padding: 20px 1rem;
+                padding: 50px 1rem;
                 .desc-body{
                     text-align: left;
                     ul{
@@ -501,4 +509,7 @@
             }
         }
     }
+}
+.modal-backdrop{
+    background-color: #013CA6;
 }
