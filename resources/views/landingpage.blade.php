@@ -742,54 +742,18 @@
                                         <table class="table table-custom border-custom">
                                             <thead>
                                                 <tr>
-                                                    <th class="align-center vertical-middle bg-color-main" rowspan="2">วงเงินอนุมัติ (บาท)</th>
-                                                    <th class="align-center vertical-middle bg-color-main" rowspan="2">ระยะเวลาผ่อนชำระ (เดือน)</th>
-                                                    <th class="align-center bg-color-secondary" colspan="3">อัตราดอกเบี้ย (ต่อปี)</th>
-                                                </tr>
-                                                <tr>
-                                                    <th class="align-center" style="background-color: #6DBCF0;">ผู้มีบัญชีเงินเดือนผ่าน</th>
-                                                    <th class="align-center" style="background-color: #FAA560;">ผู้มีเงินเดือน/รายได้ประจำ</th>
-                                                    <th class="align-center" style="background-color: #FCA5B7;">เจ้าของกิจการ</th>
+                                                    <th class="align-center vertical-middle bg-color-main">รายได้ประจำต่อเดือน</th>
+                                                    <th class="align-center bg-color-secondary">อัตราดอกเบี้ย (ต่อปี)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="vertical-middle text-color-primary font-medium" rowspan="3">ตั้งแต่ 200,000 บาทขึ้นไป</td>
-                                                    <td class="align-center">12</td>
-                                                    <td class="align-center">ดอกเบี้ยพิเศษ 15%</td>
-                                                    <td class="align-center">ดอกเบี้ยพิเศษ 17%</td>
-                                                    <td class="align-center vertical-middle" rowspan="3">20%</td>
+                                                    <td class="align-center vertical-middle text-color-primary font-medium">30,000 - 49,999 บาท</td>
+                                                    <td class="align-center">17%-19% (MRR +8.20% - MRR +10.20%)</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="align-center">18 24 36 48 60</td>
-                                                    <td class="align-center">ดอกเบี้ยพิเศษ 16%</td>
-                                                    <td class="align-center">ดอกเบี้ยพิเศษ 18%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-center">12 18 24 36 48 60</td>
-                                                    <td class="align-center">ดอกเบี้ยพิเศษ 17%</td>
-                                                    <td class="align-center">ดอกเบี้ยพิเศษ 19%</td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td class="vertical-middle text-color-primary font-medium">80,001 - 240,000</td>
-                                                    <td class="align-center">12 18 24 36 48 60</td>
-                                                    <td class="align-center">21%</td>
-                                                    <td class="align-center">22%</td>
-                                                    <td class="align-center">24%</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="vertical-middle text-color-primary font-medium">20,001 - 80,000</td>
-                                                    <td class="align-center">12 18 24 36 48 60</td>
-                                                    <td class="align-center vertical-middle" rowspan="2">21%</td>
-                                                    <td class="align-center vertical-middle" rowspan="2">22%</td>
-                                                    <td class="align-center vertical-middle" rowspan="2">24%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="vertical-middle text-color-primary font-medium">6,001 - 20,000</td>
-                                                    <td class="align-center" style="border-bottom-right-radius: 0;">12 18 24</td>
+                                                    <td class="align-center vertical-middle text-color-primary font-medium">50,000 บาทขึ้นไป</td>
+                                                    <td class="align-center">15% (MRR +6.20%)</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -798,8 +762,8 @@
                                 <br>
                                 <div class="remark-download">
                                     <div class="remark text-black">หมายเหตุ : <br>
-                                        - xxxxxxxxxx<br>
-                                        - sdfsdfds
+                                        - อัตราดอกเบี้ยข้างต้นเป็นอัตราดอกเบี้ย MRR ตามประกาศ บมจ.ธนาคารไทยเครดติเพื่อรายย่อยเท่ากับ 8.80% ต่อปีประกาศ ณ 13 เมษายน 2563 <br>
+                                        - วงเงินอนุมัติสูงสุด 2 ล้านบาท การอนุมัติวงเงินกู้อัตราดอกเบย้ีเป็นไปตามหลักเกณฑ์และเงื่อนไขการพจิารณาสินเชื่อของธนาคาร
                                     </div>
                                     <!-- <div class="btn-link2">
                                         <a href="#">
@@ -823,12 +787,42 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo4.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
-                                                    <p class="title">1. สำเนาบัตรประชาชนที่ยังไม่หมดอายุ </p>
+                                                    <p class="title">1. บุคคลธรรมดา สัญชาติไทย</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo5.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">2. อายุ 20 - 65ปี</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo6.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">3. พนักงานบริษัทหรือพนักงานรัฐวิสาหกิจ</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo7.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="title">4. รายได้ประจำตั้งแต่ 30,000บาทขึ้นไป</p>
                                                     <p class="desc">
-                                                        (โดยต้องมีอายุคงเหลืออย่างน้อย 30 วัน นับจากวันที่ลงนามในใบสมัคร)
+                                                        (ประกอบด้วยเงินเดือน และสามารถรวมรายได้ประจำอื่นๆ ที่ได้รับเท่ากันทุกเดือน)
                                                     </p>
                                                 </div>
                                             </div>
@@ -836,26 +830,10 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo8.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
-                                                    <p class="title">2. สลิปเงินเดือน 1 เดือน หรือ หนังสือรับรองการทำงาน</p>
-                                                    <p class="desc">
-                                                        ตำแหน่ง เงินเดือน และ อายุงาน (อายุเอกสารย้อนหลังไม่เกิน 1 เดือน)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
-                                                </div>
-                                                <div class="text">
-                                                    <p class="title">3. สำเนาบัญชีเงินฝากที่เงินเดือนเข้าย้อนหลัง 4 เดือน</p>
-                                                    <p class="desc">
-                                                        ตำแหน่ง เงินเดือน และ อายุงาน (อายุเอกสารย้อนหลังไม่เกิน 1 เดือน)
-                                                    </p>
+                                                    <p class="title">5. อายุงานไม่ต่ำกว่า 4 เดือน</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -890,7 +868,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo2.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">2. สลิปเงินเดือน 1 เดือน หรือ หนังสือรับรองการทำงาน</p>
@@ -903,7 +881,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo3.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">3. สำเนาบัญชีเงินฝากที่เงินเดือนเข้าย้อนหลัง 4 เดือน</p>
@@ -930,10 +908,10 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo9.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
-                                                    <p class="title">1. สำเนาบัตรประชาชนที่ยังไม่หมดอายุ </p>
+                                                    <p class="title">1. เอกสารข้อมูลสำคัญของผลิตภัณฑ์ (Product Sale Sheet) สินเชื่อหมุนเวียนส่วนบคุคล</p>
                                                     <div class="style-btn">
                                                         <div class="btn-link2">
                                                             <a href="#">
@@ -952,10 +930,10 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo10.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
-                                                    <p class="title">2. สลิปเงินเดือน 1 เดือน หรือ หนังสือรับรองการทำงาน</p>
+                                                    <p class="title">2. ตัวอย่างวิธีการคำนวณดอกเบี้ย/ยอดชำระสินเชื่อหมุนเวียนส่วนบุคคล</p>
                                                     <div class="style-btn">
                                                         <div class="btn-link2">
                                                             <a href="#">
