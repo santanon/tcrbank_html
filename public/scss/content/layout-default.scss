@@ -88,7 +88,18 @@
     }
 }
 
-.table{
+.data-table{
+    font-weight: $font-light;
+    font-size: 14px;
+    line-height: 22px;
+    color: #373737;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
     .align-center{
         text-align: center;
     }
@@ -109,6 +120,9 @@
                 font-size: 20px;
                 line-height: 30px;
                 color: #fff;
+                padding: 10px 15px;
+                border-bottom: 1px solid #fff;
+                border-right: 1px solid #fff;
                 &.bg-color-main{
                     background-color: #013CA6;
                 }
@@ -166,19 +180,7 @@
         }
     }
 
-    &.border-custom{
-        thead{
-            tr{
-                th{
-                    border-bottom: 1px solid #fff;
-                    border-right: 1px solid #fff;
-                }
-            }
-        }
-    }
-
     @media only screen and (max-width: 767px) {
-        width: 1024px;
         thead{
             tr{
                 th{
@@ -208,7 +210,7 @@
                 line-height: 30px;
                 color: #91989E;
                 border: none;
-                border-left: 2px solid #fff;
+                border-left: 2px solid #F7F7F7;
                 border-radius: 0;
                 padding:  10px 40px;
                 &.active{
@@ -218,8 +220,32 @@
             }
         }
     }
+    .bg-tab-content{
+        background-color: #fff;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
     .tab-content{
-        margin-top: 50px;
+        &.tab-content-custom{
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            @media only screen and (min-width: 576px) {
+                max-width: 540px;
+            }
+            @media only screen and (min-width: 768px) {
+                max-width: 720px;
+            }
+            @media only screen and (min-width: 992px) {
+                max-width: 960px;
+            }
+            @media only screen and (min-width: 1200px) {
+                max-width: 1140px;
+            }
+            
+        }
         .tab-pane{
             .list-group-wrapper{
                 margin-bottom: 20px;
@@ -305,12 +331,28 @@
     .style-input{
         display: none;
     }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
         .content-tabs{
             display: none;
         }
         .style-input{
             display: block;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            @media only screen and (min-width: 576px) {
+                max-width: 540px;
+            }
+            @media only screen and (min-width: 768px) {
+                max-width: 720px;
+            }
+            @media only screen and (min-width: 992px) {
+                max-width: 960px;
+            }
+            @media only screen and (min-width: 1200px) {
+                max-width: 1140px;
+            }
         }
         .tab-content{
             margin-top: 15px;
@@ -319,70 +361,73 @@
 }
 
 .custom-progressbar{
-    max-width: 550px;
+    max-width: 991px;
     margin: auto;
-    .progress{
-        height: 9px;
-        border-radius: 10px;
-        overflow: inherit;
-        .progress-bar{
-            height: 9px;
-            background-color: #FF7301;
-            overflow: inherit;
+
+    .progressbar {
+        counter-reset: step;
+        li{
+            list-style: none;
+            display: inline-block;
+            width: 30.33%;
             position: relative;
-            border-radius: 10px;
-            .status-bar{
-                position: absolute;
-                right: 0;
+            text-align: center;
+            cursor: pointer;
+            font-weight: $font-light;
+            font-size: 20px;
+            color: #fff;
+            &:before{
+                content: counter(step);
+                counter-increment: step;
                 width: 65px;
                 height: 65px;
+                line-height : 65px;
+                border: 1px solid #bfbfbf;
                 border-radius: 100%;
+                display: block;
+                text-align: center;
+                margin: 0 auto 10px auto;
+                background-color: #bfbfbf;
+                color: #666;
+                z-index: 9;
+                position: relative;
                 font-weight: $font-medium;
                 font-size: 20px;
-                line-height: 65px;
-                background-color: #FF7301;
-                color: #fff;
             }
-            &.step-progress-1{
-                width: 10%;
-            }
-            &.step-progress-2{
-                width: 50%;
-            }
-            &.step-progress-3{
+            &:after{
+                content: "";
+                position: absolute;
                 width: 100%;
+                height: 9px;
+                background-color: #fff;
+                top: 30px;
+                left: -50%;
+                z-index : 1;
             }
-        }
-        @media only screen and (max-width: 425px) {
-            .progress-bar{
-                .status-bar{
-                    font-size: 16px
+            &:first-child{
+                &:after{
+                    content: none;
+                }
+            }
+            &.active{
+                color: #fff;
+                &:before{
+                    color: #fff;
+                    border-color: #FF7301;
+                    background-color: #FF7301;
                 }
             }
         }
+        
+        li.active{
+            &:after{
+                background-color: #FF7301;
+            }
+            
+        }
     }
-
-    .text-status{
-        margin-top: 30px;
-        font-weight: $font-light;
-        font-size: 14px;
-        line-height: 22px;
-        color: #fff;
-    }
-
     @media only screen and (max-width: 425px) {
         max-width: 320px;
-    }
-    @media only screen and (max-width: 375px) {
-        .progress{
-            .progress-bar{
-                .status-bar{
-                    width: 45px;
-                    height: 45px;
-                    line-height: 45px;
-                }
-            }
-        }
     }
 }
 

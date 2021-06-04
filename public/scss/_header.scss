@@ -1,15 +1,14 @@
 .header-wrapper{
     &.landingPage{
-        padding-top: 20px;
-        .-custom{
-            max-width: 1266px;
-        }
-        position: absolute;
+        padding: 10px 15px;
+        position: fixed;
         width: 100%;
-        z-index: 9999;
+        top: 0;
+        z-index: 999;
+        background-color: #013CA6;
         .logo{
             width: 221px;
-            margin-left: auto;
+            margin: auto;
             a{
                 display: block;
             }
@@ -20,11 +19,6 @@
     }
     @media only screen and (max-width: 768px) {
         &.landingPage{
-            padding: 10px 15px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            background-color: #013CA6;
             .logo{
                 //width: 155px;
                 margin: auto;

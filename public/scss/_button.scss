@@ -1,39 +1,91 @@
+.register-online-m{
+    display: none;
+    @media only screen and (max-width: 575px) {
+        display: block;
+        position: fixed;
+        z-index: 9998;
+        width: 100%;
+        bottom: 0px;
+        .btn-link{
+            border-radius: 8px;
+            max-width: 100%;
+            &.register-online{
+                background-color: #013CA6;
+            }
+            a{
+                padding: 10px 75px;
+                display: block;
+                display: flex;
+                align-items: center;
+                position: relative;
+                justify-content: center;
+            }
+            .text{
+                font-weight: $font-medium;
+                font-size: 22px;
+                line-height: 26px;
+                color: #fff;
+            }
+            .icon{
+                position: absolute;
+                right: 10px;
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+}
+
 .btn-link{
     border-radius: 8px;
-    max-width: 275px;
+    //max-width: 275px;
+    display: inline-block;
     a{
-        padding: 10px 75px;
+        padding: 15px 70px 15px 25px;
         display: block;
         display: flex;
         align-items: center;
         position: relative;
+        text-align: left;
     }
     .text{
         font-weight: $font-medium;
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 26px;
+        line-height: 32px;
         color: #fff;
     }
     .icon{
         position: absolute;
-        right: 10px;
-        width: 34px;
-        height: 34px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+        img{
+            width: 100%;
+        }
     }
 
     &.color-primary{
         background-color: $color-primary;
     }
+    &.register-online{
+        background-color: #FFA900;
+    }
     &:hover{
         text-decoration: none;
     }
-    @media only screen and (max-width: 1024px) {
+
+    @media only screen and (max-width: 575px) {
         a{
-            padding: 10px 50px;
+            padding: 9px 55px 10px 15px;
         }
         .text{
-            font-size: 20px;
+            font-size: 18px;
             line-height: 24px;
+        }
+        .icon{
+            right: 15px;
+            width: 24px;
+            height: 24px;
         }
     }
 }

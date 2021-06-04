@@ -1,17 +1,15 @@
 @import '../variables';
-
-.register-online-m{
-    display: none;
-}
-
 .content-wrapper{
-    margin-bottom: 70px;
+    .cashexpress-wrapper{
+        padding: 70px 0;
+    }
+    &.bg-interest-rate{
+        padding: 70px 0 0;
+        background-color: #F7F7F7;
+    }
 
-    &.-cashexpress{
-        padding: 0 70px;
-        @media only screen and (max-width: 425px) {
-            padding: 0;
-        }
+    &.information{
+        padding: 70px 0;
     }
 }
 .cashexpress-wrapper{
@@ -30,30 +28,37 @@
                         }
                     }
                     .detail-cashexpress{
+                        padding-top: 80px;
+                        position: relative;
+                        height: 100%;
                         .title{
                             font-weight: $font-medium;
-                            font-size: 20px;
-                            line-height: 22px;
+                            font-size: 26px;
+                            line-height: 32px;
                             color: #373737;
-                            margin-bottom: 50px;
+                            margin-bottom: 40px;
                             padding-left: 15px;
                             border-left: 4px solid #EE7B30;
                         }
                         .desc{
                             font-weight: $font-light;
-                            font-size: 20px;
-                            line-height: 22px;
+                            font-size: 22px;
+                            line-height: 30px;
                             color: #91989E;
                             margin-bottom: 30px;
+                            padding-left: 20px;
+                        }
+                        .btn-link{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
                         }
                     }
                 }
                 @media only screen and (max-width: 991px) {
                     .content-main{
-                        .img-cashexpress{
-                            margin-bottom: 30px;
-                        }
                         .detail-cashexpress{
+                            padding-top: 30px;
                             .title{
                                 font-size: 18px;
                                 line-height: 20px;
@@ -63,38 +68,25 @@
                                 font-size: 18px;
                                 line-height: 20px;
                             }
+                            .btn-link{
+                                position: relative;
+                            }
                         }
                     }
                 }
-            }
-        }
-    }
-    .cashexpress-thumb{
-        padding-top: 50px;
-        .list-thumb{
-            margin: 0;
-            //padding: 50px 0 0;
-            li{
-                list-style: none;
-                cursor: pointer;
-                .img-thumb{
-                    transition: all .2s ease-in-out;
-                    img{
-                        width: 100%;
-                    }
-                    &:hover{
-                        transform: scale(1.2);
+                @media only screen and (max-width: 575px) {
+                    .content-main{
+                        padding: 0 5px;
                     }
                 }
             }
-
             .slick-slide {
                 //margin: 0 30px;
                 padding: 20px 25px;
-              }
+            }
             .slick-arrow{
-                //top: 0;
-                top: 58%;
+                top: auto;
+                bottom: -50%;
                 &.slick-prev{
                     width: 50px;
                     height: 50px;
@@ -131,32 +123,66 @@
                 }
             }
 
+            @media only screen and (max-width: 991px) {        
+                .slick-arrow{
+                    top: 50%;
+                    bottom: auto;
+                }
+            }
+            @media only screen and (max-width: 767px) {
+                .slick-slide {
+                    padding: 0;
+                }
+            }
+            @media only screen and (max-width: 575px) {
+                .slick-arrow{
+                    top: auto;
+                    bottom: -25px;
+                    &.slick-prev{
+                        left: 0;
+                    }
+                    &.slick-next{
+                        right: 0;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 575px) {
+            ul{
+                padding-bottom: 95px;
+            }
+        }
+    }
+    .cashexpress-thumb{
+        padding-top: 30px;
+        .list-thumb{
+            margin: 0;
+            //padding: 50px 0 0;
+            li{
+                list-style: none;
+                cursor: pointer;
+                .img-thumb{
+                    transition: all .2s ease-in-out;
+                    img{
+                        width: 100%;
+                    }
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            .slick-slide {
+                //margin: 0 30px;
+                padding: 20px;
+            }
+
             @media only screen and (max-width: 768px) {
                 .slick-list{
                     display: none;
                 }
 
-                .slick-arrow{
-                    top: 0;
-                    &.slick-prev{
-                        left: 35%;
-                        right: auto;
-                    }
-                    &.slick-next{
-                        right: 35%;
-                    }
-                }
             }
-            @media only screen and (max-width: 425px) {
-                .slick-arrow{
-                    &.slick-prev{
-                        left: 30%;
-                    }
-                    &.slick-next{
-                        right: 30%;
-                    }
-                }
-            }
+            
         }
     }
 }
@@ -1149,53 +1175,6 @@
     }
 }
 
-
-
-@media only screen and (max-width: 425px) {
-    .banner-wrapper{
-        .list-slide{
-            li{
-                .item{
-                    .btn-link{
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-    .register-online-m{
-        display: block;
-        position: fixed;
-        z-index: 9998;
-        width: 100%;
-        bottom: 0px;
-        .btn-link{
-            border-radius: 8px;
-            max-width: 100%;
-            background-color: #013CA6;
-            a{
-                padding: 10px 75px;
-                display: block;
-                display: flex;
-                align-items: center;
-                position: relative;
-                justify-content: center;
-            }
-            .text{
-                font-weight: $font-medium;
-                font-size: 22px;
-                line-height: 26px;
-                color: #fff;
-            }
-            .icon{
-                position: absolute;
-                right: 10px;
-                width: 34px;
-                height: 34px;
-            }
-        }
-    }
-}
 
 
 
