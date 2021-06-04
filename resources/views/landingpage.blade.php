@@ -54,18 +54,18 @@
             
         </header>
 
-        <section class="content-wrapper -banner">
+        <section class="content-wrapper">
             <div class="banner-wrapper">
                 <ul class="list-slide">
                     <li>
                         <div class="item">
                             <img class="d" src="{{ asset('assets/images/banner/banner-01.jpg')}}" alt="banner">
                             <img class="m" src="{{ asset('assets/images/banner/banner-01-m.jpg')}}" alt="banner">
-                            <div class="btn-link btn-link-banner color-primary register-online">
+                            <div class="btn-link register-online">
                                 <a href="javascript:void(0)">
                                     <div class="text">สมัครออนไลน์</div>
                                     <div class="icon">
-                                        <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                                        <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                     </div>
                                 </a>
                             </div>
@@ -75,11 +75,11 @@
                         <div class="item">
                             <img class="d" src="{{ asset('assets/images/banner/banner-02.jpg')}}" alt="banner">
                             <img class="m" src="{{ asset('assets/images/banner/banner-02-m.jpg')}}" alt="banner">
-                            <div class="btn-link btn-link-banner color-primary register-online">
+                            <div class="btn-link register-online">
                                 <a href="javascript:void(0)">
                                     <div class="text">สมัครออนไลน์</div>
                                     <div class="icon">
-                                        <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                                        <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                     </div>
                                 </a>
                             </div>
@@ -88,16 +88,16 @@
                 </ul>
             </div>
         </section>
-        <section class="register-online-m">
-            <div class="btn-link btn-link-banner color-primary register-online">
+        <!-- <section class="register-online-m">
+            <div class="btn-link register-online">
                 <a href="javascript:void(0)">
                     <div class="text">สมัครออนไลน์</div>
                     <div class="icon">
-                        <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                        <img src="{{ asset('assets/images/icon/icon-RegisterOnline-orange.svg')}}" alt="banner">
                     </div>
                 </a>
             </div>
-        </section>
+        </section> -->
         
         <section class="content-wrapper -cashexpress">
             <div class="container">
@@ -106,7 +106,7 @@
                         <ul class="list-main">
                             <li>
                                 <div class="content-main">
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
                                                 <img src="{{ asset('assets/images/cashexpress/img01.png')}}" alt="images">
@@ -120,15 +120,12 @@
                                                 <div class="desc">
                                                     การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
                                                     และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-
-                                                    ศูนย์ลูกค้าสัมพันธ์ โทร.0-2697-5454<br>
-                                                    เวลา 08.00 – 22.00 น.
                                                 </div>
-                                                <div class="btn-link btn-link-banner color-primary">
+                                                <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
                                                         <div class="text">สมัครออนไลน์</div>
                                                         <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
                                                     </a>
                                                 </div>
@@ -139,7 +136,7 @@
                             </li>
                             <li>
                                 <div class="content-main">
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
                                                 <img src="{{ asset('assets/images/cashexpress/img02.png')}}" alt="images">
@@ -153,15 +150,12 @@
                                                 <div class="desc">
                                                     การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
                                                     และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-
-                                                    ศูนย์ลูกค้าสัมพันธ์ โทร.0-2697-5454<br>
-                                                    เวลา 08.00 – 22.00 น.
                                                 </div>
-                                                <div class="btn-link btn-link-banner color-primary">
+                                                <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
                                                         <div class="text">สมัครออนไลน์</div>
                                                         <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
                                                     </a>
                                                 </div>
@@ -172,7 +166,7 @@
                             </li>
                             <li>
                                 <div class="content-main">
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
                                                 <img src="{{ asset('assets/images/cashexpress/img03.png')}}" alt="images">
@@ -186,15 +180,12 @@
                                                 <div class="desc">
                                                     การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
                                                     และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-
-                                                    ศูนย์ลูกค้าสัมพันธ์ โทร.0-2697-5454<br>
-                                                    เวลา 08.00 – 22.00 น.
                                                 </div>
-                                                <div class="btn-link btn-link-banner color-primary">
+                                                <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
                                                         <div class="text">สมัครออนไลน์</div>
                                                         <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
                                                     </a>
                                                 </div>
@@ -205,7 +196,7 @@
                             </li>
                             <li>
                                 <div class="content-main">
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
                                                 <img src="{{ asset('assets/images/cashexpress/img04.png')}}" alt="images">
@@ -219,15 +210,12 @@
                                                 <div class="desc">
                                                     การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
                                                     และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-
-                                                    ศูนย์ลูกค้าสัมพันธ์ โทร.0-2697-5454<br>
-                                                    เวลา 08.00 – 22.00 น.
                                                 </div>
-                                                <div class="btn-link btn-link-banner color-primary">
+                                                <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
                                                         <div class="text">สมัครออนไลน์</div>
                                                         <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
                                                     </a>
                                                 </div>
@@ -238,7 +226,7 @@
                             </li>
                             <li>
                                 <div class="content-main">
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
                                                 <img src="{{ asset('assets/images/cashexpress/img05.png')}}" alt="images">
@@ -252,15 +240,12 @@
                                                 <div class="desc">
                                                     การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
                                                     และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-
-                                                    ศูนย์ลูกค้าสัมพันธ์ โทร.0-2697-5454<br>
-                                                    เวลา 08.00 – 22.00 น.
                                                 </div>
-                                                <div class="btn-link btn-link-banner color-primary">
+                                                <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
                                                         <div class="text">สมัครออนไลน์</div>
                                                         <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
                                                     </a>
                                                 </div>
@@ -305,8 +290,8 @@
         </section>
 
 
-        <section class="content-wrapper -loancalculation">
-            <div class="container-fluid bg-loancalculation">
+        <section class="content-wrapper bg-loancalculation">
+            <div class="container-fluid">
                 <div class="container">
                     <div class="loancalculation-wrapper" style="display: none">
                         <div class="row">
@@ -708,75 +693,67 @@
             </div>
         </section>
 
-        <section class="content-wrapper">
-            <div class="container">
-                <div class="interest-rate-wrapper">
-                    <div class="style-tab">
-                        <ul class="nav nav-tabs content-tabs" id="interest-rate_tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="content-tab01" data-toggle="tab" href="#tab01" role="tab" aria-controls="tab01" aria-selected="true">อัตราดอกเบี้ย</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="content-tab02" data-toggle="tab" href="#tab02" role="tab" aria-controls="tab02" aria-selected="false">คุณสมบัติผู้สมัคร</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="content-tab03" data-toggle="tab" href="#tab03" role="tab" aria-controls="tab03" aria-selected="false">เอกสารการสมัคร</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="content-tab04" data-toggle="tab" href="#tab04" role="tab" aria-controls="tab04" aria-selected="false">เอกสารข้อมูลผลิตภัณฑ์</a>
-                            </li>
-                        </ul>
-                        <div class="style-input">
-                            <select class="selectpicker slc-style visible-xs" id="tab_selector">
-                                <option value="0">อัตราดอกเบี้ย</option>
-                                <option value="1">คุณสมบัติผู้สมัคร</option>
-                                <option value="2">เอกสารการสมัคร</option>
-                                <option value="3">เอกสารข้อมูลผลิตภัณฑ์</option>
-                            </select>
-                        </div>
-                        
-                        <div class="tab-content" id="Tab_Content">
+        <section class="content-wrapper bg-interest-rate">
+            <div class="interest-rate-wrapper">
+                <div class="style-tab">
+                    <ul class="nav nav-tabs content-tabs" id="interest-rate_tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="content-tab01" data-toggle="tab" href="#tab01" role="tab" aria-controls="tab01" aria-selected="true">อัตราดอกเบี้ย</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-tab02" data-toggle="tab" href="#tab02" role="tab" aria-controls="tab02" aria-selected="false">คุณสมบัติผู้สมัคร</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-tab03" data-toggle="tab" href="#tab03" role="tab" aria-controls="tab03" aria-selected="false">เอกสารการสมัคร</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="content-tab04" data-toggle="tab" href="#tab04" role="tab" aria-controls="tab04" aria-selected="false">เอกสารข้อมูลผลิตภัณฑ์</a>
+                        </li>
+                    </ul>
+                    <div class="style-input">
+                        <select class="selectpicker slc-style visible-xs" id="tab_selector">
+                            <option value="0">อัตราดอกเบี้ย</option>
+                            <option value="1">คุณสมบัติผู้สมัคร</option>
+                            <option value="2">เอกสารการสมัคร</option>
+                            <option value="3">เอกสารข้อมูลผลิตภัณฑ์</option>
+                        </select>
+                    </div>
+                    
+                    <div class="bg-tab-content">
+                        <div class="tab-content tab-content-custom" id="Tab_Content">
                             <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="content-tab01">
                                 <div class="data-table">
-                                    <div class="table-responsive">
-                                        <table class="table table-custom border-custom">
-                                            <thead>
-                                                <tr>
-                                                    <th class="align-center vertical-middle bg-color-main">รายได้ประจำต่อเดือน</th>
-                                                    <th class="align-center bg-color-secondary">อัตราดอกเบี้ย (ต่อปี)</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="align-center vertical-middle text-color-primary font-medium">30,000 - 49,999 บาท</td>
-                                                    <td class="align-center">17%-19% (MRR +8.20% - MRR +10.20%)</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-center vertical-middle text-color-primary font-medium">50,000 บาทขึ้นไป</td>
-                                                    <td class="align-center">15% (MRR +6.20%)</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="remark-download">
-                                    <div class="remark text-black">หมายเหตุ : <br>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="align-center vertical-middle bg-color-main">รายได้ประจำต่อเดือน</th>
+                                                <th class="align-center bg-color-secondary">อัตราดอกเบี้ย (ต่อปี)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-center vertical-middle text-color-primary font-medium">30,000 - 49,999 บาท</td>
+                                                <td class="align-center">17%-19% (MRR +8.20% - MRR +10.20%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-center vertical-middle text-color-primary font-medium">50,000 บาทขึ้นไป</td>
+                                                <td class="align-center">15% (MRR +6.20%)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>
+                                        หมายเหตุ : <br>
                                         - อัตราดอกเบี้ยข้างต้นเป็นอัตราดอกเบี้ย MRR ตามประกาศ บมจ.ธนาคารไทยเครดติเพื่อรายย่อยเท่ากับ 8.80% ต่อปีประกาศ ณ 13 เมษายน 2563 <br>
                                         - วงเงินอนุมัติสูงสุด 2 ล้านบาท การอนุมัติวงเงินกู้อัตราดอกเบย้ีเป็นไปตามหลักเกณฑ์และเงื่อนไขการพจิารณาสินเชื่อของธนาคาร
-                                    </div>
-                                    <!-- <div class="btn-link2">
-                                        <a href="#">
-                                            <div class="text">ดาวน์โหลดอัตราเบี้ย</div>
-                                        </a>
-                                    </div> -->
+                                    </p>
                                 </div>
                                 <br>
-                                <div class="btn-link color-primary register-online">
+                                <br>
+                                <div class="btn-link register-online">
                                     <a href="javascript:void(0)">
                                         <div class="text">สมัครออนไลน์</div>
                                         <div class="icon">
-                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                         </div>
                                     </a>
                                 </div>
@@ -840,11 +817,11 @@
                                     </ul>
                                 </div>
 
-                                <div class="btn-link color-primary">
+                                <div class="btn-link register-online">
                                     <a href="javascript:void(0)">
                                         <div class="text">สมัครออนไลน์</div>
                                         <div class="icon">
-                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                         </div>
                                     </a>
                                 </div>
@@ -893,11 +870,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="btn-link color-primary">
+                                <div class="btn-link register-online">
                                     <a href="javascript:void(0)">
                                         <div class="text">สมัครออนไลน์</div>
                                         <div class="icon">
-                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                         </div>
                                     </a>
                                 </div>
@@ -951,11 +928,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="btn-link color-primary">
+                                <div class="btn-link register-online">
                                     <a href="javascript:void(0)">
                                         <div class="text">สมัครออนไลน์</div>
                                         <div class="icon">
-                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
+                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                         </div>
                                     </a>
                                 </div>
@@ -970,15 +947,11 @@
             <div class="container-fluid bg-formcredit">
                 <div class="container formcredit-wrapper">
                     <div class="custom-progressbar">
-                        <div class="progress">
-                            <div class="progress-bar step-progress-1">
-                                <div class="status-bar">1</div>
-                            </div>
-                        </div>
-                        <div class="text-status">STEP</div>
-                    </div>
-                    <div class="custom-title-sub">
-                        <div class="title-sub text-white">ข้อมูลส่วนตัว</div>
+                        <ul class="progressbar">
+                            <li class="active">Step 1</li>
+                            <li class="">Step 2</li>
+                            <li>Step 3</li>
+                        </ul>
                     </div>
                     
                     <div class="row row-custom-align-center">
@@ -1230,7 +1203,7 @@
         </section>
 
 
-        <section class="content-wrapper -information">
+        <section class="content-wrapper information">
             <div class="container">
                 <div class="information-wrapper">
                     <div class="title text-black">Other Information</div>
@@ -1595,7 +1568,7 @@
             slidesToScroll: 1,
             arrows: false,
             dots: true,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 5000,
             speed: 2000,
         });
@@ -1606,7 +1579,7 @@
             slidesToScroll: 1,
             asNavFor: '.list-main',
             focusOnSelect: true,
-            arrows: true,
+            arrows: false,
             responsive: [
                 {
                     breakpoint: 769,//start device 768
@@ -1616,15 +1589,13 @@
                     }
                 },
                 {
-                    breakpoint: 426,//start device 425
+                    breakpoint: 576,//start device 575
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
+                        arrows: false,
                     }
                 },
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
         $('.list-main').slick({
@@ -1632,10 +1603,19 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             asNavFor: '.list-thumb',
-            arrows: false,
-            autoplay: true,
+            arrows: true,
+            autoplay: false,
             autoplaySpeed: 5000,
             speed: 2000,
+            responsive: [
+                {
+                    breakpoint: 769,//start device 768
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+            ]
         });
 
 
@@ -1698,8 +1678,7 @@
             $('.step2').slideDown('slow');
             $('.step1').slideUp('slow');
 
-            $('.progress-bar').removeClass('step-progress-1').addClass('step-progress-2');
-            $('.status-bar').text('2');
+            $('.progressbar li').eq(1).addClass('active');
 
             $('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเกี่ยวกับรายได้');
         });
@@ -1707,8 +1686,7 @@
             $('.step1').slideDown('slow');
             $('.step2').slideUp('slow');
 
-            $('.progress-bar').removeClass('step-progress-2').addClass('step-progress-1');
-            $('.status-bar').text('1');
+            $('.progressbar li').eq(1).removeClass('active');
 
             $('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเพื่อให้ธนาคารได้รู้จักคุณ');
         });
@@ -1716,17 +1694,13 @@
             $('.step3').slideDown('slow');
             $('.step2').slideUp('slow');
 
-            $('.progress-bar').removeClass('step-progress-2').addClass('step-progress-3');
-            $('.status-bar').text('3');
+            $('.progressbar li').eq(2).addClass('active');
         });
         $('#back_step2').click(function(){
             $('.step2').slideDown('slow');
             $('.step3').slideUp('slow');
 
-            $('.progress-bar').removeClass('step-progress-3').addClass('step-progress-2');
-            $('.status-bar').text('2');
-
-            
+            $('.progressbar li').eq(2).removeClass('active');
         });
 
         // Comma thousand

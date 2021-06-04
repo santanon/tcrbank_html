@@ -1,13 +1,12 @@
-.register-online-m {
-  display: none; }
+.content-wrapper .cashexpress-wrapper {
+  padding: 70px 0; }
 
-.content-wrapper {
-  margin-bottom: 70px; }
-  .content-wrapper.-cashexpress {
-    padding: 0 70px; }
-    @media only screen and (max-width: 425px) {
-      .content-wrapper.-cashexpress {
-        padding: 0; } }
+.content-wrapper.bg-interest-rate {
+  padding: 70px 0 0;
+  background-color: #F7F7F7; }
+
+.content-wrapper.information {
+  padding: 70px 0; }
 
 .cashexpress-wrapper .cashexpress-main ul {
   margin: 0;
@@ -19,33 +18,99 @@
     padding: 0 20px; }
     .cashexpress-wrapper .cashexpress-main ul li .content-main .img-cashexpress img {
       width: 100%; }
-    .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .title {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 22px;
-      color: #373737;
-      margin-bottom: 50px;
-      padding-left: 15px;
-      border-left: 4px solid #EE7B30; }
-    .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .desc {
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 22px;
-      color: #91989E;
-      margin-bottom: 30px; }
+    .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress {
+      padding-top: 80px;
+      position: relative;
+      height: 100%; }
+      .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .title {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+        color: #373737;
+        margin-bottom: 40px;
+        padding-left: 15px;
+        border-left: 4px solid #EE7B30; }
+      .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .desc {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        color: #91989E;
+        margin-bottom: 30px;
+        padding-left: 20px; }
+      .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .btn-link {
+        position: absolute;
+        bottom: 0;
+        left: 0; }
   @media only screen and (max-width: 991px) {
-    .cashexpress-wrapper .cashexpress-main ul li .content-main .img-cashexpress {
-      margin-bottom: 30px; }
-    .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .title {
-      font-size: 18px;
-      line-height: 20px;
-      margin-bottom: 15px; }
-    .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .desc {
-      font-size: 18px;
-      line-height: 20px; } }
+    .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress {
+      padding-top: 30px; }
+      .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .title {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 15px; }
+      .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .desc {
+        font-size: 18px;
+        line-height: 20px; }
+      .cashexpress-wrapper .cashexpress-main ul li .content-main .detail-cashexpress .btn-link {
+        position: relative; } }
+  @media only screen and (max-width: 575px) {
+    .cashexpress-wrapper .cashexpress-main ul li .content-main {
+      padding: 0 5px; } }
+  .cashexpress-wrapper .cashexpress-main ul .slick-slide {
+    padding: 20px 25px; }
+  .cashexpress-wrapper .cashexpress-main ul .slick-arrow {
+    top: auto;
+    bottom: -50%; }
+    .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-prev {
+      width: 50px;
+      height: 50px;
+      left: -65px; }
+      .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-prev:before {
+        content: '';
+        display: block;
+        background-image: url("../../assets/images/icon/icon-left-circle.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #91989E;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%; }
+    .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-next {
+      width: 50px;
+      height: 50px;
+      right: -65px; }
+      .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-next:before {
+        content: '';
+        display: block;
+        background-image: url("../../assets/images/icon/icon-right-circle.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #91989E;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%; }
+  @media only screen and (max-width: 991px) {
+    .cashexpress-wrapper .cashexpress-main ul .slick-arrow {
+      top: 50%;
+      bottom: auto; } }
+  @media only screen and (max-width: 767px) {
+    .cashexpress-wrapper .cashexpress-main ul .slick-slide {
+      padding: 0; } }
+  @media only screen and (max-width: 575px) {
+    .cashexpress-wrapper .cashexpress-main ul .slick-arrow {
+      top: auto;
+      bottom: -25px; }
+      .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-prev {
+        left: 0; }
+      .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-next {
+        right: 0; } }
+
+@media only screen and (max-width: 575px) {
+  .cashexpress-wrapper .cashexpress-main ul {
+    padding-bottom: 95px; } }
 
 .cashexpress-wrapper .cashexpress-thumb {
-  padding-top: 50px; }
+  padding-top: 30px; }
   .cashexpress-wrapper .cashexpress-thumb .list-thumb {
     margin: 0; }
     .cashexpress-wrapper .cashexpress-thumb .list-thumb li {
@@ -62,52 +127,10 @@
           -ms-transform: scale(1.2);
           transform: scale(1.2); }
     .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-slide {
-      padding: 20px 25px; }
-    .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow {
-      top: 58%; }
-      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev {
-        width: 50px;
-        height: 50px;
-        left: -65px; }
-        .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev:before {
-          content: '';
-          display: block;
-          background-image: url("../../assets/images/icon/icon-left-circle.svg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-color: #91989E;
-          width: 50px;
-          height: 50px;
-          border-radius: 100%; }
-      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-next {
-        width: 50px;
-        height: 50px;
-        right: -65px; }
-        .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-next:before {
-          content: '';
-          display: block;
-          background-image: url("../../assets/images/icon/icon-right-circle.svg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-color: #91989E;
-          width: 50px;
-          height: 50px;
-          border-radius: 100%; }
+      padding: 20px; }
     @media only screen and (max-width: 768px) {
       .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-list {
-        display: none; }
-      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow {
-        top: 0; }
-        .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev {
-          left: 35%;
-          right: auto; }
-        .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-next {
-          right: 35%; } }
-    @media only screen and (max-width: 425px) {
-      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-prev {
-        left: 30%; }
-      .cashexpress-wrapper .cashexpress-thumb .list-thumb .slick-arrow.slick-next {
-        right: 30%; } }
+        display: none; } }
 
 .bg-loancalculation {
   background-image: url("../../assets/images/banner/banner-loancalculation.png");
@@ -856,40 +879,3 @@
 @media only screen and (max-width: 425px) {
   .information-wrapper .item-info {
     margin-bottom: 25px; } }
-
-@media only screen and (max-width: 425px) {
-  .banner-wrapper .list-slide li .item .btn-link {
-    display: none; }
-  .register-online-m {
-    display: block;
-    position: fixed;
-    z-index: 9998;
-    width: 100%;
-    bottom: 0px; }
-    .register-online-m .btn-link {
-      border-radius: 8px;
-      max-width: 100%;
-      background-color: #013CA6; }
-      .register-online-m .btn-link a {
-        padding: 10px 75px;
-        display: block;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: relative;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
-      .register-online-m .btn-link .text {
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 26px;
-        color: #fff; }
-      .register-online-m .btn-link .icon {
-        position: absolute;
-        right: 10px;
-        width: 34px;
-        height: 34px; } }

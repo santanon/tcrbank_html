@@ -1,7 +1,9 @@
 .banner-wrapper{
+    padding-top: 84px;
     ul{
         margin: 0;
         padding: 0;
+        margin-bottom: 0 !important;
         li{
             list-style: none;
             .item{
@@ -30,7 +32,7 @@
                         }
                     }
                     .btn-link{
-                        bottom: 5%;
+                        bottom: 10%;
                         left: 3%;
                     }
                 }
@@ -82,5 +84,8 @@
                 }
             }
         }
+    }
+    @media only screen and (max-width: 425px) {
+        padding-top: 55px;
     }
 }
