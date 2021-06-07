@@ -147,16 +147,24 @@
                     top: 50%;
                     bottom: auto;
                     &.slick-prev{
-                        left: -65px;
+                        left: -25px;
                     }
                     &.slick-next{
-                        right: -65px;
+                        right: -25px;
                     }
                 }
             }
             @media only screen and (max-width: 767px) {
                 .slick-slide {
                     padding: 0;
+                }
+                .slick-arrow{
+                    &.slick-prev{
+                        left: -50px;
+                    }
+                    &.slick-next{
+                        right: -50px;
+                    }
                 }
             }
             @media only screen and (max-width: 575px) {
@@ -226,6 +234,11 @@
     .bg-color-orange{
         background-color: #FFA900;
         padding: 30px;
+    }
+    @media only screen and (max-width: 767px) {
+        .bg-color-orange{
+            padding: 30px 0;
+        }
     }
 }
 .loancalculation-wrapper{
@@ -444,8 +457,37 @@
         }
     }
     @media only screen and (max-width: 767px) {
+        padding-bottom: 50px;
+        .style-input{
+            max-width: 220px;
+        }
+        .type-loan, .type-installment{
+            .box-type{
+                max-width: 220px;
+                .text{
+                    font-size: 22px;
+                    line-height: 28px;
+                    max-width: 100%;
+                }
+            }
+        }
     }
     @media only screen and (max-width: 576px) {
+        .style-input{
+            max-width: 100%;
+        }
+        .type-loan, .type-installment{
+            .box-type{
+                max-width: 100%;
+                margin-bottom: 20px;
+                margin-left: 30px;
+                .text{
+                    font-size: 22px;
+                    line-height: 28px;
+                    max-width: 100%;
+                }
+            }
+        }
     }
     @media only screen and (max-width: 425px) {
     }
@@ -560,6 +602,60 @@
                 &:last-child{
                     td{
                         border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 991px) {
+        .text-privilege{
+            text-align: center;
+            img{
+                width: 40%;
+            }
+        }
+        .remark{
+            margin-bottom: 20px;
+        }
+        .on-top{
+            .text{
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .btn-link{
+                a{
+                    padding: 15px 60px 15px 25px;
+                    .icon{
+                        right: 15px;
+                    }
+                }
+            }
+        }
+        .on-bottom{
+            .text{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .text-privilege{
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            img{
+                width: 100%;
+            }
+        }
+        .on-top{
+            .text{
+                margin-bottom: 20px;
+            }
+            .btn-link{
+                a{
+                    .text{
+                        margin-bottom: 0;
                     }
                 }
             }

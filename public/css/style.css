@@ -582,6 +582,9 @@ a:hover {
   @media only screen and (max-width: 425px) {
     .banner-wrapper {
       padding-top: 55px; } }
+  @media only screen and (max-width: 320px) {
+    .banner-wrapper {
+      padding-top: 47px; } }
 
 .row-custom-align-center {
   -webkit-box-align: center;
@@ -833,6 +836,8 @@ table {
       max-width: 1140px; } }
 
 @media only screen and (max-width: 991px) {
+  .style-tab .bg-tab-content {
+    padding-top: 0; }
   .style-tab .tab-content {
     margin-top: 15px; } }
 

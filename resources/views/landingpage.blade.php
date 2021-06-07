@@ -306,7 +306,7 @@
                             <div class="col-lg-8">
                                 <div class="type-loan">
                                     <div class="row">
-                                        <div class="col-lg-5 col-md-6">
+                                        <div class="col-lg-5 col-md-6 col-sm-6 col-12">
                                             <div class="box-type active" id="">
                                                 <div class="icon-check"></div>
                                                 <div class="icon">
@@ -315,7 +315,7 @@
                                                 <div class="text">ต้องการวงเงินพร้อมใช้</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-5 col-md-6">
+                                        <div class="col-lg-5 col-md-6 col-sm-6 col-12">
                                             <div class="box-type" id="">
                                                 <div class="icon-check"></div>
                                                 <div class="icon">
@@ -336,7 +336,7 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="row">
-                                    <div class="col-lg-5 col-md-6">
+                                    <div class="col-lg-5 col-md-6 col-12">
                                         <div class="style-input">
                                             <input class="inp-style text-center text-large fm_money" type="text" value="60000">
                                             <span class="text-before-input">฿</span>
@@ -354,7 +354,7 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="row">
-                                    <div class="col-lg-5 col-md-6">
+                                    <div class="col-lg-5 col-md-6 col-12">
                                         <div class="style-input">
                                             <input class="inp-style text-center text-large fm_money" type="text" value="24">
                                             <span class="text-before-input">%</span>
@@ -373,7 +373,7 @@
                             <div class="col-lg-8">
                                 <div class="type-installment">
                                     <div class="row">
-                                        <div class="col-lg-5 col-md-6">
+                                        <div class="col-lg-5 col-md-6 col-sm-6 col-12">
                                             <div class="box-type active" id="">
                                                 <div class="icon-check"></div>
                                                 <div class="icon">
@@ -382,7 +382,7 @@
                                                 <div class="text">ผ่อนขั้นต่ำ</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-5 col-md-6">
+                                        <div class="col-lg-5 col-md-6 col-sm-6 col-12">
                                             <div class="box-type" id="">
                                                 <div class="icon-check"></div>
                                                 <div class="icon">
@@ -464,15 +464,15 @@
                                     <div class="col-lg-12">
                                         <div class="on-top">
                                             <div class="row">
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
                                                     <div class="text">วงเงินอนุมัติสูงสุด</div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">19%</div>
                                                     <div class="text">อัตราดอกเบี้ย</div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="btn-link color-primary">
                                                         <a href="javascript:void(0)">
                                                             <div class="text">สมัครออนไลน์</div>
@@ -488,11 +488,11 @@
                                     <div class="col-lg-12">
                                         <div class="on-bottom" id="t1_t1">
                                             <div class="row">
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
                                                     <div class="text">วงเงินที่ต้องการ</div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">6,100</div>
                                                     <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน</div>
                                                 </div>
@@ -500,19 +500,19 @@
                                         </div>
                                         <div class="on-bottom" id="t2_t1" style="display: none;">
                                             <div class="row">
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
                                                     <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ</div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">6,100</div>
                                                     <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน</div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">616</div>
                                                     <div class="text">ประหยัดดอกเบี้ยต่อเดือน</div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">7,397</div>
                                                     <div class="text">ประหยัดดอกเบี้ยต่อปี</div>
                                                 </div>
@@ -520,7 +520,7 @@
                                         </div>
                                         <div class="on-bottom" id="t1_t2" style="display: none;">
                                             <div class="row">
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
                                                     <div class="text">วงเงินที่ต้องการ</div>
                                                 </div>
@@ -528,15 +528,15 @@
                                         </div>
                                         <div class="on-bottom" id="t2_t2" style="display: none;">
                                             <div class="row">
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
                                                     <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ</div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">616</div>
                                                     <div class="text">ประหยัดดอกเบี้ยต่อเดือน</div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">7,397</div>
                                                     <div class="text">ประหยัดดอกเบี้ยต่อปี</div>
                                                 </div>

@@ -102,12 +102,16 @@
       top: 50%;
       bottom: auto; }
       .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-prev {
-        left: -65px; }
+        left: -25px; }
       .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-next {
-        right: -65px; } }
+        right: -25px; } }
   @media only screen and (max-width: 767px) {
     .cashexpress-wrapper .cashexpress-main ul .slick-slide {
-      padding: 0; } }
+      padding: 0; }
+    .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-prev {
+      left: -50px; }
+    .cashexpress-wrapper .cashexpress-main ul .slick-arrow.slick-next {
+      right: -50px; } }
   @media only screen and (max-width: 575px) {
     .cashexpress-wrapper .cashexpress-main ul .slick-arrow {
       top: auto;
@@ -157,6 +161,9 @@
   .bg-loancalculation .bg-color-orange {
     background-color: #FFA900;
     padding: 30px; }
+  @media only screen and (max-width: 767px) {
+    .bg-loancalculation .bg-color-orange {
+      padding: 30px 0; } }
 
 .loancalculation-wrapper .row-section {
   margin-bottom: 50px; }
@@ -333,6 +340,30 @@
   .loancalculation-wrapper .content-installment .range {
     max-width: 100%; } }
 
+@media only screen and (max-width: 767px) {
+  .loancalculation-wrapper {
+    padding-bottom: 50px; }
+    .loancalculation-wrapper .style-input {
+      max-width: 220px; }
+    .loancalculation-wrapper .type-loan .box-type, .loancalculation-wrapper .type-installment .box-type {
+      max-width: 220px; }
+      .loancalculation-wrapper .type-loan .box-type .text, .loancalculation-wrapper .type-installment .box-type .text {
+        font-size: 22px;
+        line-height: 28px;
+        max-width: 100%; } }
+
+@media only screen and (max-width: 576px) {
+  .loancalculation-wrapper .style-input {
+    max-width: 100%; }
+  .loancalculation-wrapper .type-loan .box-type, .loancalculation-wrapper .type-installment .box-type {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-left: 30px; }
+    .loancalculation-wrapper .type-loan .box-type .text, .loancalculation-wrapper .type-installment .box-type .text {
+      font-size: 22px;
+      line-height: 28px;
+      max-width: 100%; } }
+
 .total-wrapper .text-privilege {
   margin-top: -85px;
   margin-bottom: 15px; }
@@ -402,6 +433,36 @@
       color: #373737; }
   .total-wrapper table tbody tr:last-child td {
     border-bottom: none; }
+
+@media only screen and (max-width: 991px) {
+  .total-wrapper .text-privilege {
+    text-align: center; }
+    .total-wrapper .text-privilege img {
+      width: 40%; }
+  .total-wrapper .remark {
+    margin-bottom: 20px; }
+  .total-wrapper .on-top .text {
+    font-size: 20px;
+    line-height: 28px; }
+  .total-wrapper .on-top .btn-link a {
+    padding: 15px 60px 15px 25px; }
+    .total-wrapper .on-top .btn-link a .icon {
+      right: 15px; }
+  .total-wrapper .on-bottom .text {
+    font-size: 20px;
+    line-height: 28px; } }
+
+@media only screen and (max-width: 767px) {
+  .total-wrapper .text-privilege {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+    .total-wrapper .text-privilege img {
+      width: 100%; }
+  .total-wrapper .on-top .text {
+    margin-bottom: 20px; }
+  .total-wrapper .on-top .btn-link a .text {
+    margin-bottom: 0; } }
 
 .bg-formcredit {
   background-image: url("../../assets/images/banner/banner-form.png");
