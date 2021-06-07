@@ -200,9 +200,9 @@ a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin: 20px 0; }
   .group-btn .btn-type {
     min-width: 160px;
@@ -216,7 +216,7 @@ a:hover {
       color: #fff; }
     .group-btn .btn-type.bg-no {
       background-color: inherit;
-      color: #91989E; }
+      color: #666666; }
 
 .style-input {
   position: relative;
@@ -275,11 +275,12 @@ a:hover {
         padding-right: 15px;
         padding-left: 15px;
         height: 100%;
-        background-color: inherit;
+        background-color: #fff;
         border: 1px solid #E6E6E6;
-        border-radius: 10px; }
-        .style-input .bootstrap-select.slc-style .btn.dropdown-toggle:hover {
-          background-color: inherit; }
+        border-radius: 10px;
+        background-image: url("../assets/images/icon/icon-select.svg");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px); }
         .style-input .bootstrap-select.slc-style .btn.dropdown-toggle:focus {
           outline: none !important;
           -webkit-box-shadow: none;
@@ -302,19 +303,17 @@ a:hover {
         .style-input .bootstrap-select.slc-style .dropdown-menu .inner ul.dropdown-menu li:hover a {
           background-color: #0047B6;
           color: #fff; }
-    .style-input .bootstrap-select.show .btn {
+    .style-input .bootstrap-select.show .btn.dropdown-toggle {
       border: 1px solid #0047B6 !important; }
-    .style-input .bootstrap-select.error .btn {
-      border: 1px solid #DD1B1B !important; }
+    .style-input .bootstrap-select.error .btn.dropdown-toggle {
+      border: 1px solid #DD1B1B !important;
+      background-image: url("../assets/images/icon/icon-select-error.svg"); }
   .style-input .slc-style {
     -moz-appearance: none;
     /* Firefox */
     -webkit-appearance: none;
     /* Safari and Chrome */
     appearance: none;
-    background: url("../assets/images/icon/icon-select.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 10px);
     position: relative;
     width: 100%;
     height: 65px;
@@ -365,7 +364,7 @@ a:hover {
       font-weight: 300;
       font-size: 20px;
       line-height: 30px;
-      color: #91989E; }
+      color: #373737; }
     .style-input.checkbox input[type=checkbox]:checked + label {
       background-image: url("../assets/images/icon/icon-check-active.png");
       background-position: 0 0;
@@ -381,8 +380,8 @@ a:hover {
   .group-list .style-input .list-item li {
     list-style: none;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 30px;
     padding: 5px 10px;
     color: #91989E;
     border: 2px solid #92989D;
@@ -392,10 +391,16 @@ a:hover {
     .group-list .style-input .list-item li:last-child {
       margin-right: 0; }
     .group-list .style-input .list-item li.active {
-      color: #0047B6;
-      border: 2px solid #0047B6; }
+      color: #fff;
+      border: 2px solid #013CA6;
+      background-color: #013CA6; }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 991px) {
+  .group-list .style-input .list-item li {
+    font-size: 20px;
+    line-height: 28px; } }
+
+@media only screen and (max-width: 767px) {
   .group-list .style-input .list-item {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -599,8 +604,8 @@ a:hover {
 
 .title-sub {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px; }
+  font-size: 26px;
+  line-height: 32px; }
   .title-sub.text-white {
     color: #fff; }
   .title-sub.text-black {
@@ -833,7 +838,8 @@ table {
 
 .custom-progressbar {
   max-width: 991px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 40px; }
   .custom-progressbar .progressbar {
     counter-reset: step; }
     .custom-progressbar .progressbar li {
@@ -914,9 +920,9 @@ table {
 
 .consent {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
-  color: #91989E; }
+  color: #373737; }
 
 .modal.custom .modal-content {
   background-color: inherit;
@@ -970,7 +976,8 @@ table {
       margin-bottom: 40px; }
     .modal.custom .modal-content .modal-body .btn-link {
       max-width: 235px;
-      margin: auto; }
+      margin: auto;
+      display: block; }
     .modal.custom .modal-content .modal-body .consent {
       width: -webkit-max-content;
       width: -moz-max-content;
