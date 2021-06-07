@@ -124,7 +124,7 @@
 .group-btn{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 20px 0;
     .btn-type{
         min-width: 160px;
@@ -139,7 +139,7 @@
         }
         &.bg-no{
             background-color: inherit;
-            color: #91989E;
+            color: #666666;
         }
     }
 }

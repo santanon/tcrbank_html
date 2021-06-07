@@ -291,395 +291,37 @@
 
 
         <section class="content-wrapper bg-loancalculation">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="loancalculation-wrapper" style="display: none">
-                        <div class="row">
-                            <div class="col-sm-12 col-lg-4 head">
-                                <div class="title text-white title-loancal">Loan Calculation</div>
-                                <div class="btn-link color-primary register-online">
-                                    <a href="javascript:void(0)">
-                                        <div class="text">สมัครออนไลน์</div>
-                                        <div class="icon">
-                                            <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-8">
-                                <div class="caculate-wrapper">
-
-                                    <div class="initial-maximum">
-                                        <div class="title text-white">วงเงินอนุมัติสูงสุดเบื้องต้น</div>
-
-                                        <div class="financial-amount">
-                                            <div class="style-input nobg">
-                                                <input class="inp-style text-center text-large js-value fm_money" type="text" placeholder="250000" readonly>
-                                            </div>
-                                        </div>
-
-                                        <div class="range">
-                                            <div class="style-input">
-                                                <input class="inp-style text-center irs" type="text">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="min-installment">
-                                <div class="col-12">
-                                    <div class="row justify-content-end">
-                                        <div class="col-lg-8 col-sm-12">
-                                            <div class="detail">
-                                                <div class="item">
-                                                    <div class="top">อัตราดอกเบี้ยพิเศษ</div>
-                                                    <div class="middle">15%</div>
-                                                    <div class="bottom">(MRR +6.20%)</div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="top">ผ่อนชำระขั้นต่ำเพียง</div>
-                                                    <div class="middle">500</div>
-                                                    <div class="bottom">บาท/เดือน</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="normal-installment" style="display: none;">
-                                <div class="col-12">
-                                    <div class="data-table">
-                                        <div class="table-responsive">
-                                            <table class="table table-custom">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="align-center bg-color-main">Period</th>
-                                                        <th class="align-center bg-color-main">Interest Rate</th>
-                                                        <th class="align-center bg-color-secondary">Monthly Payment</th>
-                                                        <th class="align-center bg-color-secondary">Minimum Payment</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="text-color-primary font-medium">6 เดือน</td>
-                                                        <td class="align-center">15%</td>
-                                                        <td class="align-center">139,000</td>
-                                                        <td class="align-center">139,000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-color-primary font-medium">12 เดือน</td>
-                                                        <td class="align-center">15%</td>
-                                                        <td class="align-center">76,400</td>
-                                                        <td class="align-center">76,400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-color-primary font-medium">24 เดือน</td>
-                                                        <td class="align-center">15%</td>
-                                                        <td class="align-center">39,800</td>
-                                                        <td class="align-center">39,800</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="loancalculation-wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="title text-white text-center">Loan Calculation</div>
                         </div>
                     </div>
-
-
-                    <div class="loancalculation-wrapper">
-                        <div class="row">
-                            <div class="col-lg-7 col-12">
-                                <div class="title text-white text-center">Loan Calculation</div>
+                    <div class="row-section">
+                        <div class="row align-items-lg-center">
+                            <div class="col-lg-4">
+                                <div class="title-loancalculation text-white">เลือกความต้องการของคุณ</div>
+                            </div>
+                            <div class="col-lg-8">
                                 <div class="type-loan">
-                                    <div class="title text-white">เลือกความต้องการของคุณ</div>
-                                    <div class="list-type">
-                                        <div class="type-select"></div>
-                                        <div class="text-type active" id="type_1">ต้องการวงเงินพร้อมใช้</div>
-                                        <div class="text-type" id="type_2">ต้องการรวมหนี้ไว้ที่เดียว</div>
-                                    </div>
-                                </div>
-
-                                <div class="revenue">
-                                    <div class="for_type1">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <label class="title text-white mh-0">กรอกรายได้ต่อเดือนของคุณ</label>
-                                                <div class="style-input">
-                                                    <input class="inp-style text-center text-large fm_money" type="text" value="60000">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="for_type2" style="display: none;">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-12">
-                                                <label class="title text-white">กรอกรายได้ต่อเดือนของคุณ</label>
-                                                <div class="style-input">
-                                                    <input class="inp-style text-center text-large fm_money" type="text" value="60000">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <label class="title text-white">กรุณากรอกอัตราดอกเบี้ยของภาระหนี้รวมในปัจจุบัน</label>
-                                                <div class="style-input">
-                                                    <input class="inp-style text-center text-large fm_money" type="text" value="24%" >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="initial-maximum">
-                                    <div class="installment">
-                                        <div class="title text-white">เลือกรูปแบบการผ่อนชำระ</div>
-                                        <div class="type-installment">
-                                            <div class="box-type active" id="min_installment">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <div class="box-type active" id="">
+                                                <div class="icon-check"></div>
                                                 <div class="icon">
-                                                    <img src="{{ asset('assets/images/icon/icon-min-installment.svg')}}" alt="icon">
+                                                    <img src="{{ asset('assets/images/icon/icon-typeloan-1.png')}}" alt="icon">
                                                 </div>
-                                                <div class="text">ผ่อน<br>ขั้นต่ำ</div>
+                                                <div class="text">ต้องการวงเงินพร้อมใช้</div>
                                             </div>
-                                            <div class="box-type" id="normal_installment">
+                                        </div>
+                                        <div class="col-lg-5 col-md-6">
+                                            <div class="box-type" id="">
+                                                <div class="icon-check"></div>
                                                 <div class="icon">
-                                                    <img src="{{ asset('assets/images/icon/icon-normal-installment.svg')}}" alt="icon">
+                                                    <img src="{{ asset('assets/images/icon/icon-typeloan-2.png')}}" alt="icon">
                                                 </div>
-                                                <div class="text">ผ่อน<br>รายงวด</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="content-installment">
-                                    <div class="title text-white">สามารถเลื่อนเพื่อเลือกอัตราผ่อนขั้นต่ำและวงเงินรีไฟแนนซ์ที่ต้องการ</div>
-                                    <div class="range">
-                                        <div class="box-limit">
-                                            <div class="min">
-                                                <div class="text">Limit</div>
-                                                <div class="value-min">30,000</div>
-                                            </div>
-                                            <div class="max">
-                                                <div class="style-input nobg">
-                                                    <input class="inp-style js-value-limit-max" type="text" value="200000" placeholder="0" readonly>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="style-input">
-                                            <input class="inp-style text-center irs" type="text">
-                                        </div>
-                                        <div class="box-payment">
-                                            <div class="min">
-                                                <div class="text">Payment</div>
-                                                <div class="value-min">1,000</div>
-                                            </div>
-                                            <div class="max">
-                                                <div class="style-input nobg">
-                                                    <input class="inp-style js-value-payment-max" type="text" value="6100" placeholder="0" readonly>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content-installment" id="content_normal_installment">
-
-                                </div>
-
-
-
-                            </div>
-                            <!-- สิทธิพืเศษ -->
-                            <div class="col-lg-5 col-12">
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-6 col-12">
-                                        <div class="privilege-wrapper">
-                                            <div class="icon-gift-cap"></div>
-                                            <div class="box-privilege">
-                                                <div class="icon-star">
-                                                    <img src="{{ asset('assets/images/icon/icon-star_privilage.svg')}}" alt="icon">
-                                                </div>
-                                                <div class="title text-white">สิทธิพิเศษที่คุณจะได้รับ</div>
-                                                <div class="limit_interest">
-                                                    <ul>
-                                                        <li>
-                                                            <p>วงเงินอนุมัติสูงสุด</p>
-                                                            <div class="text">300,000</div>
-                                                        </li>
-                                                        <li>
-                                                            <p>อัตราดอกเบี้ย</p>
-                                                            <div class="text">15%</div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-6 col-12">
-                                        <div class="box-total-result">
-                                            <div class="for_type1">
-                                                <div class="row ">
-                                                    <div class="col-lg-5 col-12">
-                                                        <div class="title">วงเงินพร้อมใช้ผ่อนสบายๆ</div>
-                                                    </div>
-                                                    <div class="col-lg-7 col-12">
-                                                        <div class="detail">
-                                                            <div class="item">
-                                                                <p>วงเงินที่ต้องการ</p>
-                                                                <div class="style-input nobg">
-                                                                    <input class="inp-style js-value-limit-max2" type="text" value="200000" placeholder="0" readonly>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <p>อัตราผ่อนขั้นต่ำต่อเดือน</p>
-                                                                <div class="style-input nobg">
-                                                                    <input class="inp-style js-value-payment-max2" type="text" value="6100" placeholder="0" readonly>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="for_normal_installment" style="display: none;">
-                                                    <div class="data-table">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-custom border-custom">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th class="align-center" style="background-color: #013CA6;">รายงวด(เดือน)</th>
-                                                                        <th class="align-center" style="background-color: #C68FDE;">ดอกเบี้ยต่อปี</th>
-                                                                        <th class="align-center" style="background-color: #FCA5B7;">รายงวด(บาท)</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">12</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">13,900</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">24</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">7,600</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">36</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">5,500</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">48</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">4,500</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">60</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">3,900</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">72</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">3,600</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="for_type2" style="display: none;">
-                                                <div class="row">
-                                                    <div class="col-lg-5 col-12">
-                                                        <div class="title">รวมหนี้ไว้ทีเดียว ลดภาระดอกเบี้ยแพง</div>
-                                                    </div>
-                                                    <div class="col-lg-7 col-12">
-                                                        <div class="detail">
-                                                            <div class="item">
-                                                                <p>ประหยัดดอกเบี้ยต่อเดือน</p>
-                                                                <div class="style-input nobg">
-                                                                    <input class="inp-style" type="text" value="616" placeholder="0" readonly>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <p>ประหยัดดอกเบี้ยต่อปี</p>
-                                                                <div class="style-input nobg">
-                                                                    <input class="inp-style" type="text" value="7397" placeholder="0" readonly>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <p>วงเงินรีไฟแนนซ์ที่ต้องการ</p>
-                                                                <div class="style-input nobg">
-                                                                    <input class="inp-style" type="text" value="200000" placeholder="0" readonly>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item">
-                                                                <p>อัตราผ่อนขั้นต่ำ</p>
-                                                                <div class="style-input nobg">
-                                                                    <input class="inp-style" type="text" value="6100" placeholder="0" readonly>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="for_normal_installment" style="display: none;">
-                                                    <div class="data-table">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-custom border-custom">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th class="align-center" style="background-color: #013CA6;">รายงวด(เดือน)</th>
-                                                                        <th class="align-center" style="background-color: #C68FDE;">ดอกเบี้ยต่อปี</th>
-                                                                        <th class="align-center" style="background-color: #FCA5B7;">รายงวด(บาท)</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">12</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">13,900</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">24</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">7,600</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">36</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">5,500</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">48</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">4,500</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">60</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">3,900</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="vertical-middle text-color-primary font-medium text-center">72</td>
-                                                                        <td class="align-center">19%</td>
-                                                                        <td class="align-center">3,600</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-12">
-                                        <div class="btn-group-loan">
-                                            <div class="btn-link color-primary">
-                                                <a href="javascript:void(0)">
-                                                    <div class="text">สมัครออนไลน์</div>
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="icon">
-                                                    </div>
-                                                </a>
+                                                <div class="text">ต้องการรวมหนี้ไว้ที่เดียว</div>
                                             </div>
                                         </div>
                                     </div>
@@ -687,8 +329,261 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row-section">
+                        <div class="row align-items-lg-center">
+                            <div class="col-lg-4">
+                                <div class="title-loancalculation text-white">กรอกรายได้ต่อเดือนของคุณ</div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6">
+                                        <div class="style-input">
+                                            <input class="inp-style text-center text-large fm_money" type="text" value="60000">
+                                            <span class="text-before-input">฿</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-section">
+                        <div class="row align-items-lg-center">
+                            <div class="col-lg-4">
+                                <div class="title-loancalculation text-white">กรุณากรอกอัตราดอกเบี้ยของภาระหนี้รวมในปัจจุบัน</div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6">
+                                        <div class="style-input">
+                                            <input class="inp-style text-center text-large fm_money" type="text" value="24">
+                                            <span class="text-before-input">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-section">
+                        <div class="row align-items-lg-center">
+                            <div class="col-lg-4">
+                                <div class="title-loancalculation text-white">เลือกรูปแบบการผ่อนชำระ</div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="type-installment">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <div class="box-type active" id="">
+                                                <div class="icon-check"></div>
+                                                <div class="icon">
+                                                    <img src="{{ asset('assets/images/icon/icon-min-installment.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">ผ่อนขั้นต่ำ</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-6">
+                                            <div class="box-type" id="">
+                                                <div class="icon-check"></div>
+                                                <div class="icon">
+                                                    <img src="{{ asset('assets/images/icon/icon-normal-installment.png')}}" alt="icon">
+                                                </div>
+                                                <div class="text">ผ่อนรายงวด </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-section">
+                        <div class="row align-items-lg-center">
+                            <div class="col-lg-4">
+                                <div class="title-loancalculation text-white">
+                                    สามารถเลื่อนเพื่อเลือกอัตราผ่อนขั้นต่ำ และวงเงินรีไฟแนนซ์ที่ต้องการ
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <div class="content-installment">
+                                            <div class="range">
+                                                <div class="box-limit">
+                                                    <div class="min">
+                                                        <div class="text">Limit</div>
+                                                        <div class="value-min">30,000</div>
+                                                    </div>
+                                                    <div class="max">
+                                                        <div class="style-input nobg">
+                                                            <input class="inp-style js-value-limit-max" type="text" value="200000" placeholder="0" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="style-input rang-slide">
+                                                    <input class="inp-style text-center irs" type="text">
+                                                </div>
+                                                <div class="box-payment">
+                                                    <div class="min">
+                                                        <div class="text">Payment</div>
+                                                        <div class="value-min">1,000</div>
+                                                    </div>
+                                                    <div class="max">
+                                                        <div class="style-input nobg">
+                                                            <input class="inp-style js-value-payment-max" type="text" value="6100" placeholder="0" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="remark text-white">หมายเหตุ : การคำนวณดังกล่าวเป็นการคำนวณเบื้องต้น ในการอนุมัติสินเชื่อขึ้นอยูกับการพิจารณาจากเอกสารสมัคร</div>
+            <div class="container-fluid bg-color-orange">
+                <div class="total-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="text-privilege">
+                                    <img src="{{ asset('assets/images/bg-gift-text.png')}}" alt="image">
+                                </div>
+                                <div class="remark">
+                                    หมายเหตุ :<br>
+                                    การคำนวณดังกล่าวเป็นการคำนวณ
+                                    เบื้องต้น ในการอนุมัติสินเชื่อขึ้นอยูกับ
+                                    การพิจารณาจากเอกสารสมัคร
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="on-top">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="value">200,000</div>
+                                                    <div class="text">วงเงินอนุมัติสูงสุด</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="value">19%</div>
+                                                    <div class="text">อัตราดอกเบี้ย</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="btn-link color-primary">
+                                                        <a href="javascript:void(0)">
+                                                            <div class="text">สมัครออนไลน์</div>
+                                                            <div class="icon">
+                                                                <img src="{{ asset('assets/images/icon/icon-RegisterOnline-orange.svg')}}" alt="banner">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="on-bottom" id="t1_t1">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="value">200,000</div>
+                                                    <div class="text">วงเงินที่ต้องการ</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="value">6,100</div>
+                                                    <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="on-bottom" id="t2_t1" style="display: none;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="value">200,000</div>
+                                                    <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="value">6,100</div>
+                                                    <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="value">616</div>
+                                                    <div class="text">ประหยัดดอกเบี้ยต่อเดือน</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="value">7,397</div>
+                                                    <div class="text">ประหยัดดอกเบี้ยต่อปี</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="on-bottom" id="t1_t2" style="display: none;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="value">200,000</div>
+                                                    <div class="text">วงเงินที่ต้องการ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="on-bottom" id="t2_t2" style="display: none;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="value">200,000</div>
+                                                    <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="value">616</div>
+                                                    <div class="text">ประหยัดดอกเบี้ยต่อเดือน</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="value">7,397</div>
+                                                    <div class="text">ประหยัดดอกเบี้ยต่อปี</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>เดือน</td>
+                                                <td>12</td>
+                                                <td>24</td>
+                                                <td>36</td>
+                                                <td>48</td>
+                                                <td>60</td>
+                                                <td>72</td>
+                                            </tr>
+                                            <tr>
+                                                <td>รายงวด(บาท)</td>
+                                                <td>3,600</td>
+                                                <td>3,900</td>
+                                                <td>4,500</td>
+                                                <td>5,500</td>
+                                                <td>7,600</td>
+                                                <td>13,900</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ดอกเบี้ยต่อปี</td>
+                                                <td>19%</td>
+                                                <td>19%</td>
+                                                <td>19%</td>
+                                                <td>19%</td>
+                                                <td>19%</td>
+                                                <td>19%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -957,45 +852,47 @@
                     <div class="row row-custom-align-center">
                         <div class="col-lg-4 col-sm-12">
                             <div class="content-alert">
+                                <div class="icon">
+                                    <img src="{{ asset('assets/images/icon/icon_smile.png')}}" alt="icon">
+                                </div>
+                                <div class="icon-quote -open">
+                                    <img src="{{ asset('assets/images/icon/icon_quote.png')}}" alt="icon">
+                                </div>
                                 <div class="group-line">
                                     <div class="line1">สินเชื่อบุคคลไทยเครดิต สวัสดีค่ะ</div>
                                     <div class="line2">ลูกค้ากรอกข้อมูลเพื่อให้ธนาคารได้รู้จักคุณ</div>
                                 </div>
-                                <div class="icon">
-                                    <img src="{{ asset('assets/images/icon/icon-msg.svg')}}" alt="icon">
+                                <div class="icon-quote -close">
+                                    <img src="{{ asset('assets/images/icon/icon_quote.png')}}" alt="icon">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-8 col-sm-12">
                             <div class="form-wrapper">
-                                <div class="title-sub text-white text-center icon">กรอกข้อมูลผู้สมัครสินเชื่อ</div>
-                                <div class="box-form bg-white step1" style="display: block;">
+                                <div class="box-form bg step1" style="display: block;">
                                     <form action="">
+                                        <div class="title-sub text-blue icon icon-1">กรอกข้อมูลผู้สมัครสินเชื่อ</div>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">ชื่อ <span class="req">*</span></label>
-                                                    <input class="inp-style error" type="text" placeholder="ชื่อ">
+                                                    <input class="inp-style error" type="text" placeholder="ชื่อ*">
                                                     <div class="text-error">กรุณากรอกชื่อ</div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                             <div class="style-input">
-                                                    <label for="" class="title-field">นามสกุล <span class="req">*</span></label>
-                                                    <input class="inp-style" type="text" placeholder="นามสกุล">
+                                                    <input class="inp-style" type="text" placeholder="นามสกุล*">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">เบอร์โทรศัพท์มือถือ <span class="req">*</span></label>
-                                                    <input class="inp-style" type="text" placeholder="เบอร์โทรศัพท์มือถือ">
+                                                    <input class="inp-style" type="text" placeholder="เบอร์โทรศัพท์มือถือ*">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">LINE ID</label>
                                                     <input class="inp-style" type="text" placeholder="LINE ID">
                                                 </div>
                                             </div>
@@ -1003,14 +900,12 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">อีเมล <span class="req">*</span></label>
-                                                    <input class="inp-style" type="text" placeholder="อีเมล">
+                                                    <input class="inp-style" type="text" placeholder="อีเมล*">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">อาชีพ <span class="req">*</span></label>
-                                                    <select id="slc_job" class="selectpicker slc-style error" title="เลือก">
+                                                    <select id="slc_job" class="selectpicker slc-style error" title="เลือกอาชีพ*">
                                                         <option value="0">A</option>
                                                         <option value="1">B</option>
                                                         <option value="2">C</option>
@@ -1022,13 +917,11 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">ประสบการณ์การทำงาน <span class="req">*</span></label>
-                                                    <input class="inp-style" type="text" placeholder="ระบุ (ปี)">
+                                                    <input class="inp-style" type="text" placeholder="ประสบการณ์การทำงาน (ปี)*">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field no-title"></label>
                                                     <input class="inp-style" type="text" placeholder="ระบุ (เดือน)">
                                                 </div>
                                             </div>
@@ -1036,8 +929,7 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">จังหวัด <span class="req">*</span></label>
-                                                    <select class="selectpicker slc-style" title="เลือก">
+                                                    <select class="selectpicker slc-style" title="เลือกจังหวัด*">
                                                         <option>A</option>
                                                         <option>B</option>
                                                         <option>C</option>
@@ -1046,8 +938,7 @@
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">วงเงินที่ต้องการ <span class="req">*</span></label>
-                                                    <input class="inp-style" type="text" placeholder="ระบุ">
+                                                    <input class="inp-style" type="text" placeholder="วงเงินที่ต้องการ*">
                                                 </div>
                                             </div>
                                         </div>
@@ -1058,57 +949,51 @@
                                 </div>
 
 
-                                <div class="box-form bg-white step2" style="display: none;">
+                                <div class="box-form bg step2" style="display: none;">
                                     <form action="">
+                                        <div class="title-sub text-blue in icon icon-2">รายได้</div>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">รายได้ประจำต่อเดือน <span class="req">*</span></label>
-                                                    <input class="inp-style" type="text" placeholder="ระบุ">
+                                                    <input class="inp-style" type="text" placeholder="รายได้ประจำต่อเดือน*">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                             <div class="style-input">
-                                                    <label for="" class="title-field">โบนัสประจำปี</label>
-                                                    <input class="inp-style" type="text" placeholder="ระบุ">
+                                                    <input class="inp-style" type="text" placeholder="โบนัสประจำปี">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">รายได้ไม่ประจำต่อเดือน (อาทิ ค่าคอมมิชชั่น ค่าโอที)</label>
-                                                    <input class="inp-style" type="text" placeholder="ระบุ">
+                                                    <input class="inp-style" type="text" placeholder="รายได้ไม่ประจำต่อเดือน (อาทิ ค่าคอมมิชชั่น ค่าโอที )">
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="title-sub in text-blue">ภาระหนี้ต่อเดือน</div>
+                                        <div class="title-sub text-blue in icon icon-3">ภาระหนี้ต่อเดือน</div>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">สินเชื่อบ้าน/รถยนต์</label>
-                                                    <input class="inp-style" type="text" placeholder="ระบุภาระผ่อนต่อเดือน">
+                                                    <input class="inp-style" type="text" placeholder="สินเชื่อบ้าน/รถยนต์">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">สินเชื่อบุคคล</label>
-                                                    <input class="inp-style" type="text" placeholder="ระบุภาระผ่อนต่อเดือน">
+                                                    <input class="inp-style" type="text" placeholder="สินเชื่อบุคคล">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">บัตรเครดิต</label>
-                                                    <input class="inp-style" type="text" placeholder="ยอดใช้จ่ายต่อเดือน">
+                                                    <input class="inp-style" type="text" placeholder="บัตรเครดิต">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <label for="" class="title-field">บัตรกดเงินสด</label>
-                                                    <input class="inp-style" type="text" placeholder="ยอดใช้จ่ายต่อเดือน">
+                                                    <input class="inp-style" type="text" placeholder="บัตรกดเงินสด">
                                                 </div>
                                             </div>
                                         </div>
@@ -1119,7 +1004,7 @@
                                     </div>
                                 </div>
 
-                                <div class="box-form bg-white step3" style="display: none;">
+                                <div class="box-form bg step3" style="display: none;">
                                     <form action="">
                                         <div class="result-initial">
                                             <div class="title-sub text-black text-center">วงเงินอนุมัติสูงสุดเบื้องต้น</div>
@@ -1150,8 +1035,8 @@
 
                                         
                                         <div class="group-list">
+                                            <div class="title-sub text-blue in icon icon-4">วัตถุประสงค์การกู้ <span class="req">*</span></div>
                                             <div class="style-input">
-                                                <label for="" class="title-field">วัตถุประสงค์การกู้ <span class="req">*</span></label>
                                                 <ul class="list-item item01">
                                                     <li class="active">ต้องการวงเงินพร้อมใช้ </li>
                                                     <li>ต้องการรีไฟแนนซ์หนี้ </li>
@@ -1160,15 +1045,6 @@
                                             </div>
                                         </div>
 
-                                        <!-- <div class="group-list">
-                                            <div class="style-input">
-                                                <label for="" class="title-field">รูปแบบการผ่อนชำระ <span class="req">*</span></label>
-                                                <ul class="list-item item02">
-                                                    <li>ชำระขั้นต่ำ</li>
-                                                    <li>ชำระรายงวด</li>
-                                                </ul>
-                                            </div>
-                                        </div> -->
 
                                         <div class="consent">
                                             <div class="style-input checkbox">
@@ -1576,23 +1452,26 @@
         $('.list-thumb').slick({
             infinite: false,
             slidesToShow: 4,
-            slidesToScroll: 1,
             asNavFor: '.list-main',
             focusOnSelect: true,
             arrows: false,
             responsive: [
                 {
+                    breakpoint: 1025,//start device 768
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
                     breakpoint: 769,//start device 768
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1,
                     }
                 },
                 {
                     breakpoint: 576,//start device 575
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1,
                         arrows: false,
                     }
                 },

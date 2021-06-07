@@ -57,15 +57,19 @@
             padding: 0;
             border: none;
             .btn{
+                
                 &.dropdown-toggle{
                     padding-right: 15px;
                     padding-left: 15px;
                     height: 100%;
-                    background-color: inherit ;
+                    background-color: #fff;
                     border: 1px solid #E6E6E6;
                     border-radius: 10px;
+                    background-image: url('../assets/images/icon/icon-select.svg');
+                    background-repeat: no-repeat;
+                    background-position: calc(100% - 10px);
                     &:hover{
-                        background-color: inherit ;
+                        //background-color: inherit ;
                     }
                     &:focus{
                         outline: none !important;
@@ -116,13 +120,19 @@
         }
         &.show{
             .btn{
-                border: 1px solid #0047B6 !important;
+                &.dropdown-toggle{
+                    border: 1px solid #0047B6 !important;
+                }
             }
         }
         &.error{
             .btn{
-                border: 1px solid #DD1B1B !important;
+                &.dropdown-toggle{
+                    border: 1px solid #DD1B1B !important;
+                    background-image: url('../assets/images/icon/icon-select-error.svg');
+                }
             }
+            
         }
     }
     .slc-style{
@@ -130,9 +140,7 @@
         -webkit-appearance:none; /* Safari and Chrome */
         appearance:none;
 
-        background: url('../assets/images/icon/icon-select.svg');
-        background-repeat: no-repeat;
-        background-position: calc(100% - 10px);
+        
 
         position: relative;
         width: 100%;
@@ -202,7 +210,7 @@
             font-weight: $font-light;
             font-size: 20px;
             line-height: 30px;
-            color: #91989E;
+            color: #373737;
         }
 
         input[type=checkbox]:checked + label {
@@ -225,8 +233,8 @@
             li{
                 list-style: none;
                 font-weight: $font-light;
-                font-size: 14px;
-                line-height: 22px;
+                font-size: 22px;
+                line-height: 30px;
                 padding: 5px 10px;
                 color: #91989E;
                 border: 2px solid #92989D;
@@ -237,12 +245,21 @@
                     margin-right: 0;
                 }
                 &.active{
-                    color: #0047B6;
-                    border: 2px solid #0047B6;
+                    color: #fff;
+                    border: 2px solid #013CA6;
+                    background-color: #013CA6;
                 }
             }
         }
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 991px){
+            .list-item{
+                li{
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+        @media only screen and (max-width: 767px){
             .list-item{
                 flex-wrap: wrap;
                 li{

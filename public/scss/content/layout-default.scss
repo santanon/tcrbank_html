@@ -21,8 +21,8 @@
 }
 .title-sub{
     font-weight: $font-medium;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 26px;
+    line-height: 32px;
     &.text-white{
         color: #fff;
     }
@@ -363,6 +363,7 @@ table{
 .custom-progressbar{
     max-width: 991px;
     margin: auto;
+    margin-bottom: 40px;
 
     .progressbar {
         counter-reset: step;
@@ -457,9 +458,9 @@ table{
 
 .consent{
     font-weight: $font-light;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
-    color: #91989E;
+    color: #373737;
 }
 
 
@@ -528,6 +529,7 @@ table{
                 .btn-link{
                     max-width: 235px;
                     margin: auto;
+                    display: block;
                 }
 
                 .consent{
