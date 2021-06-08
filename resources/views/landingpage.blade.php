@@ -1175,7 +1175,7 @@
                             </div>
                         </div>
                         <div class="footer-bottom">
-                            <div class="list-menu -left">
+                            <!-- <div class="list-menu -left">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -1188,7 +1188,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div class="list-menu -right">
                                 <ul>
                                     <li>
