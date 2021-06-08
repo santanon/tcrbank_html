@@ -860,7 +860,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-sm-12">
-                            <div class="form-wrapper" data-aos="fade-left" data-aos-anchor="#content_alert" data-aos-delay="3000" data-aos-duration="500" data-aos-once="true">
+                            <div class="form-wrapper" data-aos="fade-left" data-aos-anchor="#content_alert" data-aos-delay="2000" data-aos-duration="500" data-aos-once="true">
                                 <div class="box-form bg step1" style="display: block;">
                                     <form action="">
                                         <div class="title-sub text-blue icon icon-1">กรอกข้อมูลผู้สมัครสินเชื่อ</div>
