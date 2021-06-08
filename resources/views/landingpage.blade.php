@@ -1059,7 +1059,7 @@
 
                                     <div class="group-btn">
                                         <button type="button" class="btn-type bg-no" id="back_step2">ย้อนกลับ</button>
-                                        <button type="button" class="btn-type bg-main" id="regis" data-toggle="modal" data-target="#alert_Msg">สมัคร</button>
+                                        <button type="button" disabled class="btn-type bg-main" id="regis" data-toggle="modal" data-target="#alert_Msg">สมัคร</button>
                                     </div>
                                 </div>
                             </div>

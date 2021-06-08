@@ -217,6 +217,10 @@ a:hover {
     .group-btn .btn-type.bg-no {
       background-color: inherit;
       color: #666666; }
+    .group-btn .btn-type:disabled, .group-btn .btn-type[disabled] {
+      border: 1px solid #cccccc;
+      background-color: #cccccc;
+      color: #fff; }
 
 .style-input {
   position: relative;
