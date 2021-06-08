@@ -841,9 +841,9 @@
                         </ul>
                     </div>
                     
-                    <div class="row row-custom-align-center">
+                    <div class="row row-custom-align-center" data-aos-delay="2000">
                         <div class="col-lg-4 col-sm-12">
-                            <div class="content-alert" id="content_alert" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500" data-aos-once="true">
+                            <div class="content-alert" id="content_alert" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
                                 <div class="icon">
                                     <img src="{{ asset('assets/images/icon/icon_smile.png')}}" alt="icon">
                                 </div>
