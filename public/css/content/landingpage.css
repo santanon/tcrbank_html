@@ -1,12 +1,12 @@
-.content-wrapper .cashexpress-wrapper {
-  padding: 70px 0; }
-
-.content-wrapper.bg-interest-rate {
-  padding: 70px 0 0;
-  background-color: #F7F7F7; }
-
-.content-wrapper.information {
-  padding: 70px 0; }
+.content-wrapper {
+  overflow: hidden; }
+  .content-wrapper .cashexpress-wrapper {
+    padding: 70px 0; }
+  .content-wrapper.bg-interest-rate {
+    padding: 70px 0 0;
+    background-color: #F7F7F7; }
+  .content-wrapper.information {
+    padding: 70px 0; }
 
 .cashexpress-wrapper .cashexpress-main ul {
   margin: 0;
