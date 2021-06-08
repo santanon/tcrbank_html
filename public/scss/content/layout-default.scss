@@ -378,14 +378,15 @@ table{
             text-align: center;
             cursor: pointer;
             font-weight: $font-light;
-            font-size: 20px;
+            font-size: 22px;
+            line-height: 30px;
             color: #fff;
             &:before{
                 content: counter(step);
                 counter-increment: step;
-                width: 65px;
-                height: 65px;
-                line-height : 65px;
+                width: 59px;
+                height: 59px;
+                line-height : 59px;
                 border: 1px solid #bfbfbf;
                 border-radius: 100%;
                 display: block;
@@ -396,7 +397,7 @@ table{
                 z-index: 9;
                 position: relative;
                 font-weight: $font-medium;
-                font-size: 20px;
+                font-size: 22px;
             }
             &:after{
                 content: "";

@@ -394,6 +394,10 @@ a:hover {
       color: #fff;
       border: 2px solid #013CA6;
       background-color: #013CA6; }
+    .group-list .style-input .list-item li:hover {
+      color: #fff;
+      border: 2px solid #013CA6;
+      background-color: #013CA6; }
 
 @media only screen and (max-width: 991px) {
   .group-list .style-input .list-item li {
@@ -855,14 +859,15 @@ table {
       text-align: center;
       cursor: pointer;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 22px;
+      line-height: 30px;
       color: #fff; }
       .custom-progressbar .progressbar li:before {
         content: counter(step);
         counter-increment: step;
-        width: 65px;
-        height: 65px;
-        line-height: 65px;
+        width: 59px;
+        height: 59px;
+        line-height: 59px;
         border: 1px solid #bfbfbf;
         border-radius: 100%;
         display: block;
@@ -873,7 +878,7 @@ table {
         z-index: 9;
         position: relative;
         font-weight: 500;
-        font-size: 20px; }
+        font-size: 22px; }
       .custom-progressbar .progressbar li:after {
         content: "";
         position: absolute;

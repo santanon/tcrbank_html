@@ -233,11 +233,38 @@
     padding: 30px 0 0;
     .bg-color-orange{
         background-color: #FFA900;
-        padding: 30px;
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.35s ease-in-out;
+        &.show{
+            padding: 30px;
+            max-height: 581px;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.35s ease-in-out;
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        .bg-color-orange{
+            &.show{
+                max-height: 741px;
+            }
+        }
     }
     @media only screen and (max-width: 767px) {
         .bg-color-orange{
-            padding: 30px 0;
+            &.show{
+                padding: 30px 0;
+                max-height: 912px;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .bg-color-orange{
+            &.show{
+                max-height: 1092px;
+            }
         }
     }
 }
@@ -278,7 +305,7 @@
     }
     .type-loan, .type-installment{
         .box-type{
-            background-color: rgba($color: #fff, $alpha: 0.5);
+            background-color: rgba($color: #fff, $alpha: 1);
             border-radius: 10px;
             position: relative;
             transition: all .35s ease-out;
@@ -292,8 +319,8 @@
                 font-size: 26px;
                 line-height: 32px;
                 padding: 10px 20px 10px 60px;
-                color: #fff;
-                opacity: 0.5;
+                color: #373737;
+                opacity: 0.4;
                 max-width: 250px;
             }
             .icon-check{
@@ -315,6 +342,7 @@
                 transition: all .35s ease-out;
                 .text{
                     opacity: 1;
+                    color: #fff;
                 }
                 .icon-check{
                     position: absolute;
@@ -331,6 +359,7 @@
                 transition: all .35s ease-out;
                 .text{
                     opacity: 1;
+                    color: #fff;
                 }
             }
         }
@@ -551,6 +580,9 @@
                     color: #fff;
                 }
             }
+            &.register-online{
+                background-color: $color-primary;
+            }
         }
     }
     .on-bottom{
@@ -655,6 +687,20 @@
             .btn-link{
                 a{
                     .text{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        .on-top{
+            .btn-link{
+                a{
+                    padding: 9px 55px 10px 15px;
+                    .text{
+                        font-size: 18px;
+                        line-height: 24px;
                         margin-bottom: 0;
                     }
                 }
@@ -774,10 +820,10 @@
                         display: none;
                     }
                     .irs-line{
-                        height: 6px;
+                        height: 10px;
                     }
                     .irs-bar{
-                        height: 6px;
+                        height: 10px;
                         background-color: #FF7301;
                     }
                     .irs-handle{
@@ -786,7 +832,7 @@
                         background-size: cover;
                         width: 26px;
                         height: 26px;
-                        top: 14px;
+                        top: 16px;
                         i{
                             display: none;
                         }

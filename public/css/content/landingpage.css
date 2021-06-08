@@ -160,10 +160,30 @@
   padding: 30px 0 0; }
   .bg-loancalculation .bg-color-orange {
     background-color: #FFA900;
-    padding: 30px; }
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out; }
+    .bg-loancalculation .bg-color-orange.show {
+      padding: 30px;
+      max-height: 581px;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out; }
+  @media only screen and (max-width: 991px) {
+    .bg-loancalculation .bg-color-orange.show {
+      max-height: 741px; } }
   @media only screen and (max-width: 767px) {
-    .bg-loancalculation .bg-color-orange {
-      padding: 30px 0; } }
+    .bg-loancalculation .bg-color-orange.show {
+      padding: 30px 0;
+      max-height: 912px; } }
+  @media only screen and (max-width: 767px) {
+    .bg-loancalculation .bg-color-orange.show {
+      max-height: 1092px; } }
 
 .loancalculation-wrapper .row-section {
   margin-bottom: 50px; }
@@ -196,7 +216,7 @@
   margin-bottom: 0; }
 
 .loancalculation-wrapper .type-loan .box-type, .loancalculation-wrapper .type-installment .box-type {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   border-radius: 10px;
   position: relative;
   -webkit-transition: all .35s ease-out;
@@ -216,8 +236,8 @@
     font-size: 26px;
     line-height: 32px;
     padding: 10px 20px 10px 60px;
-    color: #fff;
-    opacity: 0.5;
+    color: #373737;
+    opacity: 0.4;
     max-width: 250px; }
   .loancalculation-wrapper .type-loan .box-type .icon-check, .loancalculation-wrapper .type-installment .box-type .icon-check {
     position: absolute;
@@ -237,7 +257,8 @@
     -o-transition: all .35s ease-out;
     transition: all .35s ease-out; }
     .loancalculation-wrapper .type-loan .box-type.active .text, .loancalculation-wrapper .type-installment .box-type.active .text {
-      opacity: 1; }
+      opacity: 1;
+      color: #fff; }
     .loancalculation-wrapper .type-loan .box-type.active .icon-check, .loancalculation-wrapper .type-installment .box-type.active .icon-check {
       position: absolute;
       right: 5px;
@@ -252,7 +273,8 @@
     -o-transition: all .35s ease-out;
     transition: all .35s ease-out; }
     .loancalculation-wrapper .type-loan .box-type:hover .text, .loancalculation-wrapper .type-installment .box-type:hover .text {
-      opacity: 1; }
+      opacity: 1;
+      color: #fff; }
 
 .loancalculation-wrapper .content-installment .range {
   max-width: 560px; }
@@ -392,6 +414,8 @@
     color: #373737; }
   .total-wrapper .on-top .btn-link a .text {
     color: #fff; }
+  .total-wrapper .on-top .btn-link.register-online {
+    background-color: #013CA6; }
 
 .total-wrapper .on-bottom .value {
   font-weight: 500;
@@ -463,6 +487,14 @@
     margin-bottom: 20px; }
   .total-wrapper .on-top .btn-link a .text {
     margin-bottom: 0; } }
+
+@media only screen and (max-width: 575px) {
+  .total-wrapper .on-top .btn-link a {
+    padding: 9px 55px 10px 15px; }
+    .total-wrapper .on-top .btn-link a .text {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 0; } }
 
 .bg-formcredit {
   background-image: url("../../assets/images/banner/banner-form.png");
@@ -556,9 +588,9 @@
     .formcredit-wrapper .form-wrapper .box-form .result-initial .range .irs-single, .formcredit-wrapper .form-wrapper .box-form .result-initial .range .irs-min, .formcredit-wrapper .form-wrapper .box-form .result-initial .range .irs-max {
       display: none; }
     .formcredit-wrapper .form-wrapper .box-form .result-initial .range .irs-line {
-      height: 6px; }
+      height: 10px; }
     .formcredit-wrapper .form-wrapper .box-form .result-initial .range .irs-bar {
-      height: 6px;
+      height: 10px;
       background-color: #FF7301; }
     .formcredit-wrapper .form-wrapper .box-form .result-initial .range .irs-handle {
       background-image: url("../../assets/images/icon/icon-range-slide.svg");
@@ -566,7 +598,7 @@
       background-size: cover;
       width: 26px;
       height: 26px;
-      top: 14px; }
+      top: 16px; }
       .formcredit-wrapper .form-wrapper .box-form .result-initial .range .irs-handle i {
         display: none; }
     .formcredit-wrapper .form-wrapper .box-form .result-initial .range .irs-grid .irs-grid-pol.small {

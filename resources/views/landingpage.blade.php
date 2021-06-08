@@ -35,10 +35,13 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap-select.css')}}">
     <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
 
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/content/landingpage.css')}}">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="{{ asset('css/aos.css')}}">
+    <script src="{{ asset('js/aos.js') }}"></script>
 
 </head>
 <body>
@@ -88,17 +91,7 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="register-online-m">
-            <div class="btn-link register-online">
-                <a href="javascript:void(0)">
-                    <div class="text">สมัครออนไลน์</div>
-                    <div class="icon">
-                        <img src="{{ asset('assets/images/icon/icon-RegisterOnline-orange.svg')}}" alt="banner">
-                    </div>
-                </a>
-            </div>
-        </section> -->
-        
+
         <section class="content-wrapper -cashexpress">
             <div class="container">
                 <div class="cashexpress-wrapper">
@@ -289,7 +282,6 @@
             </div>
         </section>
 
-
         <section class="content-wrapper bg-loancalculation">
             <div class="container">
                 <div class="loancalculation-wrapper">
@@ -307,7 +299,7 @@
                                 <div class="type-loan">
                                     <div class="row">
                                         <div class="col-lg-5 col-md-6 col-sm-6 col-12">
-                                            <div class="box-type active" id="">
+                                            <div class="box-type need active" id="t1_1">
                                                 <div class="icon-check"></div>
                                                 <div class="icon">
                                                     <img src="{{ asset('assets/images/icon/icon-typeloan-1.png')}}" alt="icon">
@@ -316,7 +308,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-5 col-md-6 col-sm-6 col-12">
-                                            <div class="box-type" id="">
+                                            <div class="box-type need" id="t1_2">
                                                 <div class="icon-check"></div>
                                                 <div class="icon">
                                                     <img src="{{ asset('assets/images/icon/icon-typeloan-2.png')}}" alt="icon">
@@ -374,7 +366,7 @@
                                 <div class="type-installment">
                                     <div class="row">
                                         <div class="col-lg-5 col-md-6 col-sm-6 col-12">
-                                            <div class="box-type active" id="">
+                                            <div class="box-type format" id="t2_1">
                                                 <div class="icon-check"></div>
                                                 <div class="icon">
                                                     <img src="{{ asset('assets/images/icon/icon-min-installment.png')}}" alt="icon">
@@ -383,7 +375,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-5 col-md-6 col-sm-6 col-12">
-                                            <div class="box-type" id="">
+                                            <div class="box-type format" id="t2_2">
                                                 <div class="icon-check"></div>
                                                 <div class="icon">
                                                     <img src="{{ asset('assets/images/icon/icon-normal-installment.png')}}" alt="icon">
@@ -473,7 +465,7 @@
                                                     <div class="text">อัตราดอกเบี้ย</div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
-                                                    <div class="btn-link color-primary">
+                                                    <div class="btn-link register-online color-primary ">
                                                         <a href="javascript:void(0)">
                                                             <div class="text">สมัครออนไลน์</div>
                                                             <div class="icon">
@@ -548,7 +540,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="table-responsive">
+                                <div class="table-responsive" id="table_total" style="display: none;">
                                     <table class="table">
                                         <tbody>
                                             <tr>
@@ -843,15 +835,15 @@
                 <div class="container formcredit-wrapper">
                     <div class="custom-progressbar">
                         <ul class="progressbar">
-                            <li class="active">Step 1</li>
-                            <li class="">Step 2</li>
-                            <li>Step 3</li>
+                            <li class="active">Step</li>
+                            <li class="">Step</li>
+                            <li>Step</li>
                         </ul>
                     </div>
                     
                     <div class="row row-custom-align-center">
                         <div class="col-lg-4 col-sm-12">
-                            <div class="content-alert">
+                            <div class="content-alert" id="content_alert" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500" data-aos-once="true">
                                 <div class="icon">
                                     <img src="{{ asset('assets/images/icon/icon_smile.png')}}" alt="icon">
                                 </div>
@@ -868,7 +860,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-sm-12">
-                            <div class="form-wrapper">
+                            <div class="form-wrapper" data-aos="fade-left" data-aos-anchor="#content_alert" data-aos-delay="3000" data-aos-duration="500" data-aos-once="true">
                                 <div class="box-form bg step1" style="display: block;">
                                     <form action="">
                                         <div class="title-sub text-blue icon icon-1">กรอกข้อมูลผู้สมัครสินเชื่อ</div>
@@ -1078,7 +1070,6 @@
             
         </section>
 
-
         <section class="content-wrapper information">
             <div class="container">
                 <div class="information-wrapper">
@@ -1139,33 +1130,6 @@
                 
             </div>
         </section>
-
-
-        <!-- <section class="content-wrapper -menufooter m-0">
-            <div class="container-fluid bg-color-primary">
-                <div class="container">
-                    <div class="menu-footer-wrapper">
-                        <div class="accordion" id="menufooter">
-                            <div class="card">
-                                <div class="card-header" id="headfooter">
-                                    <h2 class="mb-0">
-                                        <div class="head-collapse icon-left" data-toggle="collapse" data-target="#collapsemenufooter" aria-expanded="true" aria-controls="collapsemenufooter">
-                                            เมนูเพิ่มเติม
-                                        </div>
-                                    </h2>
-                                </div>
-
-                                <div id="collapsemenufooter" class="collapse" aria-labelledby="headfooter" data-parent="#menufooter">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
 
         <footer class="footer-wrapper">
@@ -1249,7 +1213,6 @@
 
     </div>
 
-
     <!-- Modal -->
     <div class="modal fade custom" id="alert_Msg" tabindex="-1" role="dialog" aria-labelledby="alertmessage" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -1326,8 +1289,14 @@
             </div>
         </div>
     </div>
-    
 
+
+<script>
+    AOS.init({
+        duration: 5000,
+        easing: 'linear'
+    });
+</script>
 
 <script>
     $(document).ready(function () {
@@ -1504,38 +1473,61 @@
                 1500);
         });
 
-        $('.box-type').click(function(){
-            $('.box-type').removeClass('active');
+        $('.need').click(function(){
+            $('.need').removeClass('active');
             $(this).addClass('active')
         });
-        $('#min_installment').click(function(){
-            // $('.min-installment').slideDown();
-            // $('.normal-installment').slideUp();
-            $('.content-installment').find('.range .box-payment').show();
-            $('.for_normal_installment').slideUp();
+        $('.format').click(function(){
+            $('.format').removeClass('active');
+            $(this).addClass('active')
         });
-        $('#normal_installment').click(function(){
-            // $('.normal-installment').slideDown();
-            // $('.min-installment').slideUp();
-            $('.content-installment').find('.range .box-payment').hide();
-            $('.for_normal_installment').slideDown();
-
+        
+        $('.need').click(function(){
+            $('.format').removeClass('active');
+            $('.bg-color-orange').removeClass('show');
         });
 
-        $('.list-type .text-type').click(function(){
-            $('.list-type .text-type').removeClass('active');
-            $(this).addClass('active');
+        $('#t2_1').click(function(){
+            if($('#t1_1').hasClass('active')){
+                $('#t1_t1').show();
+                $('#t1_t2').hide();
+                $('#t2_t1').hide();
+                $('#t2_t2').hide();
 
-            $('.type-select').toggleClass('slide');
+                $('#table_total').hide();
+                $('.bg-color-orange').addClass('show');
+            }else{
+                $('#t1_t1').hide();
+                $('#t1_t2').hide();
+                $('#t2_t1').show();
+                $('#t2_t2').hide();
+
+                $('#table_total').hide();
+                $('.bg-color-orange').addClass('show');
+            }
         });
-        $('#type_1').click(function(){
-            $('.for_type1').show();
-            $('.for_type2').hide();
+        $('#t2_2').click(function(){
+            if($('#t1_1').hasClass('active')){
+                $('#t1_t1').hide();
+                $('#t1_t2').show();
+                $('#t2_t1').hide();
+                $('#t2_t2').hide();
+
+                $('#table_total').show();
+                $('.bg-color-orange').addClass('show');
+            }else{
+                $('#t1_t1').hide();
+                $('#t1_t2').hide();
+                $('#t2_t1').hide();
+                $('#t2_t2').show();
+
+                $('#table_total').show();
+                $('.bg-color-orange').addClass('show');
+            }
         });
-        $('#type_2').click(function(){
-            $('.for_type1').hide();
-            $('.for_type2').show();
-        });
+        
+
+
 
 
         $('.item01 li').click(function(){
@@ -1559,7 +1551,7 @@
 
             $('.progressbar li').eq(1).addClass('active');
 
-            $('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเกี่ยวกับรายได้');
+            //$('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเกี่ยวกับรายได้');
         });
         $('#back_step1').click(function(){
             $('.step1').slideDown('slow');
@@ -1567,7 +1559,7 @@
 
             $('.progressbar li').eq(1).removeClass('active');
 
-            $('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเพื่อให้ธนาคารได้รู้จักคุณ');
+            //$('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเพื่อให้ธนาคารได้รู้จักคุณ');
         });
         $('#next_step2').click(function(){
             $('.step3').slideDown('slow');
