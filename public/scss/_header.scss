@@ -1,13 +1,13 @@
 .header-wrapper{
     &.landingPage{
-        padding: 10px 15px;
+        padding: 10px 15px 0;
         position: fixed;
         width: 100%;
         top: 0;
         z-index: 999;
         background-color: #013CA6;
         .logo{
-            width: 221px;
+            width: 280px;
             margin: auto;
             a{
                 display: block;
@@ -20,7 +20,7 @@
     @media only screen and (max-width: 768px) {
         &.landingPage{
             .logo{
-                //width: 155px;
+                width: 221px;
                 margin: auto;
             }
         }

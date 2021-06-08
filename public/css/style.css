@@ -56,14 +56,14 @@ a:hover {
   text-decoration: none; }
 
 .header-wrapper.landingPage {
-  padding: 10px 15px;
+  padding: 10px 15px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 999;
   background-color: #013CA6; }
   .header-wrapper.landingPage .logo {
-    width: 221px;
+    width: 280px;
     margin: auto; }
     .header-wrapper.landingPage .logo a {
       display: block; }
@@ -72,6 +72,7 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .header-wrapper.landingPage .logo {
+    width: 221px;
     margin: auto; } }
 
 @media only screen and (max-width: 425px) {
@@ -513,7 +514,7 @@ a:hover {
           margin-bottom: 20px; } }
 
 .banner-wrapper {
-  padding-top: 84px; }
+  padding-top: 90px; }
   .banner-wrapper ul {
     margin: 0;
     padding: 0;
@@ -587,6 +588,9 @@ a:hover {
             -webkit-transition: all .35s ease-out;
             -o-transition: all .35s ease-out;
             transition: all .35s ease-out; }
+  @media only screen and (max-width: 767px) {
+    .banner-wrapper {
+      padding-top: 74px; } }
   @media only screen and (max-width: 425px) {
     .banner-wrapper {
       padding-top: 55px; } }
