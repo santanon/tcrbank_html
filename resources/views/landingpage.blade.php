@@ -339,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row-section">
+                    <div class="row-section" id="field_interest" style="display: none;">
                         <div class="row align-items-lg-center">
                             <div class="col-lg-4">
                                 <div class="title-loancalculation text-white">กรุณากรอกอัตราดอกเบี้ยของภาระหนี้รวมในปัจจุบัน</div>
@@ -1486,6 +1486,12 @@
             $('.format').removeClass('active');
             $('.bg-color-orange').removeClass('show');
         });
+        $('#t1_1').click(function(){
+            $('#field_interest').hide();
+        });
+        $('#t1_2').click(function(){
+            $('#field_interest').show();
+        });
 
         $('#t2_1').click(function(){
             if($('#t1_1').hasClass('active')){
@@ -1525,9 +1531,6 @@
                 $('.bg-color-orange').addClass('show');
             }
         });
-        
-
-
 
 
         $('.item01 li').click(function(){
