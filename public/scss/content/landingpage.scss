@@ -960,6 +960,26 @@
             width: 100%;
         }
     }
+    @media only screen and (max-width: 575px) {
+        .form-wrapper{
+            .title-sub{
+                &.icon{
+                    &.icon-1{
+                        &:before{
+                            width: 48px;
+                        }
+                    }
+                }
+            }
+        }
+        .content-alert{
+            .icon-quote{
+                &.-close{
+                    bottom: 55px;
+                }
+            }
+        }
+    }
     @media only screen and (max-width: 425px) {
         .content-alert{
             background-image: url('../../assets/images/area_bubble_xs.png');
@@ -967,7 +987,26 @@
             padding: 70px 20px 80px;
         }
     }
-    
+    @media only screen and (max-width: 320px) {
+        .form-wrapper{
+            .title-sub{
+                &.icon{
+                    &.icon-1{
+                        &:before{
+                            width: 58px;
+                        }
+                    }
+                }
+            }
+        }
+        .content-alert{
+            .icon-quote{
+                &.-close{
+                    bottom: 65px;
+                }
+            }
+        }
+    }
 }
 
 .information-wrapper{

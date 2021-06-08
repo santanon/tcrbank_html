@@ -692,11 +692,23 @@
   .formcredit-wrapper .content-alert {
     width: 100%; } }
 
+@media only screen and (max-width: 575px) {
+  .formcredit-wrapper .form-wrapper .title-sub.icon.icon-1:before {
+    width: 48px; }
+  .formcredit-wrapper .content-alert .icon-quote.-close {
+    bottom: 55px; } }
+
 @media only screen and (max-width: 425px) {
   .formcredit-wrapper .content-alert {
     background-image: url("../../assets/images/area_bubble_xs.png");
     margin: 30px auto;
     padding: 70px 20px 80px; } }
+
+@media only screen and (max-width: 320px) {
+  .formcredit-wrapper .form-wrapper .title-sub.icon.icon-1:before {
+    width: 58px; }
+  .formcredit-wrapper .content-alert .icon-quote.-close {
+    bottom: 65px; } }
 
 .information-wrapper .title {
   margin-bottom: 35px; }

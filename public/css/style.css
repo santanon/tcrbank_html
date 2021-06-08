@@ -224,7 +224,7 @@ a:hover {
 
 .style-input {
   position: relative;
-  padding-bottom: 10px; }
+  padding-bottom: 14px; }
   .style-input .inp-style {
     width: 100%;
     height: 65px;
@@ -236,7 +236,7 @@ a:hover {
     font-size: 20px;
     color: #0047B6;
     padding: 0 15px;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     .style-input .inp-style.text-center {
       text-align: center; }
     .style-input .inp-style:focus {
@@ -249,7 +249,7 @@ a:hover {
       border: 1px solid #DD1B1B; }
   .style-input .text-error {
     position: absolute;
-    bottom: 0;
+    bottom: 12px;
     left: 0;
     background-color: #DD1B1B;
     border-radius: 15px;
@@ -329,7 +329,7 @@ a:hover {
     font-size: 20px;
     color: #373737;
     padding: 0 15px;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     .style-input .slc-style:focus {
       outline: none; }
     .style-input .slc-style:invalid {
