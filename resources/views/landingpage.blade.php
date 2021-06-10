@@ -287,7 +287,7 @@
                 <div class="loancalculation-wrapper">
                     <div class="row">
                         <div class="col-12">
-                            <div class="title text-white text-center">Loan Calculation</div>
+                            <div class="title text-white text-center">คำนวณวงเงินสินเชื่อเบื้องต้น</div>
                         </div>
                     </div>
                     <div class="row-section">
@@ -392,7 +392,7 @@
                         <div class="row align-items-lg-center">
                             <div class="col-lg-4">
                                 <div class="title-loancalculation text-white">
-                                    สามารถเลื่อนเพื่อเลือกอัตราผ่อนขั้นต่ำ และวงเงินรีไฟแนนซ์ที่ต้องการ
+                                    สามารถเลื่อนเพื่อเลือกอัตราผ่อนขั้นต่ำ และวงเงินสินเชื่อที่ต้องการ
                                 </div>
                             </div>
                             <div class="col-lg-8">
@@ -458,7 +458,7 @@
                                             <div class="row">
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
-                                                    <div class="text">วงเงินอนุมัติสูงสุด</div>
+                                                    <div class="text">วงเงินอนุมัติสูงสุด/บาท</div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">19%</div>
@@ -482,11 +482,11 @@
                                             <div class="row">
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
-                                                    <div class="text">วงเงินที่ต้องการ</div>
+                                                    <div class="text">วงเงินที่ต้องการ/บาท </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">6,100</div>
-                                                    <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน</div>
+                                                    <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน/บาท </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -494,19 +494,19 @@
                                             <div class="row">
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
-                                                    <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ</div>
+                                                    <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ/บาท </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">6,100</div>
-                                                    <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน</div>
+                                                    <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน/บาท </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">616</div>
-                                                    <div class="text">ประหยัดดอกเบี้ยต่อเดือน</div>
+                                                    <div class="text">ประหยัดดอกเบี้ยต่อเดือน/บาท </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">7,397</div>
-                                                    <div class="text">ประหยัดดอกเบี้ยต่อปี</div>
+                                                    <div class="text">ประหยัดดอกเบี้ยต่อปี/บาท </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -514,7 +514,7 @@
                                             <div class="row">
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
-                                                    <div class="text">วงเงินที่ต้องการ</div>
+                                                    <div class="text">วงเงินที่ต้องการ/บาท </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -522,15 +522,15 @@
                                             <div class="row">
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">200,000</div>
-                                                    <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ</div>
+                                                    <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ/บาท </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">616</div>
-                                                    <div class="text">ประหยัดดอกเบี้ยต่อเดือน</div>
+                                                    <div class="text">ประหยัดดอกเบี้ยต่อเดือน/บาท </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">7,397</div>
-                                                    <div class="text">ประหยัดดอกเบี้ยต่อปี</div>
+                                                    <div class="text">ประหยัดดอกเบี้ยต่อปี/บาท </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -609,7 +609,7 @@
                     <div class="bg-tab-content">
                         <div class="tab-content tab-content-custom" id="Tab_Content">
                             <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="content-tab01">
-                                <div class="data-table">
+                                <div class="data-table ck-content">
                                     <table>
                                         <thead>
                                             <tr>
@@ -850,9 +850,23 @@
                                 <div class="icon-quote -open">
                                     <img src="{{ asset('assets/images/icon/icon_quote.png')}}" alt="icon">
                                 </div>
-                                <div class="group-line">
-                                    <div class="line1">สินเชื่อบุคคลไทยเครดิต สวัสดีค่ะ</div>
-                                    <div class="line2">ลูกค้ากรอกข้อมูลเพื่อให้ธนาคารได้รู้จักคุณ</div>
+                                <div class="group-line group-line-loop" id="popup_step1">
+                                    <div class="group-line" id="popup_step1_1">
+                                        <div class="line1">ธนาคารไทยเครดิต สวัสดีค่ะ</div>
+                                        <div class="line2">ลูกค้ากรอกข้อมูลเพื่อให้ธนาคารได้รู้จักคุณ</div>
+                                    </div>
+                                    <div class="group-line" id="popup_step1_2">
+                                        <div class="line1">กรุณาตรวจสอบความถูกต้อง</div>
+                                        <div class="line2">ของเบอร์โทรศัพท์อีกครั้งแล้วกดถัดไปได้เลยค่ะ</div>
+                                    </div>
+                                </div>
+                                <div class="group-line" id="popup_step2" style="display: none;">
+                                    <div class="line1">ลูกค้ากรอกข้อมูลเพิ่มเติม</div>
+                                    <div class="line2">เพื่อให้ธนาคารได้เข้าใจความต้องการของคุณเพิ่มขึ้น</div>
+                                </div>
+                                <div class="group-line" id="popup_step3" style="display: none;">
+                                    <div class="line1">ธนาคารขอนำเสนอวงเงินสินเชื่อเบื้องต้น</div>
+                                    <div class="line2">พร้อมให้บริการแก่คุณ สมัครได้เลยค่ะ</div>
                                 </div>
                                 <div class="icon-quote -close">
                                     <img src="{{ asset('assets/images/icon/icon_quote.png')}}" alt="icon">
@@ -940,7 +954,6 @@
                                     </div>
                                 </div>
 
-
                                 <div class="box-form bg step2" style="display: none;">
                                     <form action="">
                                         <div class="title-sub text-blue in icon icon-2">รายได้</div>
@@ -952,7 +965,7 @@
                                             </div>
                                             <div class="col-sm-6">
                                             <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="โบนัสประจำปี">
+                                                    <input class="inp-style" type="text" placeholder="โบนัสต่อปี">
                                                 </div>
                                             </div>
                                         </div>
@@ -968,24 +981,24 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="สินเชื่อบ้าน/รถยนต์">
+                                                    <input class="inp-style" type="text" placeholder="ค่างวดผ่อนบ้าน/รถยนต์">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="สินเชื่อบุคคล">
+                                                    <input class="inp-style" type="text" placeholder="ค่างวดสินเชื่อบุคคล">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="บัตรเครดิต">
+                                                    <input class="inp-style" type="text" placeholder="ยอดใช้จ่ายบัตรเครดิต">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="บัตรกดเงินสด">
+                                                    <input class="inp-style" type="text" placeholder="ยอดใช้จ่ายบัตรกดเงินสด">
                                                 </div>
                                             </div>
                                         </div>
@@ -1030,9 +1043,24 @@
                                             <div class="title-sub text-blue in icon icon-4">วัตถุประสงค์การกู้ <span class="req">*</span></div>
                                             <div class="style-input">
                                                 <ul class="list-item item01">
-                                                    <li class="active">ต้องการวงเงินพร้อมใช้ </li>
-                                                    <li>ต้องการรีไฟแนนซ์หนี้ </li>
-                                                    <li>ต้องการทั้งสองข้อ</li>
+                                                    <li class="active">
+                                                        <label for="">
+                                                            ต้องการวงเงินพร้อมใช้
+                                                            <input type="radio" name="type" value="0" checked>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">
+                                                            ต้องการรีไฟแนนซ์หนี้
+                                                            <input type="radio" name="type" value="1">
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">
+                                                            ต้องการทั้งสองข้อ
+                                                            <input type="radio" name="type" value="2">
+                                                        </label>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1040,10 +1068,9 @@
 
                                         <div class="consent">
                                             <div class="style-input checkbox">
-                                                <input class="chk" type="checkbox" id="accept" name="" value="">
-                                                <label for="accept"> ยอมรับ</label><br>
+                                                <input class="chk" type="checkbox" id="accept_step3" name="" value="">
+                                                <label for="accept_step3"> ยอมรับ</label><br>
                                             </div>
-
                                             <div class="text">
                                                 “ตามที่ ท่านได้ให้ข้อมูลข้างต้นเพื่อให้เจ้าหน้าที่ของธนาคารติดต่อกลับ ท่านรับรองว่าข้อมูล
                                                 ดังกล่าวเป็นของท่านจริง และยินยอมให้ธนาคารเก็บรวบรวมและใช้ข้อมูลนั้นในการติดต่อท่าน
@@ -1051,15 +1078,14 @@
                                                 และธนาคารเห็นว่าเหมาะสมและเป็นประโยชน์กับท่าน โปรดศึกษารายละเอียดเพิ่มเติมเกี่ยวกับ
                                                 การคุ้มครองข้อมูลส่วนบุคคลของธนาคาร เพื่อที่ท่านจะได้ทราบและเข้าใจถึงวิธีการที่ธนาคาร
                                                 เก็บรวบรวม ใช้ และเปิดเผยข้อมูล ตลอดจนสิทธิของท่านในฐานะเจ้าของข้อมูลส่วนบุคคลได้ที่ 
-                                                นโยบายความเป็นส่วนตัว (Privacy Policy)”
+                                                <a href="https://www.tcrbank.com/th/privacypolicy" target="_blank">นโยบายความเป็นส่วนตัว (Privacy Policy)</a>”
                                             </div>
                                         </div>
-                                        
                                     </form>
 
                                     <div class="group-btn">
                                         <button type="button" class="btn-type bg-no" id="back_step2">ย้อนกลับ</button>
-                                        <button type="button" disabled class="btn-type bg-main" id="regis" data-toggle="modal" data-target="#alert_Msg">สมัคร</button>
+                                        <button type="button" disabled class="btn-type bg-main" id="btn_submit" data-toggle="modal" data-target="#alert_Msg">สมัคร</button>
                                     </div>
                                 </div>
                             </div>
@@ -1227,8 +1253,7 @@
                     <!-- <p class="desc-body">ขอบคุณที่สนใจผลิตภัณฑ์ของไทยเครดิต ธนาคารหวังว่าจะมีโอกาสให้บริการท่านในโอกาสถัดไป</p> -->
                     <div class="btn-link color-primary">
                         <a href="javascript:void(0)">
-                            <div class="text">ตกลง</div>
-                            <!-- <div class="text">ย้อนกลับ</div> -->
+                            <div class="text">หน้าหลัก</div>
                             <div class="icon">
                                 <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
                             </div>
@@ -1267,23 +1292,19 @@
                     <img src="{{ asset('assets/images/icon/icon-close-modal.svg')}}" alt="icon close">
                 </div>
                 <div class="modal-body">
-                    <div class="text-body">ข้าพเจ้าตกลงและยินยอมให้ธนาคารเก็บรวบรวมใช้หรือเปิดเผยข้อมูลส่วนบุคคลของข้าพเจ้า</div>
+                    <!-- <div class="text-body"></div> -->
                     <p class="desc-body">
-                        เพื่อติดต่อ นำเสนอหรือประชาสัมพันธ์ผลิตภัณฑ์และบริการต่างๆ ให้คำปรึกษาทางการเงินหรือเพื่อวัตถุประสงค์ทางการตลาดของธนาคาร 
+                    "ตามที่ ท่านได้ให้ข้อมูลข้างต้นเพื่อให้เจ้าหน้าที่ของธนาคารติดต่อกลับ ท่านรับรองว่าข้อมูลดังกล่าวเป็นของท่านจริงและยินยอมให้ธนาคารเก็บรวบรวมและใช้ข้อมูลนั้นในการติดต่อท่านเพื่อให้คำปรึกษาทางการเงิน และนำเสนอผลิตภัณฑ์หรือบริการของธนาคาร ที่ท่านอาจสนใจ และธนาคารเห็นว่าเหมาะสมและเป็นประโยชน์กับท่าน โปรดศึกษารายละเอียดเพิ่มเติมเกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคลของธนาคาร
+                    เพื่อที่ท่านจะได้ทราบและเข้าใจถึงวิธีการที่ธนาคารเก็บรวบรวม ใช้ และเปิดเผยข้อมูล ตลอดจนสิทธิของท่านในฐานะเจ้าของข้อมูลส่วนบุคคล ได้ที่ <a href="https://www.tcrbank.com/th/privacypolicy" target="_blank">นโยบายความเป็นส่วนตัว (Privacy Policy)</a>"
                     </p>
                     <div class="consent">
                         <div class="style-input checkbox">
-                            <input class="chk" type="checkbox" id="consent" name="" value="">
-                            <label for="consent"> ข้าพเจ้าตกลงและยินยอม</label><br>
+                            <input class="chk" type="checkbox" id="consent_step1" name="" value="">
+                            <label for="consent_step1">ยอมรับ</label><br>
                         </div>
                     </div>
-                    <div class="btn-link color-primary" data-toggle="modal" href="#alert_Msg">
-                        <a href="javascript:void(0)">
-                            <div class="text">ตกลง</div>
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
-                            </div>
-                        </a>
+                    <div class="group-btn">
+                        <button type="button" disabled class="btn-type bg-main icon" id="btn_submit_consent" data-toggle="modal" href="#alert_Msg">ตกลง</button>
                     </div>
                 </div>
             </div>
@@ -1466,7 +1487,6 @@
             ]
         });
 
-
         $(".register-online").click(function() {
             $('html,body').animate({
                 scrollTop: $(".formcredit").offset().top},
@@ -1492,7 +1512,6 @@
         $('#t1_2').click(function(){
             $('#field_interest').show();
         });
-
         $('#t2_1').click(function(){
             if($('#t1_1').hasClass('active')){
                 $('#t1_t1').show();
@@ -1532,7 +1551,6 @@
             }
         });
 
-
         $('.item01 li').click(function(){
             $('.item01 li').removeClass('active');
             $(this).addClass('active');
@@ -1541,20 +1559,30 @@
         //     $('.item02 li').removeClass('active');
         //     $(this).addClass('active');
         // });
-
-
         $('#tab_selector').on('change', function (e) {
             $('.content-tabs li a').eq($(this).val()).tab('show');
         });
 
 
+
+        setInterval(function(){
+            if ($("#popup_step1_2").is(":visible") == true){
+                $("#popup_step1_2").fadeOut();
+                $("#popup_step1_1").fadeIn();
+            }
+            else{
+                $("#popup_step1_1").fadeOut();
+                $("#popup_step1_2").fadeIn();
+            }
+        }, 6000);
+        
         $('#next_step1').click(function(){
             $('.step2').slideDown('slow');
             $('.step1').slideUp('slow');
 
             $('.progressbar li').eq(1).addClass('active');
 
-            //$('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเกี่ยวกับรายได้');
+            $('.content-alert .group-line#popup_step1').fadeOut().next('.group-line#popup_step2').delay(500).fadeIn();
         });
         $('#back_step1').click(function(){
             $('.step1').slideDown('slow');
@@ -1562,19 +1590,38 @@
 
             $('.progressbar li').eq(1).removeClass('active');
 
-            //$('.content-alert .group-line .line2').text('ลูกค้ากรอกข้อมูลเพื่อให้ธนาคารได้รู้จักคุณ');
+            $('.content-alert .group-line#popup_step2').fadeOut().prev('.group-line#popup_step1, #popup_step1_1').delay(500).fadeIn();
         });
         $('#next_step2').click(function(){
             $('.step3').slideDown('slow');
             $('.step2').slideUp('slow');
 
             $('.progressbar li').eq(2).addClass('active');
+
+            $('.content-alert .group-line#popup_step2').fadeOut().next('.group-line#popup_step3').delay(500).fadeIn();
         });
         $('#back_step2').click(function(){
             $('.step2').slideDown('slow');
             $('.step3').slideUp('slow');
 
             $('.progressbar li').eq(2).removeClass('active');
+            $('.content-alert .group-line#popup_step3').fadeOut().prev('.group-line#popup_step2').delay(500).fadeIn();
+        });
+
+        //Consent
+        $('#accept_step3').click(function(event) {
+            if (this.checked) {
+                $('#btn_submit').removeAttr('disabled', 'disabled');
+            } else {
+                $('#btn_submit').attr('disabled', 'disabled');
+            }
+        });
+        $('#consent_step1').click(function(event) {
+            if (this.checked) {
+                $('#btn_submit_consent').removeAttr('disabled', 'disabled');
+            } else {
+                $('#btn_submit_consent').attr('disabled', 'disabled');
+            }
         });
 
         // Comma thousand

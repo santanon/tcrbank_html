@@ -570,10 +570,11 @@
             color: #fff;
         }
         .text{
-            font-weight: $font-light;
-            font-size: 22px;
-            line-height: 30px;
-            color: #373737;
+            font-weight: $font-medium;
+            font-size: 20px;
+            line-height: 28px;
+            //color: #373737;
+            color: #000;
         }
         .btn-link{
             a{
@@ -594,10 +595,11 @@
             color: #fff;
         }
         .text{
-            font-weight: $font-light;
-            font-size: 22px;
-            line-height: 30px;
-            color: #373737;
+            font-weight: $font-medium;
+            font-size: 20px;
+            line-height: 28px;
+            //color: #373737;
+            color: #000;
             margin-bottom: 20px;
         }
     }
@@ -899,6 +901,18 @@
         padding: 70px 20px 90px;
         //top: -100px;
         width: 100%;
+        .group-line-loop{
+            position: relative;
+            height: 90px;
+            .group-line{
+                position: absolute;
+                left: 0;
+                right: 0;
+                &#popup_step1_2{
+                    display: none;
+                }
+            }
+        }
         .line1{
             font-weight: $font-medium;
             font-size: 20px;
@@ -950,6 +964,9 @@
             background-image: url('../../assets/images/area_bubble_2x.png');
             margin: 30px auto;
             padding: 70px 20px 110px;
+            .group-line-loop{
+                height: 70px;
+            }
             .line2{
                 max-width: 100%;
             }
@@ -985,6 +1002,9 @@
             background-image: url('../../assets/images/area_bubble_xs.png');
             margin: 30px auto;
             padding: 70px 20px 80px;
+            .group-line-loop{
+                height: 90px;
+            }
         }
     }
     @media only screen and (max-width: 320px) {
