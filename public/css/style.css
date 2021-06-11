@@ -1371,11 +1371,11 @@ table {
         .modal.custom .modal-content .modal-body .desc-body a:hover {
           text-decoration: underline; }
     .modal.custom .modal-content .modal-body .btn-link {
-      max-width: 235px;
+      max-width: 190px;
       margin: auto;
       display: block; }
     .modal.custom .modal-content .modal-body .group-btn {
-      max-width: 235px;
+      max-width: 190px;
       margin: auto; }
       .modal.custom .modal-content .modal-body .group-btn .btn-type {
         border-radius: 8px;
@@ -1416,6 +1416,29 @@ table {
 
 .modal-backdrop {
   background-color: #013CA6; }
+
+.loading {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+  .loading .d-flex {
+    height: 100%; }
+  .loading .spinner-border {
+    color: #013CA6; }
+  .loading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(191, 191, 191, 0.8);
+    z-index: -1; }
 
 body {
   font-family: 'Kanit', sans-serif;

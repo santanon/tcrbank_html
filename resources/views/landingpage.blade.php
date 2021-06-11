@@ -444,11 +444,15 @@
                                 <div class="text-privilege">
                                     <img src="{{ asset('assets/images/bg-gift-text.png')}}" alt="image">
                                 </div>
-                                <div class="remark">
+                                <div class="remark" id="remark_1">
                                     หมายเหตุ :<br>
                                     การคำนวณดังกล่าวเป็นการคำนวณ
                                     เบื้องต้น ในการอนุมัติสินเชื่อขึ้นอยูกับ
                                     การพิจารณาจากเอกสารสมัคร
+                                </div>
+                                <div class="remark" id="remark_2" style="display: none;">
+                                    หมายเหตุ :<br>
+                                    การคำนวณดังกล่าวเป็นการคำนวณเบื้องต้น โดยเปรียบเทียบอัตราดอกเบี้ยของภาระหนี้ ปัจจุบันที่ลูกค้ากรอกกับอัตราดอกเบี้ยของธนาคารที่นำเสนอในครั้งนี้ ในการอนุมัติ สนิเชื่อขึ้นอยู่กับการพิจารณาจากเอกสารการสมัคร
                                 </div>
                             </div>
                             <div class="col-lg-9">
@@ -857,7 +861,9 @@
                                     </div>
                                     <div class="group-line" id="popup_step1_2">
                                         <div class="line1">กรุณาตรวจสอบความถูกต้อง</div>
-                                        <div class="line2">ของเบอร์โทรศัพท์อีกครั้งแล้วกดถัดไปได้เลยค่ะ</div>
+                                        <div class="line2">
+                                        <span style="color: #013CA6; text-decoration: underline;">ของเบอร์โทรศัพท์อีกครั้ง</span><br>ก่อนกดถัดไป
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="group-line" id="popup_step2" style="display: none;">
@@ -865,8 +871,8 @@
                                     <div class="line2">เพื่อให้ธนาคารได้เข้าใจความต้องการของคุณเพิ่มขึ้น</div>
                                 </div>
                                 <div class="group-line" id="popup_step3" style="display: none;">
-                                    <div class="line1">ธนาคารขอนำเสนอวงเงินสินเชื่อเบื้องต้น</div>
-                                    <div class="line2">พร้อมให้บริการแก่คุณ สมัครได้เลยค่ะ</div>
+                                    <div class="line1">ธนาคารขอนำเสนอวงเงินสินเชื่อเบื้องต้นแก่คุณ</div>
+                                    <div class="line2">กดสมัครได้เลยค่ะ</div>
                                 </div>
                                 <div class="icon-quote -close">
                                     <img src="{{ asset('assets/images/icon/icon_quote.png')}}" alt="icon">
@@ -879,37 +885,37 @@
                                     <form action="">
                                         <div class="title-sub text-blue icon icon-1">กรอกข้อมูลผู้สมัครสินเชื่อ</div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style error" type="text" placeholder="ชื่อ*">
                                                     <div class="text-error">กรุณากรอกชื่อ</div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                             <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="นามสกุล*">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="เบอร์โทรศัพท์มือถือ*">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="LINE ID">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="อีเมล*">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <select id="slc_job" class="selectpicker slc-style error" title="เลือกอาชีพ*">
                                                         <option value="0">A</option>
@@ -921,19 +927,19 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="ประสบการณ์การทำงาน (ปี)*">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="ระบุ (เดือน)*">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <select class="selectpicker slc-style" title="เลือกจังหวัด*">
                                                         <option>A</option>
@@ -942,7 +948,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="วงเงินที่ต้องการ*">
                                                 </div>
@@ -958,12 +964,12 @@
                                     <form action="">
                                         <div class="title-sub text-blue in icon icon-2">รายได้</div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="รายได้ประจำต่อเดือน*">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                             <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="โบนัสต่อปี">
                                                 </div>
@@ -979,24 +985,24 @@
 
                                         <div class="title-sub text-blue in icon icon-3">ภาระหนี้ต่อเดือน</div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="ค่างวดผ่อนบ้าน/รถยนต์">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="ค่างวดสินเชื่อบุคคล">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="ยอดใช้จ่ายบัตรเครดิต">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style" type="text" placeholder="ยอดใช้จ่ายบัตรกดเงินสด">
                                                 </div>
@@ -1237,6 +1243,15 @@
 
         </footer>
 
+
+        <div class="loading">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Modal -->
@@ -1254,6 +1269,7 @@
                     <div class="btn-link color-primary">
                         <a href="javascript:void(0)">
                             <div class="text">หน้าหลัก</div>
+                            <!-- <div class="text">ย้อนกลับ</div> -->
                             <div class="icon">
                                 <img src="{{ asset('assets/images/icon/icon-right.svg')}}" alt="banner">
                             </div>
@@ -1307,9 +1323,15 @@
                         <button type="button" disabled class="btn-type bg-main icon" id="btn_submit_consent" data-toggle="modal" href="#alert_Msg">ตกลง</button>
                     </div>
                 </div>
+
+
+                
+
             </div>
         </div>
     </div>
+
+
 
 
 <script>
@@ -1508,9 +1530,13 @@
         });
         $('#t1_1').click(function(){
             $('#field_interest').hide();
+            $('#remark_1').show();
+            $('#remark_2').hide();
         });
         $('#t1_2').click(function(){
             $('#field_interest').show();
+            $('#remark_1').hide();
+            $('#remark_2').show();
         });
         $('#t2_1').click(function(){
             if($('#t1_1').hasClass('active')){
