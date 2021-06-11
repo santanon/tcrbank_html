@@ -462,7 +462,7 @@
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="value">19%</div>
-                                                    <div class="text">อัตราดอกเบี้ย</div>
+                                                    <div class="text">อัตราดอกเบี้ย/ต่อปี</div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="btn-link register-online color-primary ">
@@ -928,7 +928,7 @@
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="ระบุ (เดือน)">
+                                                    <input class="inp-style" type="text" placeholder="ระบุ (เดือน)*">
                                                 </div>
                                             </div>
                                         </div>
