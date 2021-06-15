@@ -29,6 +29,10 @@
                     line-height: 28px;
                     color: #fff;
                 }
+                a[href^="tel"] {
+                    color: inherit;
+                    text-decoration: none;
+                }
             }
             .icon-path{
                 &:after{

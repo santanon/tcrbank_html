@@ -66,7 +66,7 @@
                             <img class="m" src="{{ asset('assets/images/banner/banner-01-m.jpg')}}" alt="banner">
                             <div class="btn-link register-online">
                                 <a href="javascript:void(0)">
-                                    <div class="text">สมัครออนไลน์</div>
+                                    <div class="text">สมัคร</div>
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                     </div>
@@ -80,7 +80,7 @@
                             <img class="m" src="{{ asset('assets/images/banner/banner-02-m.jpg')}}" alt="banner">
                             <div class="btn-link register-online">
                                 <a href="javascript:void(0)">
-                                    <div class="text">สมัครออนไลน์</div>
+                                    <div class="text">สมัคร</div>
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                     </div>
@@ -116,7 +116,7 @@
                                                 </div>
                                                 <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
-                                                        <div class="text">สมัครออนไลน์</div>
+                                                        <div class="text">สมัคร</div>
                                                         <div class="icon">
                                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
@@ -146,7 +146,7 @@
                                                 </div>
                                                 <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
-                                                        <div class="text">สมัครออนไลน์</div>
+                                                        <div class="text">สมัคร</div>
                                                         <div class="icon">
                                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
@@ -176,7 +176,7 @@
                                                 </div>
                                                 <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
-                                                        <div class="text">สมัครออนไลน์</div>
+                                                        <div class="text">สมัคร</div>
                                                         <div class="icon">
                                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
@@ -206,7 +206,7 @@
                                                 </div>
                                                 <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
-                                                        <div class="text">สมัครออนไลน์</div>
+                                                        <div class="text">สมัคร</div>
                                                         <div class="icon">
                                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
@@ -236,7 +236,7 @@
                                                 </div>
                                                 <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
-                                                        <div class="text">สมัครออนไลน์</div>
+                                                        <div class="text">สมัคร</div>
                                                         <div class="icon">
                                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                                         </div>
@@ -300,20 +300,26 @@
                                     <div class="row">
                                         <div class="col-lg-5 col-md-6 col-sm-6 col-12">
                                             <div class="box-type need active" id="t1_1">
-                                                <div class="icon-check"></div>
-                                                <div class="icon">
-                                                    <img src="{{ asset('assets/images/icon/icon-typeloan-1.png')}}" alt="icon">
-                                                </div>
-                                                <div class="text">ต้องการวงเงินพร้อมใช้</div>
+                                                <label>
+                                                    <div class="icon-check"></div>
+                                                    <div class="icon">
+                                                        <img src="{{ asset('assets/images/icon/icon-typeloan-1.svg')}}" alt="icon">
+                                                    </div>
+                                                    <div class="text">ต้องการวงเงินพร้อมใช้</div>
+                                                    <input type="radio" name="loan_loan_type" value="cash" checked="">
+                                                </label>
                                             </div>
                                         </div>
                                         <div class="col-lg-5 col-md-6 col-sm-6 col-12">
                                             <div class="box-type need" id="t1_2">
-                                                <div class="icon-check"></div>
-                                                <div class="icon">
-                                                    <img src="{{ asset('assets/images/icon/icon-typeloan-2.png')}}" alt="icon">
-                                                </div>
-                                                <div class="text">ต้องการรวมหนี้ไว้ที่เดียว</div>
+                                                <label>
+                                                    <div class="icon-check"></div>
+                                                    <div class="icon">
+                                                        <img src="{{ asset('assets/images/icon/icon-typeloan-2.svg')}}" alt="icon">
+                                                    </div>
+                                                    <div class="text">ต้องการรวมหนี้ไว้ที่เดียว</div>
+                                                    <input type="radio" name="loan_loan_type" value="refinace">
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -367,20 +373,26 @@
                                     <div class="row">
                                         <div class="col-lg-5 col-md-6 col-sm-6 col-12">
                                             <div class="box-type format" id="t2_1">
-                                                <div class="icon-check"></div>
-                                                <div class="icon">
-                                                    <img src="{{ asset('assets/images/icon/icon-min-installment.png')}}" alt="icon">
-                                                </div>
-                                                <div class="text">ผ่อนขั้นต่ำ</div>
+                                                <label>
+                                                    <div class="icon-check"></div>
+                                                    <div class="icon">
+                                                        <img src="{{ asset('assets/images/icon/icon-min-installment.svg')}}" alt="icon">
+                                                    </div>
+                                                    <div class="text">ผ่อนขั้นต่ำ</div>
+                                                    <input type="radio" name="loan_istm_type" value="min_istn" checked="">
+                                                </label>
                                             </div>
                                         </div>
                                         <div class="col-lg-5 col-md-6 col-sm-6 col-12">
                                             <div class="box-type format" id="t2_2">
-                                                <div class="icon-check"></div>
-                                                <div class="icon">
-                                                    <img src="{{ asset('assets/images/icon/icon-normal-installment.png')}}" alt="icon">
-                                                </div>
-                                                <div class="text">ผ่อนรายงวด </div>
+                                                <label>
+                                                    <div class="icon-check"></div>
+                                                    <div class="icon">
+                                                        <img src="{{ asset('assets/images/icon/icon-normal-installment.svg')}}" alt="icon">
+                                                    </div>
+                                                    <div class="text">ผ่อนรายงวด </div>
+                                                    <input type="radio" name="loan_istm_type" value="istn">
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -452,7 +464,14 @@
                                 </div>
                                 <div class="remark" id="remark_2" style="display: none;">
                                     หมายเหตุ :<br>
-                                    การคำนวณดังกล่าวเป็นการคำนวณเบื้องต้น โดยเปรียบเทียบอัตราดอกเบี้ยของภาระหนี้ ปัจจุบันที่ลูกค้ากรอกกับอัตราดอกเบี้ยของธนาคารที่นำเสนอในครั้งนี้ ในการอนุมัติ สนิเชื่อขึ้นอยู่กับการพิจารณาจากเอกสารการสมัคร
+                                    <ul>
+                                        <li>
+                                            การคำนวณดังกล่าวเป็นการคำนวณเบื้องต้น ในการอนุมัติสินเชื่อขึ้นอยู่กับการพิจารณาจากเอกสารการสมัคร
+                                        </li>
+                                        <li>
+                                            การคำนวณอัตราดอกเบี้ยเบื้องต้น โดยเปรียบเทียบกับอัตรดอกเบี้ยของภาระหนี้ปัจจุบันที่ลูกค้ากรอกกับอัตราดอกเบี้ยของธนาคารที่นำเสนอในครั้งนี้
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-lg-9">
@@ -471,7 +490,7 @@
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="btn-link register-online color-primary ">
                                                         <a href="javascript:void(0)">
-                                                            <div class="text">สมัครออนไลน์</div>
+                                                            <div class="text">สมัคร</div>
                                                             <div class="icon">
                                                                 <img src="{{ asset('assets/images/icon/icon-RegisterOnline-orange.svg')}}" alt="banner">
                                                             </div>
@@ -638,11 +657,30 @@
                                         - วงเงินอนุมัติสูงสุด 2 ล้านบาท การอนุมัติวงเงินกู้อัตราดอกเบย้ีเป็นไปตามหลักเกณฑ์และเงื่อนไขการพจิารณาสินเชื่อของธนาคาร
                                     </p>
                                 </div>
+
+                                <div class="data-table ck-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-center vertical-middle bg-color-main">รายได้ประจำต่อเดือน</td>
+                                                <td class="align-center bg-color-secondary">อัตราดอกเบี้ย (ต่อปี)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-center vertical-middle text-color-primary font-medium">30,000 - 49,999 บาท</td>
+                                                <td class="align-center">17%-19% (MRR +8.20% - MRR +10.20%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-center vertical-middle text-color-primary font-medium">50,000 บาทขึ้นไป</td>
+                                                <td class="align-center">15% (MRR +6.20%)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 <br>
                                 <br>
                                 <div class="btn-link register-online">
                                     <a href="javascript:void(0)">
-                                        <div class="text">สมัครออนไลน์</div>
+                                        <div class="text">สมัคร</div>
                                         <div class="icon">
                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                         </div>
@@ -710,7 +748,7 @@
 
                                 <div class="btn-link register-online">
                                     <a href="javascript:void(0)">
-                                        <div class="text">สมัครออนไลน์</div>
+                                        <div class="text">สมัคร</div>
                                         <div class="icon">
                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                         </div>
@@ -763,7 +801,7 @@
                                 </div>
                                 <div class="btn-link register-online">
                                     <a href="javascript:void(0)">
-                                        <div class="text">สมัครออนไลน์</div>
+                                        <div class="text">สมัคร</div>
                                         <div class="icon">
                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                         </div>
@@ -821,7 +859,7 @@
                                 </div>
                                 <div class="btn-link register-online">
                                     <a href="javascript:void(0)">
-                                        <div class="text">สมัครออนไลน์</div>
+                                        <div class="text">สมัคร</div>
                                         <div class="icon">
                                             <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
                                         </div>
@@ -868,7 +906,7 @@
                                 </div>
                                 <div class="group-line" id="popup_step2" style="display: none;">
                                     <div class="line1">ลูกค้ากรอกข้อมูลเพิ่มเติม</div>
-                                    <div class="line2">เพื่อให้ธนาคารได้เข้าใจความต้องการของคุณเพิ่มขึ้น</div>
+                                    <div class="line2">เพื่อให้ธนาคารได้เข้าใจ<br>ความต้องการของคุณเพิ่มขึ้น</div>
                                 </div>
                                 <div class="group-line" id="popup_step3" style="display: none;">
                                     <div class="line1">ธนาคารขอนำเสนอวงเงินสินเชื่อเบื้องต้นแก่คุณ</div>
@@ -917,10 +955,13 @@
                                             </div>
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <select id="slc_job" class="selectpicker slc-style error" title="เลือกอาชีพ*">
+                                                    <select id="slc_job" class="selectpicker slc-style error" title="เลือกอาชีพ*" data-size="5">
                                                         <option value="0">A</option>
                                                         <option value="1">B</option>
                                                         <option value="2">C</option>
+                                                        <option value="3">D</option>
+                                                        <option value="4">E</option>
+                                                        <option value="5">F</option>
                                                     </select>
                                                     <div class="text-error">กรุณาเลือกอาชีพ</div>
                                                 </div>
@@ -941,7 +982,34 @@
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <select class="selectpicker slc-style" title="เลือกจังหวัด*">
+                                                    <select class="selectpicker slc-style" title="เลือกจังหวัด*" data-size="8">
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
+                                                        <option>A</option>
+                                                        <option>B</option>
+                                                        <option>C</option>
                                                         <option>A</option>
                                                         <option>B</option>
                                                         <option>C</option>
@@ -1178,7 +1246,7 @@
                                     <div class="text">
                                         <div class="title text-white">ที่อยู่</div>
                                         <div class="desc">
-                                            123 ชั้น 1 อาคารไทยประกันชีวิต ถ.รัชดาภิเษกแขวงดินแดง เขตดินแดง กทม. 10400
+                                            123 ชั้น 1 อาคารไทยประกันชีวิต ถ.รัชดาภิเษก แขวงดินแดง เขตดินแดง กทม. 10400
                                         </div>
                                     </div>
                                 </div>
@@ -1187,7 +1255,9 @@
                                         <img src="{{ asset('assets/images/icon/icon-customer.svg')}}" alt="icon customer">
                                     </div>
                                     <div class="text">
-                                        <div class="title text-white">02 697 5454</div>
+                                        <div class="title text-white">
+                                            <a href="tel:02 697 5454">02 697 5454</a>
+                                        </div>
                                         <div class="desc">
                                             ศูนย์ลูกค้าสัมพันธ์
                                         </div>
@@ -1224,12 +1294,12 @@
                             <div class="list-menu -right">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.tcrbank.com/th/privacypolicy" target="_blank">
                                             นโยบายความเป็นส่วนตัว
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.tcrbank.com/th/cookiepolicy" target="_blank">
                                             นโยบายความเป็นส่วนตัวในการใช้คุกกี้
                                         </a>
                                     </li>
@@ -1506,12 +1576,18 @@
                         slidesToScroll: 1,
                     }
                 },
+                {
+                    breakpoint: 576,//start device 575
+                    settings: {
+                        dots: true,
+                    }
+                },
             ]
         });
 
         $(".register-online").click(function() {
             $('html,body').animate({
-                scrollTop: $(".formcredit").offset().top},
+                scrollTop: $(".formcredit").offset().top - 50},
                 1500);
         });
 

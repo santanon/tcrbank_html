@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Radio_Dufualt" data-name="Radio Dufualt" transform="translate(-406 -253.692)">
+    <g id="Ellipse_181" data-name="Ellipse 181" transform="translate(406 253.692)" fill="none" stroke="#707070" stroke-width="1" opacity="0.3">
+      <circle cx="10" cy="10" r="10" stroke="none"/>
+      <circle cx="10" cy="10" r="9.5" fill="none"/>
+    </g>
+    <g id="Icon" transform="translate(408.859 256.692)" opacity="0">
+      <rect id="Area" width="14" height="14" transform="translate(0.142)" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-2" data-name="Icon" transform="translate(2.283 3.484)">
+        <path id="Path" d="M12.939,5l-6.6,6.6-3-3" transform="translate(-3.333 -5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

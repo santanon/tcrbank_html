@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Radio_Active" data-name="Radio Active" transform="translate(-421 -197.692)">
+    <path id="Path_3045" data-name="Path 3045" d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z" transform="translate(421 197.692)" fill="#1bc382"/>
+    <g id="Icon" transform="translate(424 200.692)">
+      <rect id="Area" width="14" height="14" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-2" data-name="Icon" transform="translate(2.283 3.484)">
+        <path id="Path" d="M12.939,5l-6.6,6.6-3-3" transform="translate(-3.333 -5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

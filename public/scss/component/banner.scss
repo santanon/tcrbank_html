@@ -48,14 +48,14 @@
             transition: all .35s ease-out;
             button{
                 width: 29px;
-                height: 6px;
+                height: 4px;
                 transition: all .35s ease-out;
                 &:before{
                     content: '';
                     background-color: #91989e;
                     border-radius: 10px;
                     width: 29px;
-                    height: 6px;
+                    height: 4px;
                     opacity: 1;
                     transition: all .35s ease-out;
                 }

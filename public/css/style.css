@@ -213,7 +213,7 @@ a:hover {
     font-weight: 500;
     font-size: 20px; }
     .group-btn .btn-type.bg-main {
-      background-color: #013CA6;
+      background-color: #3E75CE;
       color: #fff; }
     .group-btn .btn-type.bg-no {
       background-color: inherit;
@@ -395,7 +395,8 @@ a:hover {
     margin-right: 20px;
     cursor: pointer; }
     .group-list .style-input .list-item li label {
-      cursor: pointer; }
+      cursor: pointer;
+      width: 100%; }
     .group-list .style-input .list-item li:last-child {
       margin-right: 0; }
     .group-list .style-input .list-item li.active {
@@ -615,21 +616,10 @@ a:hover {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  height: 100%;
-  border: 1px double #b3b3b3; }
+  height: 100%; }
 
 /* ckeditor5-table/theme/table.css */
-.ck-content .table table td,
-.ck-content .table table th {
-  min-width: 2em;
-  padding: .4em;
-  border: 1px solid #bfbfbf; }
-
 /* ckeditor5-table/theme/table.css */
-.ck-content .table table th {
-  font-weight: bold;
-  background: black; }
-
 /* ckeditor5-table/theme/table.css */
 .ck-content[dir="rtl"] .table th {
   text-align: right; }
@@ -810,6 +800,9 @@ a:hover {
       font-size: 20px;
       line-height: 28px;
       color: #fff; }
+    .footer-wrapper .contact-wrapper .detail-contact .text a[href^="tel"] {
+      color: inherit;
+      text-decoration: none; }
     .footer-wrapper .contact-wrapper .detail-contact .icon-path:after {
       content: '';
       display: block;
@@ -919,7 +912,7 @@ a:hover {
       transition: all .35s ease-out; }
       .banner-wrapper .slick-dots li button {
         width: 29px;
-        height: 6px;
+        height: 4px;
         -webkit-transition: all .35s ease-out;
         -o-transition: all .35s ease-out;
         transition: all .35s ease-out; }
@@ -928,7 +921,7 @@ a:hover {
           background-color: #91989e;
           border-radius: 10px;
           width: 29px;
-          height: 6px;
+          height: 4px;
           opacity: 1;
           -webkit-transition: all .35s ease-out;
           -o-transition: all .35s ease-out;
@@ -994,7 +987,7 @@ a:hover {
   .title-sub.text-black {
     color: #373737; }
   .title-sub.text-blue {
-    color: #013CA6; }
+    color: #3E75CE; }
 
 .accordion .card {
   background-color: inherit;
@@ -1065,8 +1058,9 @@ table {
     line-height: 30px;
     color: #fff;
     padding: 10px 15px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff; }
+    border-bottom: 1px solid #fff !important;
+    border-right: 1px solid #fff !important;
+    border-top: none !important; }
     table thead tr th.bg-color-main {
       background-color: #013CA6; }
     table thead tr th.bg-color-secondary {
@@ -1081,11 +1075,16 @@ table {
     font-size: 20px;
     line-height: 30px;
     color: #373737;
-    padding: 15px; }
+    padding: 15px;
+    border-top: none !important; }
     table tbody tr td.text-color-primary {
       color: #013CA6; }
     table tbody tr td.font-medium {
       font-weight: 500; }
+  table tbody tr:first-child td:first-child {
+    border-top-left-radius: 20px; }
+  table tbody tr:first-child td:last-child {
+    border-top-right-radius: 20px; }
   table tbody tr:last-child td:first-child {
     border-bottom-left-radius: 20px; }
   table tbody tr:last-child td:last-child {
@@ -1115,7 +1114,7 @@ table {
     border-radius: 0;
     padding: 10px 40px; }
     .style-tab .nav-tabs .nav-item .nav-link.active {
-      color: #013CA6;
+      color: #49A0EA;
       border-left: 2px solid #FF7301; }
 
 .style-tab .bg-tab-content {
@@ -1164,7 +1163,7 @@ table {
           font-weight: 500;
           font-size: 20px;
           line-height: 28px;
-          color: #013CA6;
+          color: #49A0EA;
           margin-bottom: 5px; }
         .style-tab .tab-content .tab-pane .list-group-wrapper ul li .item .text .desc {
           font-weight: 300;
@@ -1305,6 +1304,17 @@ table {
   color: #373737; }
   .remark.text-white {
     color: #fff; }
+  .remark ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px; }
+    .remark ul li {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      color: #373737;
+      list-style: disc;
+      list-style-position: outside; }
 
 .consent {
   font-weight: 300;
@@ -1363,7 +1373,7 @@ table {
       font-weight: 300;
       font-size: 20px;
       line-height: 28px;
-      color: #91989E;
+      color: #666;
       text-align: center;
       margin-bottom: 40px; }
       .modal.custom .modal-content .modal-body .desc-body a {
@@ -1371,11 +1381,11 @@ table {
         .modal.custom .modal-content .modal-body .desc-body a:hover {
           text-decoration: underline; }
     .modal.custom .modal-content .modal-body .btn-link {
-      max-width: 190px;
+      max-width: 200px;
       margin: auto;
       display: block; }
     .modal.custom .modal-content .modal-body .group-btn {
-      max-width: 190px;
+      max-width: 200px;
       margin: auto; }
       .modal.custom .modal-content .modal-body .group-btn .btn-type {
         border-radius: 8px;
@@ -1405,7 +1415,7 @@ table {
       margin: auto; }
 
 .modal.custom-info .modal-content .modal-body {
-  padding: 50px 1rem; }
+  padding: 50px 2rem; }
   .modal.custom-info .modal-content .modal-body .desc-body {
     text-align: left; }
     .modal.custom-info .modal-content .modal-body .desc-body ul {
