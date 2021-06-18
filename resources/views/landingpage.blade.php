@@ -1696,7 +1696,7 @@
         });
         
 
-        setTimeout(function(){
+        setInterval(function(){
             if ($("#popup_step1_2").is(":visible") == true){
                 $("#popup_step1_2").fadeOut();
                 $("#popup_step1_1").fadeIn();
@@ -1705,7 +1705,7 @@
                 $("#popup_step1_1").fadeOut();
                 $("#popup_step1_2").fadeIn();
             }
-        }, 30000);
+        }, 15000);
         
         $('#next_step1').click(function(){
             $('.step2').slideDown('slow');
