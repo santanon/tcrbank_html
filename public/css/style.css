@@ -257,6 +257,9 @@ a:hover {
     font-size: 14px;
     line-height: 28px;
     padding: 0 15px; }
+    .style-input .text-error#loan_amount_error_validate {
+      font-size: 13px;
+      line-height: 31px; }
   .style-input.nobg .inp-style {
     background-color: inherit;
     border: none;
@@ -1359,7 +1362,7 @@ table {
       font-size: 36px;
       color: #fff; }
   .modal.custom .modal-content .modal-body {
-    padding: 50px 2rem;
+    padding: 50px 1.8rem;
     background-color: #fff;
     border-radius: 20px; }
     .modal.custom .modal-content .modal-body .text-body {
@@ -1415,7 +1418,7 @@ table {
       margin: auto; }
 
 .modal.custom-info .modal-content .modal-body {
-  padding: 50px 2rem; }
+  padding: 50px 1.8rem; }
   .modal.custom-info .modal-content .modal-body .desc-body {
     text-align: left; }
     .modal.custom-info .modal-content .modal-body .desc-body ul {
@@ -1423,6 +1426,9 @@ table {
       padding: 0; }
     .modal.custom-info .modal-content .modal-body .desc-body a {
       color: #91989E; }
+
+.modal.custom-consent .modal-content .modal-body .desc-body {
+  text-align: left; }
 
 .modal-backdrop {
   background-color: #013CA6; }

@@ -850,7 +850,7 @@
         }
         .bg{
             background-color: rgba($color: #EDEFFC, $alpha: 0.9);
-            padding: 20px;
+            padding: 20px 30px;
             border-radius: 10px;
         }
 
@@ -1055,6 +1055,22 @@
                         &:before{
                             width: 48px;
                         }
+                    }
+                }
+            }
+            .box-form{
+                .result-initial{
+                    .financial-amount{
+                        .style-input{
+                            .inp-style{
+                                font-size: 40px;
+                                line-height: 46px;
+                            }
+                        }
+                    }
+                    .result-main{
+                        font-size: 40px;
+                        line-height: 46px;
                     }
                 }
             }

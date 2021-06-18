@@ -39,6 +39,10 @@
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/content/landingpage.css')}}">
 
+    <!-- mask -->
+    <script src="{{ asset('js/imask.js') }}"></script>
+    <!-- <script src="{{ asset('js/jquery.mask.js') }}"></script> -->
+
     <!-- AOS -->
     <link rel="stylesheet" href="{{ asset('css/aos.css')}}">
     <script src="{{ asset('js/aos.js') }}"></script>
@@ -519,7 +523,7 @@
                                                     <div class="value">200,000</div>
                                                     <div class="text">วงเงินรีไฟแนนซ์ที่ต้องการ/บาท </div>
                                                 </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                                <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <div class="value">6,100</div>
                                                     <div class="text">อัตราผ่อนขั้นต่ำต่อเดือน/บาท </div>
                                                 </div>
@@ -527,7 +531,7 @@
                                                     <div class="value">616</div>
                                                     <div class="text">ประหยัดดอกเบี้ยต่อเดือน/บาท </div>
                                                 </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                                <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <div class="value">7,397</div>
                                                     <div class="text">ประหยัดดอกเบี้ยต่อปี/บาท </div>
                                                 </div>
@@ -817,11 +821,11 @@
                                                     <img class="d" src="{{ asset('assets/images/icon/icon-demo9.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
-                                                    <p class="title">1. เอกสารข้อมูลสำคัญของผลิตภัณฑ์ (Product Sale Sheet) สินเชื่อหมุนเวียนส่วนบคุคล</p>
+                                                    <p class="title">1. เอกสารข้อมูลสำคัญของผลิตภัณฑ์ (Product Sale Sheet) สินเชื่อหมุนเวียนส่วนบุคคล</p>
                                                     <div class="style-btn">
                                                         <div class="btn-link2">
                                                             <a href="#">
-                                                                ดาวน์โหลดอัตราเบี้ย
+                                                                ดาวน์โหลดไฟล์
                                                             </a>
                                                         </div>
                                                         <div class="btn-link2">
@@ -843,7 +847,7 @@
                                                     <div class="style-btn">
                                                         <div class="btn-link2">
                                                             <a href="#">
-                                                                ดาวน์โหลดอัตราเบี้ย
+                                                                ดาวน์โหลดไฟล์
                                                             </a>
                                                         </div>
                                                         <div class="btn-link2">
@@ -900,7 +904,7 @@
                                     <div class="group-line" id="popup_step1_2">
                                         <div class="line1">กรุณาตรวจสอบความถูกต้อง</div>
                                         <div class="line2">
-                                        <span style="color: #013CA6; text-decoration: underline;">ของเบอร์โทรศัพท์อีกครั้ง</span><br>ก่อนกดถัดไป
+                                        <span style="color: #013CA6; text-decoration: underline; font-size: 20px; line-height: 20px;">ของเบอร์โทรศัพท์อีกครั้ง</span><br>ก่อนกดถัดไป
                                         </div>
                                     </div>
                                 </div>
@@ -950,7 +954,7 @@
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="อีเมล*">
+                                                    <input class="inp-style email_only" type="text" placeholder="อีเมล*">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
@@ -982,10 +986,10 @@
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <select class="selectpicker slc-style" title="เลือกจังหวัด*" data-size="8">
+                                                    <select class="selectpicker slc-style" title="เลือกจังหวัด*" data-size="6" data-live-search="true">
                                                         <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
+                                                        <option>BA</option>
+                                                        <option>CA</option>
                                                         <option>A</option>
                                                         <option>B</option>
                                                         <option>C</option>
@@ -1018,7 +1022,7 @@
                                             </div>
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="วงเงินที่ต้องการ*">
+                                                    <input class="inp-style" id="money_mask" type="text" placeholder="วงเงินที่ต้องการ*">
                                                 </div>
                                             </div>
                                         </div>
@@ -1236,7 +1240,7 @@
             <div class="container-fluid bg-footer">
                 <div class="container">
                     <div class="contact-wrapper">
-                        <div class="title text-white">ติดต่อ ธนาคารไทยเครดิต</div>
+                        <div class="title text-white">ติดต่อ ธนาคารไทยเครดิต เพื่อรายย่อย</div>
                         <div class="detail-contact">
                             <div class="row">
                                 <div class="col-md-4 col-lg-3 icon-path">
@@ -1430,6 +1434,7 @@
             grid: false,
             step: 1000,
             from: 200000,//ถ้าไม่fix ให้เอาออก
+            keyboard: false,
             onChange: function (data) {
                 from = data.from;
                 updateValues();
@@ -1469,18 +1474,20 @@
             $from2 = $(".js-value2"),
             range,
             min = 0,
-            max = 250000,
+            max = 2000000,
             from;
 
         var updateValues = function () {
             $from2.prop("value", from);
+            
         };
         $range2.ionRangeSlider({
             min: min,
             max: max,
-            step: 250,
+            step: 1000,
             from: 250000,//ถ้าไม่fix ให้เอาออก
             grid: true,
+            keyboard: false,
             onChange: function (data) {
                 from = data.from;
                 updateValues();
@@ -1497,7 +1504,7 @@
         });
 
         range = $range2.data("ionRangeSlider");
-
+        
         var updateRange = function () {
             range.update({
                 from: from,
@@ -1514,9 +1521,32 @@
     });
 </script>
 
-
 <script>
     $(document).ready(function () {
+
+        //$('.money_mask').mask('99,999,999', {reverse: true});
+        // $('.money_mask').mask('A0,000,000', {'translation': {
+        //         A: {pattern: /[1-9]/},
+        //     },
+        // });
+        var numberMask = IMask(
+        document.getElementById('money_mask'),
+        {
+            mask: Number,
+            max: 99999999,
+            thousandsSeparator: ','
+        });
+
+        $(".email_only").on("keypress",function(e){
+
+            var code = e.charCode || e.keyCode;
+            var ch = String.fromCharCode(code);
+
+            if ((ch < "0" || "9" < ch) && (ch < "A" || "Z" < ch) && (ch < "a" || "z" < ch) && (ch!="@") && (ch!=".") && (ch!="-") && (ch!="_") && (e.keyCode!=8) && (e.keyCode!=13))
+            {
+                return false;
+            }
+        });
 
         $('.selectpicker').selectpicker();
 
@@ -1664,10 +1694,9 @@
         $('#tab_selector').on('change', function (e) {
             $('.content-tabs li a').eq($(this).val()).tab('show');
         });
+        
 
-
-
-        setInterval(function(){
+        setTimeout(function(){
             if ($("#popup_step1_2").is(":visible") == true){
                 $("#popup_step1_2").fadeOut();
                 $("#popup_step1_1").fadeIn();
@@ -1676,7 +1705,7 @@
                 $("#popup_step1_1").fadeOut();
                 $("#popup_step1_2").fadeIn();
             }
-        }, 6000);
+        }, 30000);
         
         $('#next_step1').click(function(){
             $('.step2').slideDown('slow');
@@ -1752,8 +1781,9 @@
                 $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
             }, 0);
         });
+
     });
 </script>
-    
+  
 </body>
 </html>

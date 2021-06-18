@@ -613,7 +613,7 @@
 
 .formcredit-wrapper .form-wrapper .bg {
   background-color: rgba(237, 239, 252, 0.9);
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 10px; }
 
 .formcredit-wrapper .form-wrapper .box-form .group-result-initial {
@@ -771,6 +771,12 @@
 @media only screen and (max-width: 575px) {
   .formcredit-wrapper .form-wrapper .title-sub.icon.icon-1:before {
     width: 48px; }
+  .formcredit-wrapper .form-wrapper .box-form .result-initial .financial-amount .style-input .inp-style {
+    font-size: 40px;
+    line-height: 46px; }
+  .formcredit-wrapper .form-wrapper .box-form .result-initial .result-main {
+    font-size: 40px;
+    line-height: 46px; }
   .formcredit-wrapper .content-alert .icon-quote.-close {
     bottom: 70px; } }
 

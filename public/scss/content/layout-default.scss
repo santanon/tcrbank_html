@@ -545,7 +545,7 @@ table{
                 }
             }
             .modal-body{
-                padding: 50px 2rem;
+                padding: 50px 1.8rem;
                 background-color: #fff;
 
                 // border-bottom-left-radius: 20px;
@@ -621,7 +621,7 @@ table{
     &.custom-info{
         .modal-content{
             .modal-body{
-                padding: 50px 2rem;
+                padding: 50px 1.8rem;
                 .desc-body{
                     text-align: left;
                     ul{
@@ -631,6 +631,15 @@ table{
                     a{
                         color: #91989E;
                     }
+                }
+            }
+        }
+    }
+    &.custom-consent{
+        .modal-content{
+            .modal-body{
+                .desc-body{
+                    text-align: left;
                 }
             }
         }
