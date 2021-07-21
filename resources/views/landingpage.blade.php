@@ -1405,9 +1405,6 @@
         </div>
     </div>
 
-
-
-
 <script>
     AOS.init({
         duration: 5000,
@@ -1535,6 +1532,13 @@
             mask: Number,
             max: 99999999,
             thousandsSeparator: ','
+        });
+
+
+        $('#money_mask').focus(function(){
+            $('.content-alert .icon img').attr('src','assets/images/icon/icon_phone.png');
+            $("#popup_step1_1").fadeOut();
+            $("#popup_step1_2").fadeIn();
         });
 
         $(".email_only").on("keypress",function(e){
@@ -1696,16 +1700,16 @@
         });
         
 
-        setInterval(function(){
-            if ($("#popup_step1_2").is(":visible") == true){
-                $("#popup_step1_2").fadeOut();
-                $("#popup_step1_1").fadeIn();
-            }
-            else{
-                $("#popup_step1_1").fadeOut();
-                $("#popup_step1_2").fadeIn();
-            }
-        }, 15000);
+        // setInterval(function(){
+        //     if ($("#popup_step1_2").is(":visible") == true){
+        //         $("#popup_step1_2").fadeOut();
+        //         $("#popup_step1_1").fadeIn();
+        //     }
+        //     else{
+        //         $("#popup_step1_1").fadeOut();
+        //         $("#popup_step1_2").fadeIn();
+        //     }
+        // }, 15000);
         
         $('#next_step1').click(function(){
             $('.step2').slideDown('slow');
