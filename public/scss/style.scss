@@ -9,7 +9,12 @@
 @import './component/banner.scss';
 @import './content/layout-default.scss';
 
-body{
-    font-family: 'Kanit', sans-serif;
+body, html{
+    font-family: 'Kanit' !important;
     transition: all .5s ease-out;
+}
+a{
+    &:hover{
+        text-decoration: none !important;
+    }
 }

@@ -60,7 +60,8 @@
         width: 30px;
         height: 30px;
         img{
-            width: 100%;
+            width: 30px;
+            height: 30px;
         }
     }
 
@@ -71,7 +72,7 @@
         background-color: #FFA900;
     }
     &:hover{
-        text-decoration: none;
+        text-decoration: none !important;
     }
 
     @media only screen and (max-width: 575px) {
@@ -144,6 +145,12 @@
         &:disabled,&[disabled]{
             background-color: #cccccc;
             color: #fff;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .btn-type{
+            padding: 5px 12px;
         }
     }
 }

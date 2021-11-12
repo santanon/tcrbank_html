@@ -18,6 +18,10 @@
     &.text-blue{
         color: #013CA6;
     }
+    @media only screen and (max-width: 767px) {
+        font-size: 30px;
+        line-height: 32px;
+    }
 }
 .title-sub{
     font-weight: $font-medium;
@@ -31,6 +35,11 @@
     }
     &.text-blue{
         color: #3E75CE;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 22px;
+        line-height: 28px;
     }
 }
 
@@ -450,6 +459,24 @@ table{
             
         }
     }
+    // @media only screen and (max-width: 767px) {
+    //     .progressbar{
+    //         li{
+    //             font-size: 18px;
+    //             &:before{
+    //                 width: 35px;
+    //                 height: 35px;
+    //                 line-height: 35px;
+    //                 font-size: 18px;
+    //                 margin: 0 auto;
+    //             }
+    //             &:after{
+    //                 height: 6px;
+    //                 top: 16px;
+    //             }
+    //         }
+    //     }
+    // }
     @media only screen and (max-width: 425px) {
         max-width: 320px;
     }

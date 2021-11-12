@@ -20,7 +20,8 @@
                 .btn-link{
                     position: absolute;
                     bottom: 10%;
-                    left: 4%;
+                    //left: 4%;
+                    right: 4%;
                 }
                 @media only screen and (max-width: 768px) {
                     img{
@@ -32,9 +33,45 @@
                         }
                     }
                     .btn-link{
+                        width: 156px;
                         bottom: 10%;
-                        left: 3%;
+                        //left: 3%;
+                        right: 3%;
                     }
+                }
+            }
+        }
+    }
+
+    .list-slide-Owl{
+        .item{
+            position: relative;
+            img{
+                width: 100%;
+                &.d{
+                    display: block;
+                }
+                &.m{
+                    display: none;
+                }
+            }
+            .btn-link{
+                position: absolute;
+                bottom: 10%;
+                left: 4%;
+            }
+            @media only screen and (max-width: 768px) {
+                img{
+                    &.d{
+                        display: none;
+                    }
+                    &.m{
+                        display: block;
+                    }
+                }
+                .btn-link{
+                    bottom: 10%;
+                    left: 3%;
                 }
             }
         }

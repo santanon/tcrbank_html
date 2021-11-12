@@ -6,3 +6,29 @@ $font-medium: 500;
 
 //Colors
 $color-primary: #013CA6;
+
+
+@font-face {
+    font-family: 'kanit';
+    src: url('/fonts/kanit-light.woff2') format('woff2'),
+         url('/fonts/kanit-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'kanit';
+    src: url('/fonts/kanit-medium.woff2') format('woff2'),
+         url('/fonts/kanit-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'kanit';
+    src: url('/fonts/kanit-regular.woff2') format('woff2'),
+         url('/fonts/kanit-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

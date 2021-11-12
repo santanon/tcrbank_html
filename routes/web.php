@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/landingpage', function () {
     return view('landingpage');
 });
+Route::get('/check', function () {
+    return view('check');
+});

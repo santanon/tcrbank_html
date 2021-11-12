@@ -10,43 +10,18 @@
     <meta name="description" content="" />
 
     <link rel="canonical" href=""/>
-    <!-- <link rel="icon" href="{{ asset('assets/images/favicon.ico')}}" type="image/x-icon"> -->
-
-    <!-- Jquery -->
-    <script src="{{ asset('js/jquery-1.12.3.js') }}"></script>
-    <script src="{{ asset('js/jquery-ui-1.11.4.custom.js') }}"></script>
-
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css')}}">
-    <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,300&display=swap">
-
-    <!-- Slick -->
-    <link rel="stylesheet" href="{{ asset('slick/slick.css')}}">
-    <link rel="stylesheet" href="{{ asset('slick/slick-theme.css')}}">
-    <script src="{{ asset('slick/slick.min.js') }}"></script>
-
-    <!-- Range Slide -->
-    <link rel="stylesheet" href="{{ asset('css/ion.rangeSlider.min.css')}}">
-    <script src="{{ asset('js/ion.rangeSlider.min.js') }}"></script>
-
-    <!-- bootstrap-select -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-select.css')}}">
-    <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/content/landingpage.css')}}">
-
-    <!-- mask -->
-    <script src="{{ asset('js/imask.js') }}"></script>
-    <!-- <script src="{{ asset('js/jquery.mask.js') }}"></script> -->
-
-    <!-- AOS -->
-    <link rel="stylesheet" href="{{ asset('css/aos.css')}}">
-    <script src="{{ asset('js/aos.js') }}"></script>
-
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css')}}">
+    <link rel="preload" href="{{ asset('css/style.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+    </noscript>
+    <link rel="preload" href="{{ asset('css/content/landingpage.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="{{ asset('css/content/landingpage.css')}}">
+    </noscript>
+    
 </head>
 <body>
     <div class="wrapper-site">
@@ -66,8 +41,8 @@
                 <ul class="list-slide">
                     <li>
                         <div class="item">
-                            <img class="d" src="{{ asset('assets/images/banner/banner-01.jpg')}}" alt="banner">
-                            <img class="m" src="{{ asset('assets/images/banner/banner-01-m.jpg')}}" alt="banner">
+                            <img class="d" data-lazy="{{ asset('assets/images/banner/banner-01.webp')}}" alt="banner">
+                            <img class="m" data-lazy="{{ asset('assets/images/banner/banner-01-m.webp')}}" alt="banner">
                             <div class="btn-link register-online">
                                 <a href="javascript:void(0)">
                                     <div class="text">สมัคร</div>
@@ -80,8 +55,8 @@
                     </li>
                     <li>
                         <div class="item">
-                            <img class="d" src="{{ asset('assets/images/banner/banner-02.jpg')}}" alt="banner">
-                            <img class="m" src="{{ asset('assets/images/banner/banner-02-m.jpg')}}" alt="banner">
+                            <img class="d" data-lazy="{{ asset('assets/images/banner/banner-02.jpg')}}" alt="banner">
+                            <img class="m" data-lazy="{{ asset('assets/images/banner/banner-02-m.jpg')}}" alt="banner">
                             <div class="btn-link register-online">
                                 <a href="javascript:void(0)">
                                     <div class="text">สมัคร</div>
@@ -106,7 +81,7 @@
                                     <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
-                                                <img src="{{ asset('assets/images/cashexpress/img01.png')}}" alt="images">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img01.png')}}" alt="images">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
@@ -116,7 +91,7 @@
                                                 </div>
                                                 <div class="desc">
                                                     การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย 02-398-3609<br><br>
                                                 </div>
                                                 <div class="btn-link register-online">
                                                     <a href="javascript:void(0)">
@@ -136,7 +111,7 @@
                                     <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
-                                                <img src="{{ asset('assets/images/cashexpress/img02.png')}}" alt="images">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img02.png')}}" alt="images">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
@@ -166,7 +141,7 @@
                                     <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
-                                                <img src="{{ asset('assets/images/cashexpress/img03.png')}}" alt="images">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img03.png')}}" alt="images">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
@@ -196,7 +171,7 @@
                                     <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
-                                                <img src="{{ asset('assets/images/cashexpress/img04.png')}}" alt="images">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img04.png')}}" alt="images">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
@@ -226,7 +201,7 @@
                                     <div class="row align-items-lg-stretch">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="img-cashexpress">
-                                                <img src="{{ asset('assets/images/cashexpress/img05.png')}}" alt="images">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img05.png')}}" alt="images">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
@@ -257,27 +232,27 @@
                         <ul class="list-thumb">
                             <li>
                                 <div class="img-thumb">
-                                    <img src="{{ asset('assets/images/cashexpress/img01-thumb.png')}}" alt="images">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img01-thumb.png')}}" alt="images">
                                 </div>
                             </li>
                             <li>
                                 <div class="img-thumb">
-                                    <img src="{{ asset('assets/images/cashexpress/img02-thumb.png')}}" alt="images">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img02-thumb.png')}}" alt="images">
                                 </div>
                             </li>
                             <li>
                                 <div class="img-thumb">
-                                    <img src="{{ asset('assets/images/cashexpress/img03-thumb.png')}}" alt="images">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img03-thumb.png')}}" alt="images">
                                 </div>
                             </li>
                             <li>
                                 <div class="img-thumb">
-                                    <img src="{{ asset('assets/images/cashexpress/img04-thumb.png')}}" alt="images">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img04-thumb.png')}}" alt="images">
                                 </div>
                             </li>
                             <li>
                                 <div class="img-thumb">
-                                    <img src="{{ asset('assets/images/cashexpress/img05-thumb.png')}}" alt="images">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img05-thumb.png')}}" alt="images">
                                 </div>
                             </li>
                         </ul>
@@ -286,7 +261,7 @@
             </div>
         </section>
 
-        <section class="content-wrapper bg-loancalculation">
+        <section class="content-wrapper bg-loancalculation  lazyload" data-src="{{ asset('assets/images/banner/banner-loancalculation.webp')}}">
             <div class="container">
                 <div class="loancalculation-wrapper">
                     <div class="row">
@@ -307,7 +282,7 @@
                                                 <label>
                                                     <div class="icon-check"></div>
                                                     <div class="icon">
-                                                        <img src="{{ asset('assets/images/icon/icon-typeloan-1.svg')}}" alt="icon">
+                                                        <img class="lazyload" data-src="{{ asset('assets/images/icon/icon-typeloan-1.svg')}}" alt="icon">
                                                     </div>
                                                     <div class="text">ต้องการวงเงินพร้อมใช้</div>
                                                     <input type="radio" name="loan_loan_type" value="cash" checked="">
@@ -319,7 +294,7 @@
                                                 <label>
                                                     <div class="icon-check"></div>
                                                     <div class="icon">
-                                                        <img src="{{ asset('assets/images/icon/icon-typeloan-2.svg')}}" alt="icon">
+                                                        <img class="lazyload" data-src="{{ asset('assets/images/icon/icon-typeloan-2.svg')}}" alt="icon">
                                                     </div>
                                                     <div class="text">ต้องการรวมหนี้ไว้ที่เดียว</div>
                                                     <input type="radio" name="loan_loan_type" value="refinace">
@@ -380,7 +355,7 @@
                                                 <label>
                                                     <div class="icon-check"></div>
                                                     <div class="icon">
-                                                        <img src="{{ asset('assets/images/icon/icon-min-installment.svg')}}" alt="icon">
+                                                        <img class="lazyload" data-src="{{ asset('assets/images/icon/icon-min-installment.svg')}}" alt="icon">
                                                     </div>
                                                     <div class="text">ผ่อนขั้นต่ำ</div>
                                                     <input type="radio" name="loan_istm_type" value="min_istn" checked="">
@@ -392,7 +367,7 @@
                                                 <label>
                                                     <div class="icon-check"></div>
                                                     <div class="icon">
-                                                        <img src="{{ asset('assets/images/icon/icon-normal-installment.svg')}}" alt="icon">
+                                                        <img class="lazyload" data-src="{{ asset('assets/images/icon/icon-normal-installment.svg')}}" alt="icon">
                                                     </div>
                                                     <div class="text">ผ่อนรายงวด </div>
                                                     <input type="radio" name="loan_istm_type" value="istn">
@@ -458,7 +433,7 @@
                         <div class="row">
                             <div class="col-lg-3">
                                 <div class="text-privilege">
-                                    <img src="{{ asset('assets/images/bg-gift-text.png')}}" alt="image">
+                                    <img class="lazyload" data-src="{{ asset('assets/images/bg-gift-text.png')}}" alt="image">
                                 </div>
                                 <div class="remark" id="remark_1">
                                     หมายเหตุ :<br>
@@ -697,7 +672,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo4.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo4.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">1. บุคคลธรรมดา สัญชาติไทย</p>
@@ -707,7 +682,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo5.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo5.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">2. อายุ 20 - 65ปี</p>
@@ -717,7 +692,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo6.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo6.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">3. พนักงานบริษัทหรือพนักงานรัฐวิสาหกิจ</p>
@@ -727,7 +702,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo7.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo7.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">4. รายได้ประจำตั้งแต่ 30,000บาทขึ้นไป</p>
@@ -740,7 +715,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo8.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo8.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">5. อายุงานไม่ต่ำกว่า 4 เดือน</p>
@@ -765,7 +740,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo1.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">1. สำเนาบัตรประชาชนที่ยังไม่หมดอายุ </p>
@@ -778,7 +753,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo2.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo2.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">2. สลิปเงินเดือน 1 เดือน หรือ หนังสือรับรองการทำงาน</p>
@@ -791,7 +766,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo3.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo3.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">3. สำเนาบัญชีเงินฝากที่เงินเดือนเข้าย้อนหลัง 4 เดือน</p>
@@ -818,7 +793,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo9.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo9.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">1. เอกสารข้อมูลสำคัญของผลิตภัณฑ์ (Product Sale Sheet) สินเชื่อหมุนเวียนส่วนบุคคล</p>
@@ -840,7 +815,7 @@
                                         <li>
                                             <div class="item">
                                                 <div class="icon">
-                                                    <img class="d" src="{{ asset('assets/images/icon/icon-demo10.png')}}" alt="icon">
+                                                    <img class="d lazyload" data-src="{{ asset('assets/images/icon/icon-demo10.png')}}" alt="icon">
                                                 </div>
                                                 <div class="text">
                                                     <p class="title">2. ตัวอย่างวิธีการคำนวณดอกเบี้ย/ยอดชำระสินเชื่อหมุนเวียนส่วนบุคคล</p>
@@ -877,7 +852,7 @@
         </section>
 
         <section class="content-wrapper formcredit">
-            <div class="container-fluid bg-formcredit">
+            <div class="container-fluid bg-formcredit lazyload" data-src="{{ asset('assets/images/banner/banner-form.webp')}}">
                 <div class="container formcredit-wrapper">
                     <div class="custom-progressbar">
                         <ul class="progressbar">
@@ -1035,6 +1010,7 @@
                                 <div class="box-form bg step2" style="display: none;">
                                     <form action="">
                                         <div class="title-sub text-blue in icon icon-2">รายได้</div>
+                                        <p style="margin-bottom: 1rem; color: #DD1B1B;">เงินเดือนประจำ ตั้งแต่ 30,000 บาทขึ้นไป </p>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
@@ -1182,7 +1158,7 @@
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="item-info">
                                 <div class="hover-img">
-                                    <div class="list" style="background-image: url('assets/images/information/img01.png');"></div>
+                                    <div class="list lazyload" data-src="{{ asset('assets/images/information/img01.png')}}"></div>
                                 </div>
                                 <div class="content">
                                     <div class="title-info">เงินฝากแบบถอนได้ไม่จำกัด</div>
@@ -1198,7 +1174,7 @@
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="item-info">
                                 <div class="hover-img">
-                                    <div class="list" style="background-image: url('assets/images/information/img02.png');"></div>
+                                    <div class="list lazyload" data-src="{{ asset('assets/images/information/img02.png')}}"></div>
                                 </div>
                                 <div class="content">
                                     <div class="title-info">สินเชื่อไม่ใช้หลักประกัน</div>
@@ -1216,7 +1192,7 @@
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="item-info">
                                 <div class="hover-img">
-                                    <div class="list" style="background-image: url('assets/images/information/img03.png');"></div>
+                                    <div class="list lazyload" data-src="{{ asset('assets/images/information/img03.png')}}"></div>
                                 </div>
                                 <div class="content">
                                     <div class="title-info">บริการบัตรต่างๆ</div>
@@ -1237,7 +1213,7 @@
 
 
         <footer class="footer-wrapper">
-            <div class="container-fluid bg-footer">
+            <div class="container-fluid bg-footer lazyload" data-src="{{ asset('assets/images/banner/banner-contact.webp')}}">
                 <div class="container">
                     <div class="contact-wrapper">
                         <div class="title text-white">ติดต่อ ธนาคารไทยเครดิต เพื่อรายย่อย</div>
@@ -1245,7 +1221,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-lg-3 icon-path">
                                     <div class="icon">
-                                        <img src="{{ asset('assets/images/icon/icon-location.svg')}}" alt="icon location">
+                                        <img class="lazyload" data-src="{{ asset('assets/images/icon/icon-location.svg')}}" alt="icon location">
                                     </div>
                                     <div class="text">
                                         <div class="title text-white">ที่อยู่</div>
@@ -1256,7 +1232,7 @@
                                 </div>
                                 <div class="col-md-4 col-lg-3 icon-path">
                                     <div class="icon">
-                                        <img src="{{ asset('assets/images/icon/icon-customer.svg')}}" alt="icon customer">
+                                        <img class="lazyload" data-src="{{ asset('assets/images/icon/icon-customer.svg')}}" alt="icon customer">
                                     </div>
                                     <div class="text">
                                         <div class="title text-white">
@@ -1269,7 +1245,7 @@
                                 </div>
                                 <div class="col-md-4 col-lg-3 icon-path">
                                     <div class="icon">
-                                        <img src="{{ asset('assets/images/icon/icon-opening.svg')}}" alt="icon opening">
+                                        <img class="lazyload" data-src="{{ asset('assets/images/icon/icon-opening.svg')}}" alt="icon opening">
                                     </div>
                                     <div class="text">
                                         <div class="title text-white">08.00-22.00 น.</div>
@@ -1405,389 +1381,58 @@
         </div>
     </div>
 
-<script>
-    AOS.init({
-        duration: 5000,
-        easing: 'linear'
-    });
-</script>
+    <!-- Jquery -->
+    <script src="{{ asset('js/jquery-1.12.3.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui-1.11.4.custom.js') }}"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js" integrity="sha512-mx0L9xs+R5jFQ6OoBbS9oOfdPyymQXsrSAjJ8rncuCxA9FPPrlrCxrr8Xwo+N246jOgHtIPBR0eF61OQuPSoDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" integrity="sha512-BHDCWLtdp0XpAFccP2NifCbJfYoYhsRSZOUM3KnAxy2b/Ay3Bn91frud+3A95brA4wDWV3yEOZrJqgV8aZRXUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-<script>
-    $(document).ready(function () {
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css')}}">
+    <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-        var $range = $(".irs"),
-            $from = $(".js-value-limit-max, .js-value-limit-max2"),
-            range,
-            min = 30000,
-            max = 200000,
-            from;
+    <!-- bootstrap-select -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-select-dist.css')}}">
+    <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/css/bootstrap-select.min.css" integrity="sha512-z13ghwce5srTmilJxE0+xd80zU6gJKJricLCq084xXduZULD41qpjRE9QpWmbRyJq6kZ2yAaWyyPAgdxwxFEAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/js/bootstrap-select.min.js" integrity="sha512-CJXg3iK9v7yyWvjk2npXkQjNQ4C1UES1rQaNB7d7ZgEVX2a8/2BmtDmtTclW4ial1wQ41cU34XPxOw+6xJBmTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-        var updateValues = function () {
-            $from.prop("value", from);
-        };
-        $range.ionRangeSlider({
-            min: min,
-            max: max,
-            grid: false,
-            step: 1000,
-            from: 200000,//ถ้าไม่fix ให้เอาออก
-            keyboard: false,
-            onChange: function (data) {
-                from = data.from;
-                updateValues();
-            },
-            onFinish: function (data) {
-                from = data.from;     
-                updateValues();
-            },
-            prettify: function (num) {
-                var n = num.toString();
-                n = n.replace(".", ",");
-                return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1\,");
-            }
-        });
-
-        range = $range.data("ionRangeSlider");
-
-        var updateRange = function () {
-            range.update({
-                from: from,
-            });
-        };
-        $from.on("change", function () {
-            from = +$(this).prop("value");
-            if (from < min) {
-                from = min;
-            }
-            updateValues();    
-            updateRange();
-        });            
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-        var $range2 = $(".irs2"),
-            $from2 = $(".js-value2"),
-            range,
-            min = 0,
-            max = 2000000,
-            from;
-
-        var updateValues = function () {
-            $from2.prop("value", from);
-            
-        };
-        $range2.ionRangeSlider({
-            min: min,
-            max: max,
-            step: 1000,
-            from: 250000,//ถ้าไม่fix ให้เอาออก
-            grid: true,
-            keyboard: false,
-            onChange: function (data) {
-                from = data.from;
-                updateValues();
-            },
-            onFinish: function (data) {
-                from = data.from;     
-                updateValues();
-            },
-            prettify: function (num) {
-                var n = num.toString();
-                n = n.replace(".", ",");
-                return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1\,");
-            }
-        });
-
-        range = $range2.data("ionRangeSlider");
-        
-        var updateRange = function () {
-            range.update({
-                from: from,
-            });
-        };
-        $from2.on("change", function () {
-            from = +$(this).prop("value");
-            if (from < min) {
-                from = min;
-            }
-            updateValues();    
-            updateRange();
-        });
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-
-        //$('.money_mask').mask('99,999,999', {reverse: true});
-        // $('.money_mask').mask('A0,000,000', {'translation': {
-        //         A: {pattern: /[1-9]/},
-        //     },
-        // });
-        var numberMask = IMask(
-        document.getElementById('money_mask'),
-        {
-            mask: Number,
-            max: 99999999,
-            thousandsSeparator: ','
-        });
+    <!-- Slick -->
+    <link rel="stylesheet" href="{{ asset('slick/slick.css')}}">
+    <link rel="stylesheet" href="{{ asset('slick/slick-theme.css')}}">
+    <script src="{{ asset('slick/slick.min.js') }}"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
 
-        $('#money_mask').focus(function(){
-            $('.content-alert .icon img').attr('src','assets/images/icon/icon_phone.png');
-            $("#popup_step1_1").fadeOut();
-            $("#popup_step1_2").fadeIn();
-        });
+    <!-- Lazyloadsize -->
+    <script src="{{ asset('js/jquery.lazy.min.js') }}"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js" integrity="sha512-duR4V2n7kIaA7Yxd7iR3tpfe2/0US6dAYK69VqSAvSvYPVGyCYcPEwzI1Z7KatAAJu8yL0lSMBFdEigvbs1EPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js" integrity="sha512-e+Ss4SqKxi4VTMKEonq+qzWZ32jfsuNV/nxu8DHH3viIVdrWWy3CL09hWO1jfKLs+OtJujh6s9RzWrczJ0yuaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-        $(".email_only").on("keypress",function(e){
+    <!-- Range Slide -->
+    <link rel="stylesheet" href="{{ asset('css/ion.rangeSlider.min.css')}}">
+    <script src="{{ asset('js/ion.rangeSlider.min.js') }}"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" integrity="sha512-NWCafukXClS6fKch6bSMl/WvPzZrD1OGMf1oMAnFYXSSKZ7hgeswls+r4SdK4bFJauVwmvFf7HlMwji2TsjROA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-            var code = e.charCode || e.keyCode;
-            var ch = String.fromCharCode(code);
+    <!-- mask -->
+    <script src="{{ asset('js/imask-dist.js') }}"></script>
+    <!-- <script src="{{ asset('js/jquery.mask-dist.js') }}"></script> -->
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="{{ asset('css/aos.css')}}">
+    <script src="{{ asset('js/aos.js') }}"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
 
-            if ((ch < "0" || "9" < ch) && (ch < "A" || "Z" < ch) && (ch < "a" || "z" < ch) && (ch!="@") && (ch!=".") && (ch!="-") && (ch!="_") && (e.keyCode!=8) && (e.keyCode!=13))
-            {
-                return false;
-            }
-        });
+    <!-- <script src="{{ asset('js/function-dist.js') }}"></script> -->
+    <script src="{{ asset('js/function.js') }}"></script>
 
-        $('.selectpicker').selectpicker();
-
-        $('.list-slide').slick({
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            autoplay: false,
-            autoplaySpeed: 5000,
-            speed: 2000,
-        });
-
-        $('.list-thumb').slick({
-            infinite: false,
-            slidesToShow: 4,
-            asNavFor: '.list-main',
-            focusOnSelect: true,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 1025,//start device 768
-                    settings: {
-                        slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 769,//start device 768
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                },
-                {
-                    breakpoint: 576,//start device 575
-                    settings: {
-                        slidesToShow: 1,
-                        arrows: false,
-                    }
-                },
-            ]
-        });
-        $('.list-main').slick({
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: '.list-thumb',
-            arrows: true,
-            autoplay: false,
-            autoplaySpeed: 5000,
-            speed: 2000,
-            responsive: [
-                {
-                    breakpoint: 769,//start device 768
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 576,//start device 575
-                    settings: {
-                        dots: true,
-                    }
-                },
-            ]
-        });
-
-        $(".register-online").click(function() {
-            $('html,body').animate({
-                scrollTop: $(".formcredit").offset().top - 50},
-                1500);
-        });
-
-        $('.need').click(function(){
-            $('.need').removeClass('active');
-            $(this).addClass('active')
-        });
-        $('.format').click(function(){
-            $('.format').removeClass('active');
-            $(this).addClass('active')
-        });
-        
-        $('.need').click(function(){
-            $('.format').removeClass('active');
-            $('.bg-color-orange').removeClass('show');
-        });
-        $('#t1_1').click(function(){
-            $('#field_interest').hide();
-            $('#remark_1').show();
-            $('#remark_2').hide();
-        });
-        $('#t1_2').click(function(){
-            $('#field_interest').show();
-            $('#remark_1').hide();
-            $('#remark_2').show();
-        });
-        $('#t2_1').click(function(){
-            if($('#t1_1').hasClass('active')){
-                $('#t1_t1').show();
-                $('#t1_t2').hide();
-                $('#t2_t1').hide();
-                $('#t2_t2').hide();
-
-                $('#table_total').hide();
-                $('.bg-color-orange').addClass('show');
-            }else{
-                $('#t1_t1').hide();
-                $('#t1_t2').hide();
-                $('#t2_t1').show();
-                $('#t2_t2').hide();
-
-                $('#table_total').hide();
-                $('.bg-color-orange').addClass('show');
-            }
-        });
-        $('#t2_2').click(function(){
-            if($('#t1_1').hasClass('active')){
-                $('#t1_t1').hide();
-                $('#t1_t2').show();
-                $('#t2_t1').hide();
-                $('#t2_t2').hide();
-
-                $('#table_total').show();
-                $('.bg-color-orange').addClass('show');
-            }else{
-                $('#t1_t1').hide();
-                $('#t1_t2').hide();
-                $('#t2_t1').hide();
-                $('#t2_t2').show();
-
-                $('#table_total').show();
-                $('.bg-color-orange').addClass('show');
-            }
-        });
-
-        $('.item01 li').click(function(){
-            $('.item01 li').removeClass('active');
-            $(this).addClass('active');
-        });
-        // $('.item02 li').click(function(){
-        //     $('.item02 li').removeClass('active');
-        //     $(this).addClass('active');
-        // });
-        $('#tab_selector').on('change', function (e) {
-            $('.content-tabs li a').eq($(this).val()).tab('show');
-        });
-        
-
-        // setInterval(function(){
-        //     if ($("#popup_step1_2").is(":visible") == true){
-        //         $("#popup_step1_2").fadeOut();
-        //         $("#popup_step1_1").fadeIn();
-        //     }
-        //     else{
-        //         $("#popup_step1_1").fadeOut();
-        //         $("#popup_step1_2").fadeIn();
-        //     }
-        // }, 15000);
-        
-        $('#next_step1').click(function(){
-            $('.step2').slideDown('slow');
-            $('.step1').slideUp('slow');
-
-            $('.progressbar li').eq(1).addClass('active');
-
-            $('.content-alert .group-line#popup_step1').fadeOut().next('.group-line#popup_step2').delay(500).fadeIn();
-        });
-        $('#back_step1').click(function(){
-            $('.step1').slideDown('slow');
-            $('.step2').slideUp('slow');
-
-            $('.progressbar li').eq(1).removeClass('active');
-
-            $('.content-alert .group-line#popup_step2').fadeOut().prev('.group-line#popup_step1, #popup_step1_1').delay(500).fadeIn();
-        });
-        $('#next_step2').click(function(){
-            $('.step3').slideDown('slow');
-            $('.step2').slideUp('slow');
-
-            $('.progressbar li').eq(2).addClass('active');
-
-            $('.content-alert .group-line#popup_step2').fadeOut().next('.group-line#popup_step3').delay(500).fadeIn();
-        });
-        $('#back_step2').click(function(){
-            $('.step2').slideDown('slow');
-            $('.step3').slideUp('slow');
-
-            $('.progressbar li').eq(2).removeClass('active');
-            $('.content-alert .group-line#popup_step3').fadeOut().prev('.group-line#popup_step2').delay(500).fadeIn();
-        });
-
-        //Consent
-        $('#accept_step3').click(function(event) {
-            if (this.checked) {
-                $('#btn_submit').removeAttr('disabled', 'disabled');
-            } else {
-                $('#btn_submit').attr('disabled', 'disabled');
-            }
-        });
-        $('#consent_step1').click(function(event) {
-            if (this.checked) {
-                $('#btn_submit_consent').removeAttr('disabled', 'disabled');
-            } else {
-                $('#btn_submit_consent').attr('disabled', 'disabled');
-            }
-        });
-
-        // Comma thousand
-        $('.fm_money').keyup(function (event) {
-            // skip for arrow keys
-            if (event.which >= 37 && event.which <= 40) return;
-            // format number
-            $(this).val(function (index, value) {
-                return value
-                .replace(/\D/g, "")
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-                ;
-            });
-        });
-
-
-        $("#slc_job").change(function () {
-            if ($(this).val() == "0") {
-                $('#modal_conset').modal('show');
-            }
-        })
-        $(document).on('show.bs.modal', '.modal', function (event) {
-            var zIndex = 1040 + (10 * $('.modal:visible').length);
-            $(this).css('z-index', zIndex);
-            setTimeout(function () {
-                $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
-            }, 0);
-        });
-
-    });
-</script>
   
 </body>
 </html>

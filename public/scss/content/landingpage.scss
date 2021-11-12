@@ -54,6 +54,13 @@
                             color: #91989E;
                             margin-bottom: 30px;
                             padding-left: 20px;
+                            a{
+                                color: #91989E;
+                            }
+                            a[href^=tel] {
+                                text-decoration:inherit;
+                                color: #91989E;
+                            }
                         }
                         .btn-link{
                             position: absolute;
@@ -259,17 +266,26 @@
                 cursor: pointer;
                 .img-thumb{
                     transition: all .2s ease-in-out;
+                    transform: scale(0.8);
+                    opacity: 0.8;
                     img{
                         width: 100%;
                     }
                     &:hover{
                         transform: scale(1.1);
+                        opacity: 1;
                     }
                 }
             }
             .slick-slide {
                 //margin: 0 30px;
                 padding: 20px;
+                &.slick-current{
+                    .img-thumb{
+                        opacity: 1;
+                        transform: scale(1.1);
+                    }
+                }
             }
 
             @media only screen and (max-width: 768px) {
@@ -285,7 +301,7 @@
 
 
 .bg-loancalculation{
-    background-image: url("../../assets/images/banner/banner-loancalculation.png");
+    // background-image: url("../../assets/images/banner/banner-loancalculation.webp");
     /* Set a specific height */
     min-height: 570px; 
     /* Create the parallax scrolling effect */
@@ -323,13 +339,13 @@
             }
         }
     }
-    @media only screen and (max-width: 767px) {
-        .bg-color-orange{
-            &.show{
-                //max-height: 1092px;
-            }
-        }
-    }
+    // @media only screen and (max-width: 767px) {
+    //     .bg-color-orange{
+    //         &.show{
+    //             //max-height: 1092px;
+    //         }
+    //     }
+    // }
 }
 .loancalculation-wrapper{
     .row-section{
@@ -403,6 +419,10 @@
                 position: absolute;
                 top: -5px;
                 left: -33px;
+                img{
+                    width: 88px;
+                    height: 88px;
+                }
             }
             &.active{
                 background-color: rgba($color: #013CA6, $alpha: 1);
@@ -532,8 +552,6 @@
         }
     }
 
-    @media only screen and (max-width: 1200px) {
-    }
     @media only screen and (max-width: 991px) {
         .row-section{
             margin-bottom: 30px;
@@ -559,14 +577,61 @@
         padding-bottom: 50px;
         .style-input{
             max-width: 220px;
+            .text-before-input{
+                top: 0;
+            }
+            .inp-style{
+                margin-bottom: 0;
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+        .title{
+            margin-bottom: 30px;
+        }
+        .title-loancalculation{
+            font-size: 20px;
         }
         .type-loan, .type-installment{
             .box-type{
                 max-width: 220px;
+                min-height: 68px;
+                label{
+                    margin-bottom: 0;
+                }
                 .text{
-                    font-size: 22px;
-                    line-height: 28px;
+                    font-size: 18px;
+                    line-height: 24px;
                     max-width: 100%;
+                }
+                .icon{
+                    img{
+                        width: 66px;
+                        height: 66px;
+                    }
+                }
+                .text{
+                    padding: 10px 20px 10px 40px;
+                }
+            }
+        }
+
+        .content-installment{
+            .rang{
+                .box-limit{
+                    .min{
+                        .text{
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
+                    }
+                    .max{
+                        .style-input{
+                            .inp-style{
+                                font-size: 32px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -587,11 +652,6 @@
                 }
             }
         }
-    }
-    @media only screen and (max-width: 425px) {
-    }
-
-    @media only screen and (max-width: 375px) {
     }
 }
 .total-wrapper{
@@ -783,7 +843,7 @@
 
 
 .bg-formcredit{
-    background-image: url("../../assets/images/banner/banner-form.png");
+    // background-image: url("../../assets/images/banner/banner-form.webp");
     //min-height: 570px; 
     background-attachment: fixed;
     background-position: center top;
@@ -812,6 +872,7 @@
                 position: relative;
                 display: flex;
                 align-items: center;
+                padding-left: 55px;
                 &.icon-1{
                     &:before{
                         background-image: url('../../assets/images/icon/icon_personal.png');
@@ -845,6 +906,8 @@
                     display: block;
                     background-repeat: no-repeat;
                     margin-right: 15px;
+                    position: absolute;
+                    left: 0;
                 }
             }
         }
@@ -920,6 +983,13 @@
                             line-height: 16px;
                             color: #91989E;
                             bottom: -10px;
+                            display: none;
+                            &.js-grid-text-0{
+                                display: block;
+                            }
+                            &:last-of-type{
+                                display: block;
+                            }
                         }
                     }
                 }
@@ -959,10 +1029,10 @@
         }
     }
 
-    .content-alert{
+    .content-alert{ 
         position: relative;
         //background-color: #fff;
-        background-image: url('../../assets/images/area_bubble.png');
+        background-image: url('../../assets/images/area_bubble.webp');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         padding: 70px 20px 90px;
@@ -1009,12 +1079,18 @@
             margin: auto;
             width: 111px;
             height: 111px;
+            text-align: center;
             img{
-                width: 80%;
+                width: 85px;
+                height: 85px;
             }
         }
         .icon-quote{
             position: absolute;
+            img{
+                width: 18px;
+                height: 12px;
+            }
             &.-open{
                 top: 40px;
                 left: 70px;
@@ -1031,7 +1107,7 @@
             margin-bottom: 30px;
         }
         .content-alert{
-            background-image: url('../../assets/images/area_bubble_2x.png');
+            background-image: url('../../assets/images/area_bubble_2x.webp');
             margin: 30px auto;
             padding: 70px 20px 110px;
             .group-line-loop{
@@ -1046,6 +1122,39 @@
         .content-alert{
             width: 100%;
         }
+        .form-wrapper{
+            .bg{
+                padding: 20px 15px;
+            }
+            .box-form{
+                .result-initial{
+                    .title-sub{
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                    .financial-amount{
+                        .style-input{
+                            .inp-style{
+                                font-size: 44px;
+                                line-height: 50px;
+                            }
+                        }
+                    }
+                    .result-main{
+                        font-size: 44px;
+                        line-height: 50px;
+                    }
+                    .result-mmr{
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                    .range{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+
     }
     @media only screen and (max-width: 575px) {
         .form-wrapper{
@@ -1085,7 +1194,7 @@
     }
     @media only screen and (max-width: 425px) {
         .content-alert{
-            background-image: url('../../assets/images/area_bubble_xs.png');
+            background-image: url('../../assets/images/area_bubble_xs.webp');
             margin: 30px auto;
             padding: 70px 20px 80px;
             .group-line-loop{
