@@ -1211,7 +1211,7 @@
             </div>
         </section>
 
-
+        
         <footer class="footer-wrapper">
             <div class="container-fluid bg-footer lazyload" data-src="{{ asset('assets/images/banner/banner-contact.webp')}}">
                 <div class="container">

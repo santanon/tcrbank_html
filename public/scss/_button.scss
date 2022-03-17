@@ -37,12 +37,11 @@
 }
 
 .btn-link{
-    border-radius: 8px;
-    //max-width: 275px;
-    display: inline-block;
+    display: flex;
+    justify-content: end;
     a{
         padding: 15px 70px 15px 25px;
-        display: block;
+        border-radius: 8px;
         display: flex;
         align-items: center;
         position: relative;
@@ -66,10 +65,15 @@
     }
 
     &.color-primary{
-        background-color: $color-primary;
+        a{
+            background-color: $color-primary;
+        }
     }
     &.register-online{
-        background-color: #FFA900;
+        a{
+            background-color: #FFA900;
+        }
+        
     }
     &:hover{
         text-decoration: none !important;
