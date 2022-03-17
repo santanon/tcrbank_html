@@ -712,7 +712,10 @@
                 }
             }
             &.register-online{
-                background-color: $color-primary;
+                a{
+                    background-color: $color-primary;
+                }
+                
             }
         }
     }

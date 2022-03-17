@@ -98,6 +98,7 @@ $(function() {
         focusOnSelect: true,
         arrows: false,
         autoplay: true,
+        speed: 2000,
         autoplaySpeed: 5000,
         responsive: [
             {
@@ -129,6 +130,7 @@ $(function() {
         arrows: true,
         autoplay: false,
         speed: 2000,
+        autoplaySpeed: 5000,
         responsive: [
             {
                 breakpoint: 769,//start device 768
@@ -141,6 +143,7 @@ $(function() {
                 breakpoint: 576,//start device 575
                 settings: {
                     dots: true,
+                    speed: 1500,
                 }
             },
         ]
