@@ -1,5 +1,6 @@
 .banner-wrapper{
     padding-top: 90px;
+    
     ul{
         margin: 0;
         padding: 0;
@@ -75,6 +76,10 @@
                 }
             }
         }
+    }
+
+    .slick-slide{
+        font-size: 0;
     }
 
     .slick-dots{

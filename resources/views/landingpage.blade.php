@@ -71,195 +71,7 @@
             </div>
         </section>
 
-        <section class="content-wrapper -cashexpress">
-            <div class="container">
-                <div class="cashexpress-wrapper">
-                    <div class="cashexpress-main">
-                        <ul class="list-main">
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img01.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 2 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย 02-398-3609<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img02.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img03.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 2 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img04.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img05.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cashexpress-thumb">
-                        <ul class="list-thumb">
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img01-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img02-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img03-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img04-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img05-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <section class="content-wrapper bg-loancalculation  lazyload" data-src="{{ asset('assets/images/banner/banner-loancalculation.webp')}}">
             <div class="container">
@@ -577,6 +389,196 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-wrapper -cashexpress">
+            <div class="container">
+                <div class="cashexpress-wrapper">
+                    <div class="cashexpress-main">
+                        <ul class="list-main">
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img01.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 2 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย 02-398-3609<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img02.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img03.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 2 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img04.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img05.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cashexpress-thumb">
+                        <ul class="list-thumb">
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img01-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img02-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img03-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img04-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img05-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
