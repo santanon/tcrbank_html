@@ -21,6 +21,8 @@
     <noscript>
         <link rel="stylesheet" href="{{ asset('css/content/landingpage.css')}}">
     </noscript>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     
 </head>
 <body>
@@ -71,7 +73,196 @@
             </div>
         </section>
 
-        
+
+        <section class="content-wrapper -cashexpress">
+            <div class="container">
+                <div class="cashexpress-wrapper">
+                    <div class="cashexpress-main">
+                        <ul class="list-main">
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img01.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 2 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย 02-398-3609<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img02.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img03.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 2 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img04.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-main">
+                                    <div class="row align-items-lg-stretch">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="img-cashexpress">
+                                                <img data-lazy="{{ asset('assets/images/cashexpress/img05.png')}}" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="detail-cashexpress">
+                                                <div class="title">
+                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
+                                                </div>
+                                                <div class="desc">
+                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
+                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
+                                                </div>
+                                                <div class="btn-link register-online">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="text">สมัคร</div>
+                                                        <div class="icon">
+                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cashexpress-thumb">
+                        <ul class="list-thumb">
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img01-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img02-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img03-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img04-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-thumb">
+                                    <img data-lazy="{{ asset('assets/images/cashexpress/img05-thumb.png')}}" alt="images">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="content-wrapper bg-loancalculation  lazyload" data-src="{{ asset('assets/images/banner/banner-loancalculation.webp')}}">
             <div class="container">
@@ -394,196 +585,6 @@
             </div>
         </section>
 
-        <section class="content-wrapper -cashexpress">
-            <div class="container">
-                <div class="cashexpress-wrapper">
-                    <div class="cashexpress-main">
-                        <ul class="list-main">
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img01.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 2 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย 02-398-3609<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img02.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img03.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 2 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img04.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="content-main">
-                                    <div class="row align-items-lg-stretch">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="img-cashexpress">
-                                                <img data-lazy="{{ asset('assets/images/cashexpress/img05.png')}}" alt="images">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="detail-cashexpress">
-                                                <div class="title">
-                                                    วงเงินสูงสุด 4 ล้านบาท หรือไม่เกิน 5 เท่าของรายได้เฉลี่ยต่อเดือน
-                                                </div>
-                                                <div class="desc">
-                                                    การอนุมัติวงเงินกู้ ขึ้นอยู่กับเอกสารประกอบการพิจารณารายได้ 
-                                                    และเงื่อนไขที่ธนาคารกำหนดผ่อนสบาย<br><br>
-                                                </div>
-                                                <div class="btn-link register-online">
-                                                    <a href="javascript:void(0)">
-                                                        <div class="text">สมัคร</div>
-                                                        <div class="icon">
-                                                            <img src="{{ asset('assets/images/icon/icon-RegisterOnline-blue.svg')}}" alt="banner">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cashexpress-thumb">
-                        <ul class="list-thumb">
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img01-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img02-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img03-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img04-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-thumb">
-                                    <img data-lazy="{{ asset('assets/images/cashexpress/img05-thumb.png')}}" alt="images">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="content-wrapper bg-interest-rate">
             <div class="interest-rate-wrapper">
                 <div class="style-tab">
@@ -864,8 +865,8 @@
                         </ul>
                     </div>
                     
-                    <div class="row row-custom-align-center" data-aos-delay="2000">
-                        <div class="col-lg-4 col-sm-12">
+                    <div class="row row-custom-align-center justify-content-center" data-aos-delay="2000">
+                        <!-- <div class="col-lg-4 col-sm-12">
                             <div class="content-alert" id="content_alert" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
                                 <div class="icon">
                                     <img src="{{ asset('assets/images/icon/icon_smile.png')}}" alt="icon">
@@ -897,73 +898,85 @@
                                     <img src="{{ asset('assets/images/icon/icon_quote.png')}}" alt="icon">
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12">
+                        </div> -->
+                        <div class="col-lg-9 col-sm-12">
                             <div class="form-wrapper" data-aos="fade-left" data-aos-anchor="#content_alert" data-aos-delay="2000" data-aos-duration="500" data-aos-once="true">
                                 <div class="box-form bg step1" style="display: block;">
-                                    <form action="">
+                                    <form class="needs-validation"action="#" novalidate>
                                         <div class="title-sub text-blue icon icon-1">กรอกข้อมูลผู้สมัครสินเชื่อ</div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <input class="inp-style error" type="text" placeholder="ชื่อ*">
-                                                    <div class="text-error">กรุณากรอกชื่อ</div>
+                                                    <input id="inp_1" class="inp-style form-control" onblur="requiredField(this)" type="text" placeholder="ชื่อ*" required>
+                                                    <!-- <div class="text-error">กรุณากรอกชื่อ</div> -->
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
                                             <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="นามสกุล*">
+                                                    <input class="inp-style form-control" onblur="requiredField(this)" type="text" placeholder="นามสกุล*" required>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="เบอร์โทรศัพท์มือถือ*">
+                                                    <input class="inp-style form-control" onblur="requiredField(this)" type="text" placeholder="หมายเลขบัตรประชาชน" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="LINE ID">
+                                                    <input class="inp-style form-control" onblur="requiredField(this)" type="text" placeholder="เบอร์โทรศัพท์มือถือ*" required>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <input class="inp-style email_only" type="text" placeholder="อีเมล*">
+                                                    <input class="inp-style email_only form-control" onblur="requiredField(this)" type="text" placeholder="อีเมล*" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
-                                                <div class="style-input">
-                                                    <select id="slc_job" class="selectpicker slc-style error" title="เลือกอาชีพ*" data-size="5">
-                                                        <option value="0">A</option>
-                                                        <option value="1">B</option>
-                                                        <option value="2">C</option>
-                                                        <option value="3">D</option>
-                                                        <option value="4">E</option>
-                                                        <option value="5">F</option>
+                                                <div class="style-input ddl check-valid">
+                                                    <select id="slc_job" class="selectpicker slc-style form-control" title="เลือกอาชีพ*" data-size="5" required>
+                                                        <option value="0">พนักงานบริษัท/เอกชน</option>
+                                                        <option value="1">พนักงานรัฐวิสาหกิจ</option>
+                                                        <option value="2">บุคลากรทางการแพทย์</option>
+                                                        <option value="3">ข้าราชการ</option>
+                                                        <option value="4">เจ้าของธุรกิจ</option>
+                                                        <option value="5">พ่อค้า/แม่ค้า</option>
+                                                        <option value="5">อาชีพอิสระ/ฟรีแลนซ์</option>
                                                     </select>
-                                                    <div class="text-error">กรุณาเลือกอาชีพ</div>
+                                                    <!-- <div class="text-error">กรุณาเลือกอาชีพ</div> -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
-                                                <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="ประสบการณ์การทำงาน (ปี)*">
+                                                <div class="style-input ddl check-invalid">
+                                                    <select class="selectpicker slc-style form-control" title="เงินเดือนประจำ*" data-size="6" data-live-search="true" required>
+                                                        <option>น้อยกว่า 30,000 บาท</option>
+                                                        <option>30,000-49,999 บาท </option>
+                                                        <option>50,000-79,999 บาท</option>
+                                                        <option>80,000-99,999 บาท</option>
+                                                        <option>100,000-149,999 บาท</option>
+                                                        <option>มากกว่า 150,000 ขึ้นไป</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
-                                                <div class="style-input">
-                                                    <input class="inp-style" type="text" placeholder="ระบุ (เดือน)*">
+                                                <div class="style-input ddl">
+                                                    <select class="selectpicker slc-style form-control" title="อายุงานปัจจุบัน*" data-size="4" data-live-search="true" required>
+                                                        <option>น้อยกว่า 4 เดือน</option>
+                                                        <option>มากกว่า 4 เดือน</option>
+                                                        <option>มากกว่า 1 ปี</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
-                                                <div class="style-input">
-                                                    <select class="selectpicker slc-style" title="เลือกจังหวัด*" data-size="6" data-live-search="true">
+                                                <div class="style-input ddl">
+                                                    <select class="selectpicker slc-style form-control" title="จังหวัดที่ทำงาน*" data-size="6" data-live-search="true" required>
                                                         <option>A</option>
                                                         <option>BA</option>
                                                         <option>CA</option>
@@ -971,45 +984,42 @@
                                                         <option>B</option>
                                                         <option>C</option>
                                                         <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
-                                                        <option>A</option>
-                                                        <option>B</option>
-                                                        <option>C</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
-                                                <div class="style-input">
-                                                    <input class="inp-style" id="money_mask" type="text" placeholder="วงเงินที่ต้องการ*">
+                                                <div class="style-input ddl">
+                                                    <select class="selectpicker slc-style form-control" title="วัตถุประสงค์ในการกู้*" data-size="6" data-live-search="true" required>
+                                                        <option>ต้องการวงเงินพร้อมใช้</option>
+                                                        <option>ต้องการรีไฟแนนซ์หนี้</option>
+                                                        <option>ต้องการทั้งสองข้อ</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="consent">
+                                            <div class="style-input checkbox">
+                                                <input class="chk" type="checkbox" id="accept_step3" name="" value="">
+                                                <label for="accept_step3"> ยอมรับ</label><br>
+                                            </div>
+                                            <div class="text">
+                                                “ตามที่ ท่านได้ให้ข้อมูลข้างต้นเพื่อให้เจ้าหน้าที่ของธนาคารติดต่อกลับ ท่านรับรองว่าข้อมูล
+                                                ดังกล่าวเป็นของท่านจริง และยินยอมให้ธนาคารเก็บรวบรวมและใช้ข้อมูลนั้นในการติดต่อท่าน
+                                                เพื่อให้คำปรึกษาทางการเงิน และนำเสนอผลิตภัณฑ์หรือบริการของธนาคาร ที่ท่านอาจสนใจ 
+                                                และธนาคารเห็นว่าเหมาะสมและเป็นประโยชน์กับท่าน โปรดศึกษารายละเอียดเพิ่มเติมเกี่ยวกับ
+                                                การคุ้มครองข้อมูลส่วนบุคคลของธนาคาร เพื่อที่ท่านจะได้ทราบและเข้าใจถึงวิธีการที่ธนาคาร
+                                                เก็บรวบรวม ใช้ และเปิดเผยข้อมูล ตลอดจนสิทธิของท่านในฐานะเจ้าของข้อมูลส่วนบุคคลได้ที่ 
+                                                <a href="https://www.tcrbank.com/th/privacypolicy" target="_blank">นโยบายความเป็นส่วนตัว (Privacy Policy)</a>”
+                                            </div>
+                                        </div>
+                                        <div class="group-btn">
+                                            <button type="submit" class="btn-type bg-main">สมัคร</button>
+                                        </div>
                                     </form>
-                                    <div class="group-btn">
-                                        <button type="button" class="btn-type bg-main" id="next_step1">ถัดไป</button>
-                                    </div>
                                 </div>
 
-                                <div class="box-form bg step2" style="display: none;">
+                                <!-- <div class="box-form bg step2" style="display: none;">
                                     <form action="">
                                         <div class="title-sub text-blue in icon icon-2">รายได้</div>
                                         <p style="margin-bottom: 1rem; color: #DD1B1B;">เงินเดือนประจำ ตั้งแต่ 30,000 บาทขึ้นไป </p>
@@ -1143,7 +1153,7 @@
                                         <button type="button" class="btn-type bg-no" id="back_step2">ย้อนกลับ</button>
                                         <button type="button" disabled class="btn-type bg-main" id="btn_submit" data-toggle="modal" data-target="#alert_Msg">สมัคร</button>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -1435,6 +1445,17 @@
     <!-- <script src="{{ asset('js/function-dist.js') }}"></script> -->
     <script src="{{ asset('js/function.js') }}"></script>
 
-  
+    <script>
+
+
+        function requiredField(input) {
+            if (input.value.length < 1) {
+                input.parentNode.classList.add("check-invalid");
+            } else {
+                input.parentNode.classList.add("check-valid");
+            }
+        }
+    </script>
+    
 </body>
 </html>

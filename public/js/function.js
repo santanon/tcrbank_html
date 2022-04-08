@@ -49,23 +49,23 @@ $(function() {
     });
 
 
-    var numberMask = IMask(
-    document.getElementById('money_mask'),
-    {
-        mask: Number,
-        max: 99999999,
-        thousandsSeparator: ','
-    });
+    // var numberMask = IMask(
+    // document.getElementById('money_mask'),
+    // {
+    //     mask: Number,
+    //     max: 99999999,
+    //     thousandsSeparator: ','
+    // });
 
 
 
     $('.lazyload').lazy();
 
-    $('#money_mask').focus(function(){
-        $('.content-alert .icon img').attr('src','assets/images/icon/icon_phone.png');
-        $("#popup_step1_1").fadeOut();
-        $("#popup_step1_2").fadeIn();
-    });
+    // $('#money_mask').focus(function(){
+    //     $('.content-alert .icon img').attr('src','assets/images/icon/icon_phone.png');
+    //     $("#popup_step1_1").fadeOut();
+    //     $("#popup_step1_2").fadeIn();
+    // });
 
     $(".email_only").on("keypress",function(e){
 
