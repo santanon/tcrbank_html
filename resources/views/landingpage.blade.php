@@ -22,7 +22,11 @@
         <link rel="stylesheet" href="{{ asset('css/content/landingpage.css')}}">
     </noscript>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> -->
+    <link rel="preload" href="{{ asset('css/bootstrap-icons.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-icons.css')}}">
+    </noscript>
     
 </head>
 <body>
@@ -920,7 +924,7 @@
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
-                                                    <input class="inp-style form-control" onblur="requiredField(this)" type="text" placeholder="หมายเลขบัตรประชาชน" required>
+                                                    <input class="inp-style form-control" onblur="requiredField(this)" type="text" maxlength="13" placeholder="หมายเลขบัตรประชาชน" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
@@ -933,6 +937,7 @@
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input">
                                                     <input class="inp-style email_only form-control" onblur="requiredField(this)" type="text" placeholder="อีเมล*" required>
+                                                    <div class="text-error" style="display: none;">กรุณาเลือกอาชีพ</div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
@@ -946,13 +951,14 @@
                                                         <option value="5">พ่อค้า/แม่ค้า</option>
                                                         <option value="5">อาชีพอิสระ/ฟรีแลนซ์</option>
                                                     </select>
-                                                    <!-- <div class="text-error">กรุณาเลือกอาชีพ</div> -->
+                                                    <div class="text-error" style="display: none;">กรุณาเลือกอาชีพ</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
-                                                <div class="style-input ddl check-invalid">
+                                                <div class="style-input ddl ddl__textrequire check-invalid">
+                                                    <p class="text--require">* เงินเดือนประจำ ตั้งแต่ 30,000 บาทขึ้นไป </p>
                                                     <select class="selectpicker slc-style form-control" title="เงินเดือนประจำ*" data-size="6" data-live-search="true" required>
                                                         <option>น้อยกว่า 30,000 บาท</option>
                                                         <option>30,000-49,999 บาท </option>
@@ -961,10 +967,13 @@
                                                         <option>100,000-149,999 บาท</option>
                                                         <option>มากกว่า 150,000 ขึ้นไป</option>
                                                     </select>
+                                                    
+                                                    <div class="text-error" style="display: block;">เงินเดือนประจำ</div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="style-input ddl">
+                                                    <p class="text--require invisible">อายุงานปัจจุบัน</p>
                                                     <select class="selectpicker slc-style form-control" title="อายุงานปัจจุบัน*" data-size="4" data-live-search="true" required>
                                                         <option>น้อยกว่า 4 เดือน</option>
                                                         <option>มากกว่า 4 เดือน</option>
@@ -1446,8 +1455,6 @@
     <script src="{{ asset('js/function.js') }}"></script>
 
     <script>
-
-
         function requiredField(input) {
             if (input.value.length < 1) {
                 input.parentNode.classList.add("check-invalid");
